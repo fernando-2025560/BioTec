@@ -1,8 +1,8 @@
 html, body {
   margin: 0 !important;
   padding: 0 !important;
-  min-width: 1460px !important;
-  min-height: 1460px !important;
+  min-width: 106.88140556368961vw !important;
+  min-height: 222.22222222222223vh !important;
   background-image: url(1.jpg) !important;
   background-size: cover !important;
   background-position: center center !important;
@@ -1912,3 +1912,4 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
