@@ -8,9 +8,9 @@
     
 //document.querySelector('.search-button').addEventListener('click', function () {
   //  const query = document.querySelector('.search-bar').value;
-    //if (query.trim() !== "") {
-      //  window.open(`https://www.google.com.br/search?q=${encodeURIComponent(query)}`, '_blank');
-    //}
+  //  if (query.trim() !== "") {
+ //       window.open(`https://www.google.com.br/search?q=${encodeURIComponent(query)}`, '_blank');
+ //   }
 //});
 
 
@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ===================== LISTA DE TERMOS =====================
 
-  // 300 termos sobre DNA Projetado
+  // Termos sobre DNA Projetado
   const dnaProjetado = [
-    "DNA projetado", "engenharia genética", "edição genética", "CRISPR", "genoma artificial",
+    "DNA projetado", "engenharia genética", "edição genética", "CRISPR", "genoma","genoma artificial",
     "terapia gênica", "código genético sintético", "genética computacional", "modelagem genética",
     "biologia sintética", "design genético", "genes artificiais", "manipulação de DNA",
     "projetos genômicos", "biotecnologia genética", "engenharia de cromossomos", "nanogenética",
@@ -98,10 +98,89 @@ document.addEventListener("DOMContentLoaded", function () {
     "bioengenharia molecular avançada", "DNA regenerativo programado", "engenharia artificial biomédica",
     "genes programáveis com IA", "DNA digital regenerativo", "engenharia genética artificial aplicada",
     "genes artificiais terapêuticos digitais", "DNA preditivo biomédico", "engenharia genômica digital",
-    "genes regenerativos programados", "DNA projetado digital biomédico"
-  ];
+    "genes regenerativos programados", "DNA projetado digital biomédico",
+    "DNA recombinante", "engenharia genética", "biologia molecular", "biotecnologia industrial", "genoma humano",
+    "RNA mensageiro", "enzimas de restrição", "vetor plasmidial", "clonagem molecular", "sequenciamento genético",
+    "terapia gênica", "bioengenharia", "microscopia eletrônica", "mutagênese dirigida", "proteômica",
+    "transcriptômica", "genômica funcional", "cultura celular", "fermentação biotecnológica", "transgênicos", 
+    "bioreator", "CRISPR-Cas9", "edição genética", "vetor viral", "cDNA", "biblioteca genômica", "bioinformática",
+   "genética sintética", "biologia sintética", "nanobiotecnologia", "biofabricação", "microinjeção", 
+   "reação em cadeia da polimerase", "PCR", "transgênese", "proteína recombinante", "enzima recombinante",
+    "biorremediação", "biocatálise", "biossensor", "nanotecnologia molecular", "expressão gênica", "mutação genética",
+    "transformação bacteriana", "transdução", "transfecção", "bioprocesso", "biotecnologia médica", "imunologia molecular",
+  "anticorpos monoclonais", "vacinas de DNA", "diagnóstico molecular", "biotecnologia ambiental", "bioética",
+  "biotecnologia marinha", "microbiologia aplicada", "engenharia de proteínas", "engenharia metabólica",
+   "metabolômica", "cromatografia líquida", "eletroforese em gel", "DNA mitocondrial", "RNA de interferência",
+ "RNAi", "knockout gênico", "knock-in", "epigenética", "genética de populações", "bioimpressão 3D", "biomateriais",
+  "biocompatibilidade", "nanopartículas", "biotecnologia vegetal", "agrobiotecnologia", "cultura de tecidos vegetais",
+ "engenharia de plantas", "organismos geneticamente modificados", "OGM", "biossegurança", "biodiversidade",
+  "genética aplicada", "microbioma", "biologia de sistemas", "sinalização celular", "ciclo celular",
+  "replicação do DNA", "transcrição", "tradução", "ribossomo", "nucleotídeo", "adenina", "guanina",
+ "citosina", "timina", "uracila", "fita dupla", "helicase", "ligase", "topoisomerase", "DNA polimerase",
+  "RNA polimerase", "replicon", "codão", "anticodão", "mutação silenciosa", "mutação de sentido trocado",
+  "deleção", "inserção gênica", "transposição", "retrotransposon", "genética molecular", "fatores de transcrição",
+    "promotor gênico", "operon", "região codificadora", "intron", "exon", "spliceossomo", "RNA ribossômico",
+  "RNA transportador", "tRNA", "rRNA", "microRNA", "siRNA", "biologia computacional", "análise filogenética",
+  "alinhamento de sequências", "BLAST", "modelagem molecular", "docking molecular", "estrutura secundária de proteínas",
+  "estrutura terciária", "estrutura quaternária", "pontes de hidrogênio", "ligações peptídicas", 
+  "cadeia polipeptídica", "aminoácido", "sequência de aminoácidos", "mutagênese sítio-dirigida", 
+  "engenharia de anticorpos", "terapia celular", "células-tronco", "células totipotentes", "células pluripotentes",
+  "células multipotentes", "diferenciação celular", "reprogramação genética", "células somáticas", "nucleação",
+  "citoplasma", "mitocôndria", "cloroplasto", "ribossomo", "lisossomo", "retículo endoplasmático", "complexo de Golgi",
+ "vesículas", "membrana plasmática", "fosfolipídio", "receptor de membrana", "sinalização intracelular", "apoptose", 
+ "autofagia", "engenharia de tecidos", "biotecnologia farmacêutica", "biotecnologia industrial", "enzimas industriais",
+ "biotecnologia alimentar", "fermentação alcoólica", "fermentação láctica", "biopolímeros", "ácido polilático", "bioplásticos",
+ "biotecnologia de enzimas", "enzimas termoestáveis", "biotecnologia microbiana", "metagenômica", "biotecnologia de vacinas", 
+ "vacinas recombinantes", "imunoterapia", "anticorpo recombinante", "biotecnologia diagnóstica", "microarranjos de DNA",
+ "chips genéticos", "biossegurança genética", "nanomedicina", "nanorrobótica", "nanopartículas de ouro", "nanocápsulas",
+ "biossistemas", "sistemas biomiméticos", "biomimética", "biologia sintética aplicada", "biossíntese", "rotas metabólicas",
+ "bioconversão", "bioenergia", "biocombustíveis", "etanol de segunda geração", "biodiesel", "hidrogênio biológico",
+"fotossíntese artificial", "bioeletrônica", "biochips", "biocomputação", "quimiogenômica", "bioquímica estrutural",
+ "enzimologia", "cinética enzimática", "cofatores", "coenzimas", "apoenzima", "holoenzima", "metabolismo energético",
+"cadeia respiratória", "fosforilação oxidativa", "ciclo de Krebs", "glicólise", "fermentação anaeróbica", "respiração celular",
+"engenharia genética aplicada", "genética computacional", "inteligência artificial em biotecnologia", "aprendizado de máquina genético",
+"modelagem de proteínas", "análise de expressão gênica", "controle epigenético", "metilação do DNA", "acetilação de histonas",
+"desacetilase", "histonas", "nucleossomo", "DNA superenrolado", "telômero", "telomerase", "cromossomo", "centrômero", "cromatina",
+"heterocromatina", "eucromatina", "genoma nuclear", "genoma plasmidial", "genoma viral", "genoma bacteriano",
+"engenharia de microrganismos", "bactérias recombinantes", "leveduras recombinantes", "E. coli", "Saccharomyces cerevisiae",
+"Bacillus subtilis", "Pseudomonas putida", "Streptomyces", "biotecnologia animal", "transgênicos animais", "clonagem reprodutiva",
+"nuclear transfer", "Dolly", "engenharia genética vegetal", "resistência a pragas", "resistência a herbicidas", "biofortificação",
+"arroz dourado", "melhoramento genético", "marcadores moleculares", "microssatélites", "RFLP", "AFLP", "SNP", "bioestatística",
+"biotecnologia agrícola", "biotecnologia verde", "biotecnologia branca", "biotecnologia azul", "biotecnologia vermelha",
+"engenharia bioquímica", "análise proteica", "cristalografia de proteínas", "espectrometria de massas", "RMN", "resonância magnética nuclear",
+"difração de raios X", "purificação proteica", "ultracentrifugação", "microfiltração", "imunoprecipitação", "hibridização molecular",
+"northern blot", "southern blot", "western blot", "dot blot", "spot blot", "engenharia genômica", "controle de expressão",
+"plasmídeo de expressão", "vetor de clonagem", "vetor de expressão", "vetor shuttle", "biologia estrutural", "engenharia metabólica avançada",
+"bioengenharia celular", "biologia computacional aplicada", "bioinformática estrutural", "modelagem de redes biológicas",
+"sistemas regulatórios", "análise multômica", "metatranscriptômica", "metaproteômica", "biologia de sistemas integrativa",
+"biosimulação", "biorreator contínuo", "biorreator batelada", "controle de pH", "controle de oxigênio dissolvido",
+"engenharia de fermentadores", "produção de biomassa", "extração proteica", "purificação de DNA", "purificação de RNA",
+"síntese de oligonucleotídeos", "hibridização in situ", "bioquímica molecular", "engenharia genética aplicada à medicina",
+"genética clínica", "diagnóstico genético", "teste de paternidade", "marcadores genéticos", "genotipagem", "fenotipagem",
+ "expressão diferencial", "vetores adenovirais", "vetores lentivirais", "terapia gênica ex vivo", "terapia gênica in vivo",
+"modulação gênica", "silenciamento gênico", "biotecnologia regenerativa", "engenharia de órgãos", "bioimpressão tecidual",
+"nanofabricação", "microfluídica", "lab-on-a-chip", "biorreatores miniaturizados", "biossegurança laboratorial", "níveis de biossegurança",
+"NB1", "NB2", "NB3", "NB4", "engenharia genética vegetal avançada", "genética animal aplicada", "biotecnologia veterinária",
+"vacinas recombinantes animais", "biotecnologia aquática", "engenharia genética de algas", "produção de biocombustíveis de algas",
+"biotecnologia de fungos", "biotecnologia microbiana industrial", "engenharia genética de leveduras", "produção de enzimas industriais",
+"biossíntese de antibióticos", "biotecnologia farmacogenômica", "farmacogenética", "biotecnologia nutricional", "biotecnologia de cosméticos",
+"biotecnologia alimentar avançada", "engenharia genética de probióticos", "biologia molecular aplicada", "engenharia genética de plantas",
+"biotecnologia ambiental avançada", "biorremediação genética", "biodegradação enzimática", "engenharia de enzimas oxidativas",
+"engenharia de lipases", "biocatálise enzimática", "engenharia de microorganismos fotossintéticos", "biologia de algas",
+"genética de fungos", "biologia celular", "engenharia genética aplicada à saúde", "nanobiotecnologia médica", "biossensores implantáveis",
+"bioeletrônica médica", "bioengenharia de tecidos", "biotecnologia de precisão", "genética personalizada", "genômica médica",
+"farmacogenômica", "biologia molecular de vírus", "engenharia genética viral", "biossegurança molecular", "regulação gênica", "engenharia genética humana", "ética genética", "biossistemas computacionais", "modelagem genética digital", "engenharia genética quântica", "nanobiologia", "biotecnologia espacial", "biologia sintética avançada", "engenharia genética automatizada", "plataformas de edição gênica", "nanossistemas biológicos", "bioengenharia ambiental", "biologia quântica", "biorrobótica", "biofísica molecular", "biologia teórica", "biologia computacional aplicada à medicina", "engenharia genética de precisão", "genética sintética programável", "bioengenharia aplicada à energia", "biotecnologia computacional", "engenharia genética autônoma", "DNA digital", "bioinformática genética", "banco genético digital", "genética molecular computacional",
+"engenharia genética neural", "biologia artificial", "engenharia de genomas sintéticos", "síntese total de genomas",
+"biologia molecular aplicada à IA", "biologia sintética robótica", "bioengenharia autônoma", "engenharia molecular inteligente",
+"biotecnologia de ponta", "genética sintética de sistemas", "modelagem molecular quântica", "bioinformática aplicada à saúde",
+"engenharia de biocircuitos", "biologia computacional evolutiva", "genética digital aplicada", "engenharia molecular de precisão",
+"nanogenética", "engenharia genética sustentável", "biologia sistêmica aplicada", "engenharia biomolecular", "engenharia genética adaptativa",
+"biotecnologia evolutiva", "engenharia molecular avançada", "engenharia genética simbiótica", "engenharia genética regenerativa",
+"engenharia genética neural", "engenharia genética fotônica", "engenharia genética quiral", "engenharia genética híbrida",
+"engenharia genética holográfica", "engenharia genética sintética avançada"
+];
 
-  // 300 termos sobre Biotecnologia
+  // Termos sobre Biotecnologia
   const biotecnologia = [
     "biotecnologia", "bioinformática", "biologia molecular", "nanobiotecnologia",
     "células-tronco", "terapia celular", "diagnóstico molecular", "engenharia de tecidos",
@@ -224,8 +303,8 @@ document.addEventListener("DOMContentLoaded", function () {
   
     new QRCode(document.getElementById("qrcode"), {
       text: url,
-      width: 8.272327964860908vw,   // 3cm ≈ 113px
-      height: 17.199391171993913vh,
+      width: 113,   // 3cm ≈ 113px
+      height: 113,
       colorDark: "#000000",
       colorLight: "#ffffff",
       correctLevel: QRCode.CorrectLevel.H
@@ -293,11 +372,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const css = `
     /* Estilos conforme especificado acima */
-    #custom-overlay-container { position: absolute; top: 17.199391171993913vh; left: 566.9291338582676; pointer-events: none; }
+    #custom-overlay-container { position: absolute; top: 113px; left: 566.9291338582676px; pointer-events: none; }
     #custom-overlay-container > * { pointer-events: auto; }
     #custom-video { position: relative; z-index: 2; display: block; }
     #custom-image { position: relative; z-index: 1; display: block; }
-    #custom-caption { position: relative; top:  0.5752705569338079vh; display: block; text-align: center; z-index: 3; }
+    #custom-caption { position: relative; top: 3.779527559055118px; display: block; text-align: center; z-index: 3; }
   `;
   const style = document.createElement('style');
   style.textContent = css;
@@ -704,10 +783,6 @@ document.head.appendChild(customTag);
   const placeholder = document.getElementById('ytPlaceholder');
   const container = document.getElementById('ytPlayerContainer');
 
-  // URL do player embed (já com parâmetros)
-  const embedUrl = 'https://www.youtube.com/embed/C5x073iElaA?rel=0&modestbranding=1&playsinline=1&iv_load_policy=3';
-
-  function createIframe() {
   
 
 
@@ -744,9 +819,9 @@ document.head.appendChild(customTag);
 function ajustarColunas() {
   const gallery = document.querySelector('.video-gallery');
   if(window.innerWidth < 1050) {
-    gallery.style.gridTemplateColumns = 'repeat(2, 48.7062404870624vh)';   // 2 colunas em telas menores
+    gallery.style.gridTemplateColumns = 'repeat(2, 320px)';   // 2 colunas em telas menores
   } else {
-    gallery.style.gridTemplateColumns = 'repeat(3, 48.7062404870624vh)';
+    gallery.style.gridTemplateColumns = 'repeat(3, 320px)';
   }
 }
 
@@ -756,20 +831,32 @@ window.addEventListener('load', ajustarColunas);
 
 
 
+
+
+function ajustarLayout() {
+  if (window.innerWidth <= 768) {
+    // Código para telas pequenas
+  } else {
+    // Código para telas grandes
+  }
+}
+
+window.addEventListener("load", ajustarLayout);
+window.addEventListener("resize", ajustarLayout);
 function ajustarLayout() {
   const videos = document.querySelectorAll("iframe, video");
   const imagens = document.querySelectorAll("img");
   const menu = document.querySelector("nav");
   const body = document.body;
 
-  if (window.innerWidth <= 56.22254758418741vw) {
+  if (window.innerWidth <= 768) {
     console.log("Modo mobile ativado");
 
     // 🔹 Ajuste de vídeos para telas pequenas
     videos.forEach(video => {
       video.style.width = "100%";
       video.style.height = "auto";
-      video.style.maxWidth = "23.42606149341142vw";
+      video.style.maxWidth = "320px";
       video.style.display = "block";
       video.style.margin = "0 auto";
     });
@@ -778,10 +865,10 @@ function ajustarLayout() {
     imagens.forEach(img => {
       img.style.width = "100%";
       img.style.height = "auto";
-      img.style.maxWidth = "23.42606149341142vw";
-      img.style.borderRadius = "0.8784773060029283vw";
+      img.style.maxWidth = "320px";
+      img.style.borderRadius = "12px";
       img.style.display = "block";
-      img.style.margin = "0.7320644216691069vw auto";
+      img.style.margin = "10px auto";
     });
 
     // 🔹 Ajuste do menu para mobile
@@ -791,23 +878,23 @@ function ajustarLayout() {
       menu.style.width = "100%";
       menu.style.height = "auto";
       menu.style.backgroundColor = "rgba(0, 0, 0, 0.85)";
-      menu.style.backdropFilter = "blur( 0.36603221083455345vw)";
+      menu.style.backdropFilter = "blur(5px)";
       menu.style.flexDirection = "column";
       menu.style.textAlign = "center";
-      menu.style.padding = "1.52207001522070vh";
+      menu.style.padding = "10px 0";
     }
 
     // 🔹 Ajuste geral do corpo da página
-    body.style.paddingTop = "10.654490106544902vh";
+    body.style.paddingTop = "70px";
 
   } else {
     console.log("Modo desktop ativado");
 
     // 🔹 Ajuste de vídeos para telas grandes
     videos.forEach(video => {
-      video.style.width = "46.85212298682284vw";
-      video.style.height = "54.794520547945204vh";
-      video.style.margin = "1.4641288433382138vw auto";
+      video.style.width = "640px";
+      video.style.height = "360px";
+      video.style.margin = "20px auto";
       video.style.display = "block";
     });
 
@@ -815,10 +902,10 @@ function ajustarLayout() {
     imagens.forEach(img => {
       img.style.width = "auto";
       img.style.height = "auto";
-      img.style.maxWidth = "43.92386530014641vw";
-      img.style.borderRadius = "0.5856515373352855vw";
+      img.style.maxWidth = "600px";
+      img.style.borderRadius = "8px";
       img.style.display = "block";
-      img.style.margin = "1.4641288433382138vw auto";
+      img.style.margin = "20px auto";
     });
 
     // 🔹 Ajuste do menu para desktop
@@ -826,23 +913,35 @@ function ajustarLayout() {
       menu.style.position = "fixed";
       menu.style.top = "0";
       menu.style.width = "100%";
-      menu.style.height = "9.132420091324201vh";
+      menu.style.height = "60px";
       menu.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
       menu.style.display = "flex";
       menu.style.justifyContent = "center";
       menu.style.alignItems = "center";
       menu.style.flexDirection = "row";
-      menu.style.backdropFilter = "blur( 0.21961932650073207vw)";
+      menu.style.backdropFilter = "blur(3px)";
     }
 
     // 🔹 Ajuste geral do corpo da página
-    body.style.paddingTop = "12.1765601217656vh";
+    body.style.paddingTop = "80px";
   }
 }
 
 // Executa o ajuste ao carregar e redimensionar
 window.addEventListener("load", ajustarLayout);
 window.addEventListener("resize", ajustarLayout);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
