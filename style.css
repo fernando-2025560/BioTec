@@ -393,7 +393,7 @@ body {
 .video-container {
   position: absolute;
   top: 13.23122280947758vh;
-  left: 37.79527559055118px;
+  left: 2.766857656702136vw;
   width: 27.81844802342606vw;
   height: 31.963470319634702vh;
   border-radius: 0.36603221083455345vw;
@@ -629,7 +629,7 @@ body {
   width: var(--video-width);
   height: var(--video-height);
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 0.36603221083455345vw;
   z-index: 2;
   transition: opacity 0.4s ease;
   pointer-events: none;
@@ -1292,7 +1292,7 @@ html, body {
   left: 2.766857656702136vw;
   width: 23.42606149341142vw;
   height: 27.397260273972602vh;
-  border-radius: 5px;
+  border-radius: 0.36603221083455345vw;
 }
 
 
@@ -1303,7 +1303,7 @@ html, body {
 
 ::-webkit-scrollbar-thumb {
   background-color: darkgrey; /* Cor do "polegar" da barra */
-  border-radius: 5px; /* Borda arredondada */
+  border-radius: 0.36603221083455345vw; /* Borda arredondada */
 }
 
 ::-webkit-scrollbar-track {
@@ -1361,7 +1361,7 @@ html, body {
 }
 
 #videoCaption3 {
-  margin-top: 37.79527559055118px;
+  margin-top: 5.752705569338079vh;
   width: 23.42606149341142vw;
   font-size: 13px;
   color: #000;
@@ -1838,7 +1838,7 @@ body {
 /* Definindo o layout do conteúdo principal */
 main {
   flex-grow: 1; /* Garante que o conteúdo ocupe toda a área disponível */
-  padding: 20px;
+  padding: 1.4641288433382138vw;
 }
 
 
@@ -1851,16 +1851,16 @@ main {
   }
 
   main {
-      padding: 10px;
+      padding: 0.7320644216691069vw;
   }
 
   
 }
 
 /* Para telas até 480px (smartphones em modo retrato) */
-@media (max-width: 480px) {
+@media (max-width: 35.13909224011713vw) {
   main {
-      padding: 5px; /* Reduz o padding em telas muito pequenas */
+      padding:  0.36603221083455345vw; /* Reduz o padding em telas muito pequenas */
   }
 
   
@@ -1912,6 +1912,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
