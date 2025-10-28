@@ -224,8 +224,8 @@ document.addEventListener("DOMContentLoaded", function () {
   
     new QRCode(document.getElementById("qrcode"), {
       text: url,
-      width: 113,   // 3cm ≈ 113px
-      height: 113,
+      width: 8.272327964860908vw,   // 3cm ≈ 113px
+      height: 17.199391171993913vh,
       colorDark: "#000000",
       colorLight: "#ffffff",
       correctLevel: QRCode.CorrectLevel.H
@@ -293,11 +293,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const css = `
     /* Estilos conforme especificado acima */
-    #custom-overlay-container { position: absolute; top: 113px; left: 566.9291338582676px; pointer-events: none; }
+    #custom-overlay-container { position: absolute; top: 17.199391171993913vh; left: 566.9291338582676; pointer-events: none; }
     #custom-overlay-container > * { pointer-events: auto; }
     #custom-video { position: relative; z-index: 2; display: block; }
     #custom-image { position: relative; z-index: 1; display: block; }
-    #custom-caption { position: relative; top: 3.779527559055118px; display: block; text-align: center; z-index: 3; }
+    #custom-caption { position: relative; top:  0.5752705569338079vh; display: block; text-align: center; z-index: 3; }
   `;
   const style = document.createElement('style');
   style.textContent = css;
@@ -843,6 +843,7 @@ function ajustarLayout() {
 // Executa o ajuste ao carregar e redimensionar
 window.addEventListener("load", ajustarLayout);
 window.addEventListener("resize", ajustarLayout);
+
 
 
 
