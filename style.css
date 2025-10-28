@@ -239,8 +239,8 @@ h1 {
 }
 
 .icon-glass-container img {
-  width: 100% !important;
-  height: 100% !important;
+  width: 100vw !important;
+  height: 100vh !important;
   object-fit: contain !important;
   display: block !important;
   box-sizing: border-box !important;
@@ -392,19 +392,19 @@ body {
 
 .video-container {
   position: absolute;
-  top: 86.9291338582677px;
+  top: 13.23122280947758vh;
   left: 37.79527559055118px;
-  width: 380px;
-  height: 210px;
-  border-radius: 5px;
+  width: 27.81844802342606vw;
+  height: 31.963470319634702vh;
+  border-radius: 0.36603221083455345vw;
   overflow: hidden;
   cursor: pointer;
 }
 
 
 #player {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -420,14 +420,14 @@ body {
 /* Legenda */
 .caption-link {
   position: absolute;
-  top: calc(75.59055118110236px + 220px + 5px);
-  left: 37.79527559055118px;
+  top: calc(11.505411138676157vh + 33.4855403348554vh + 0.76103500761035vh);
+  left: 2.766857656702136vw;
   font-size: 13px;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
   line-height: 1.2;
-  width: 377.95275590551176px;
+  width: 27.668576567021358vw;
 }
 
 .caption-link:hover {
@@ -448,11 +448,11 @@ body {
 
 /* Dimensões fixas */
 :root {
-  --video-width: 226.77165354330708px;
-  --video-height: 171.21259842519686px; /* 16:9 proporção exata para 60px largura */
-  --video-top: 60px;
-  --video-left: 34px;
-  --caption-gap: 56.69291338582677px;
+  --video-width: 16.601145940212817vw;
+  --video-height: 26.0597562291015vh; /* 16:9 proporção exata para 60px largura */
+  --video-top: 9.132420091324201vh;
+  --video-left: 5.175038051750381vh;
+  --caption-gap: 4.150286485053204vw;
 }
 
 .video-container {
@@ -473,7 +473,7 @@ body {
   width: var(--video-width);
   height: var(--video-height);
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 0.36603221083455345vw;
   z-index: 2;
   transition: opacity 0.4s ease;
   pointer-events: none;
@@ -486,7 +486,7 @@ body {
 #player iframe {
   width: var(--video-width);
   height: var(--video-height);
-  border-radius: 5px;
+  border-radius: 0.36603221083455345vw;
   z-index: 1;
   position: relative;
 }
@@ -494,7 +494,7 @@ body {
 /* Legenda com alinhamento e distância de 1.5mm abaixo da imagem */
 .caption-link {
   position: absolute;
-  top: calc(var(--video-top)  + var(--video-height) + 188.97637795275588px);
+  top: calc(var(--video-top)  + var(--video-height) + 28.76352784669039vh);
   left: var(--video-left);
   width: var(--video-width);
   font-size: 13px;
@@ -521,18 +521,18 @@ body {
 
 .video-container {
   position: absolute;
-  top: 76.9291338582677px;
-  left: 37.79527559055118px;
-  width: 380px;
-  height: 210px;
-  border-radius: 5px;
+  top: 11.70915279425688vh;
+  left: 2.766857656702136vw;
+  width: 27.81844802342606vw;
+  height: 31.963470319634702vh;
+  border-radius: 0.36603221083455345vw;
   overflow: hidden;
   cursor: pointer;
 }
 
 #poster {
-  width: 100%;
-  height: 100%;
+  width: 7.320644216691069vw;
+  height: 15.220700152207002vh;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -542,8 +542,8 @@ body {
 }
 
 #player {
-  width: 100%;
-  height: 100%;
+  width: 7.320644216691069vw;
+  height: 15.220700152207002vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -559,14 +559,14 @@ body {
 /* Legenda */
 .caption-link {
   position: absolute;
-  top: calc(75.59055118110236px + 210px + 0.1px);
-  left: 37.79527559055118px;
+  top: calc(11.505411138676157vh + 31.963470319634702vh + 0.015220700152207vh);
+  left: 2.766857656702136vw;
   font-size: 13px;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
   line-height: 1.2;
-  width: 377.95275590551176px;
+  width: 27.668576567021358vw;
 }
 
 
@@ -604,11 +604,11 @@ body {
 
 /* Dimensões fixas */
 :root {
-  --video-width: 226.77165354330708px;
-  --video-height: 171.21259842519686px; /* 16:9 proporção exata para 60px largura */
+  --video-width: 16.601145940212817vw;
+  --video-height: 26.0597562291015vh; /* 16:9 proporção exata para 60px largura */
   --video-top: 0px;
-  --video-left: 134px;
-  --caption-gap: 56.69291338582677px;
+  --video-left: 4.150286485053204vw;
+  --caption-gap:  4.150286485053204vw;
 }
 
 .video-container {
@@ -642,7 +642,7 @@ body {
 #player iframe {
   width: var(--video-width);
   height: var(--video-height);
-  border-radius: 5px;
+  border-radius: 0.36603221083455345vw;
   z-index: 1;
   position: relative;
 }
@@ -650,7 +650,7 @@ body {
 /* Legenda com alinhamento e distância de 1.5mm abaixo da imagem */
 .caption-link {
   position: absolute;
-  top: calc(var(--video-top)  var(--video-height) + 188.97637795275588px);
+  top: calc(var(--video-top)  var(--video-height) + 28.76352784669039vh);
   left: var(--video-left);
   width: var(--video-width);
   font-size: 13px;
@@ -679,18 +679,18 @@ body {
 
 .video-container {
   position: absolute;
-  top: 86.9291338582677px;
-  left: 37.79527559055118px;
-  width: 320px;
-  height: 180px;
-  border-radius: 5px;
+  top: 13.23122280947758vh;
+  left: 2.766857656702136vw;
+  width: 23.42606149341142vw;
+  height: 27.397260273972602vh;
+  border-radius: 0.36603221083455345vw;
   overflow: hidden;
   cursor: pointer;
 }
 
 #poster {
-  width: 100%;
-  height: 100%;
+  width: 7.320644216691069vw;
+  height: 15.220700152207002vh;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -700,8 +700,8 @@ body {
 }
 
 #player {
-  width: 100%;
-  height: 100%;
+  width: 7.320644216691069vw;
+  height: 15.220700152207002vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -717,14 +717,14 @@ body {
 /* Legenda */
 .caption-link {
   position: absolute;
-  left: 37.79527559055118px;
+  left: 2.766857656702136vw;
   font-size: 13px;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
   line-height: 1.1;
-  width: 320.95275590551176px;
-  bottom: 362.835px;
+  width: 23.49580936350745vw;
+  bottom: 55.226027397260275vh;
 }
 
 
@@ -734,15 +734,15 @@ body {
 
 .chart-wrap {
   position: fixed;
-  right: 18.90px;
-  bottom: 75.59055118110236px;
-  width: 139.84251968503938px;
-  height: 94.48818897637794px;
+  right: 1.3836017569546117vw;
+  bottom: 11.505411138676157vh;
+  width: 10.237373329797904vw;
+  height:  14.381763923345195vh;
   background: #fff;
-  padding: 9.9px;
+  padding: 0.7247437774524158vw;
   box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  border: 0.07320644216691069vw solid #ccc;
+  border-radius:  0.43923865300146414vw;
 }
 
 svg.chart {
@@ -771,13 +771,13 @@ svg.chart {
   position: absolute;
   background: #000;
   color: #fff;
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 0.29282576866764276vw 0.5856515373352855vw;
+  border-radius: 0.29282576866764276vw;
   font-size: 12px;
   pointer-events: none;
   display: none;
   white-space: nowrap;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  box-shadow: 0 0.14641288433382138vw 0.43923865300146414vw rgba(0,0,0,0.3);
 }
 
 
@@ -787,13 +787,13 @@ svg.chart {
 /* SVG gráfico estático (gatilho) */
 #graficoSvg {
   cursor: pointer;
-  margin: 50px;
-  border: 2px solid transparent;
+  margin: 3.6603221083455346vw;
+  border: 0.14641288433382138vw solid transparent;
   transition: border 0.3s;
 }
 
 #graficoSvg:hover {
-  border: 2px solid #3498db;
+  border: 0.14641288433382138vw solid #3498db;
 }
 
 /* Container do gráfico dinâmico */
@@ -804,22 +804,22 @@ svg.chart {
   left: 88.7%;
   transform: translate(-50%, -50%);
   background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 1.4641288433382138vw;
+  border-radius: 0.5856515373352855vw;
+  box-shadow: 0 0 0.7320644216691069vw rgba(0, 0, 0, 0.3);
   z-index: 100000000000000000000000000;
 }
 
 canvas {
-  max-width: 500px;
+  max-width: 36.603221083455345vw;
 }
 
 
 /* CSS a ser adicionado */
 #custom-overlay-container {
   position: absolute;
-  top: 86.9291338582677px;
-  left: 453.54330708661416px;
+  top: 13.23122280947758vh;
+  left: 33.20229188042563vw;
   pointer-events: none;  /* evita interferência na página */
 }
 
@@ -836,7 +836,7 @@ canvas {
 
 #custom-caption {
   position: relative;
-  top: 0.41px !important; /* 0.1 mm abaixo da imagem */
+  top:  0.0624048706240487vh !important; /* 0.1 mm abaixo da imagem */
   display: block;
   text-align: absolute;
   z-index: 3;
@@ -848,7 +848,7 @@ canvas {
 #custom-video,
 #custom-image,
 #custom-overlay-container {
-  border-radius: 6px; /* ajuste o valor conforme o nível de arredondamento desejado */
+  border-radius:  0.43923865300146414vw; /* ajuste o valor conforme o nível de arredondamento desejado */
   overflow: hidden; /* útil se o conteúdo interno for maior que a borda */
 }
 
@@ -856,28 +856,28 @@ canvas {
 
 #custom-overlay-container {
   width: 100%;
-  max-width: 400px;
+  max-width: 29.282576866764277vw;
 }
 
 #custom-overlay-container {
   position: absolute;
-  top: 86.93px; /* posição vertical do vídeo na tela */
-  left: 374px;  /* posição horizontal do vídeo */
-  width: 320px; /* largura total do contêiner, igual ao vídeo */
+  top: 13.231354642313546vh; /* posição vertical do vídeo na tela */
+  left: 27.379209370424597vw;  /* posição horizontal do vídeo */
+  width: 23.42606149341142vw; /* largura total do contêiner, igual ao vídeo */
   height: auto;
 }
 
 #custom-video {
   display: block;
-  width: 320px;
-  height: 180px;
-  border-radius: 6px;
+  width: 23.42606149341142vw;
+  height: 27.397260273972602vh;
+  border-radius:  0.43923865300146414vw;
   z-index: 2;
 }
 
 #custom-caption {
   display: block;
-  margin-top: 3.78px; /* distância de 1mm após o vídeo */
+  margin-top: 0.5753424657534246vh; /* distância de 1mm após o vídeo */
   width: 100%;        /* mesma largura do vídeo */
   font-size: 12px;
   text-align: absolute;
@@ -894,8 +894,8 @@ html, body { margin: 0; padding: 0; }
 /* Bloco absoluto na posição pedida */
 .yt-block {
   position: absolute;
-  top: 117.16535433070865px;           /* 3.1 cm abaixo do topo */
-  left: 566.929px;           /* 15 cm da lateral esquerda */
+  top: 17.833387264948044vh;           /* 3.1 cm abaixo do topo */
+  left: 41.5028550512445vw;           /* 15 cm da lateral esquerda */
   display: inline-block;
   line-height: 0;
   user-select: none;
@@ -945,7 +945,7 @@ html, body { margin: 0; padding: 0; }
 /* Legenda abaixo do bloco */
 .yt-caption {
   display: block;
-  margin-top: 37.795275590551181px;
+  margin-top: 5.752705569338079vh;
   font: 500 13px/1.2 system-ui,  Arial, sans-serif;
   text-decoration: none;
   color: #000;
@@ -961,8 +961,8 @@ html, body { margin: 0; padding: 0;}
 /* Bloco absoluto na posição pedida */
 .yt-block {
   position: absolute;
-  top: 86.9291338582677px;
-  left: 377.95275590551176px;
+  top: 13.23122280947758vh;
+  left: 27.668576567021358vw;
   display: inline-block;
   line-height: 0;
   user-select: none;
@@ -977,27 +977,27 @@ html, body { margin: 0; padding: 0;}
 /* Imagem de capa */
 .yt-cover {
   display: block;
-  width: 320px;
+  width: 23.42606149341142vw;
   height: auto;
   object-fit: cover;
   transition: opacity 180ms ease-in-out, visibility 180ms ease-in-out;
   cursor: pointer;
-  border-radius: 5px;
-  height: 180px;
+  border-radius: 0.36603221083455345vw;
+  height: 27.397260273972602vh;
 }
 
 /* Iframe do vídeo*/
 .yt-iframe {
   position: absolute;
   inset: 0;
-  width: 320px;
-  height: 180px;
+  width: 23.42606149341142vw;
+  height: 27.397260273972602vh;
   border: 0;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 180ms ease-in-out, visibility 180ms ease-in-out;
-  border-radius: 5px;
+  border-radius: 0.36603221083455345vw;
 }
 
 /* Estado ativo: video-aparece */
@@ -1005,7 +1005,7 @@ html, body { margin: 0; padding: 0;}
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  height: 181.41732283464566px;
+  height: 27.612986732822783vh;
 }
 
 .yt-wrap.playing .yt-iframe {
@@ -1017,31 +1017,31 @@ html, body { margin: 0; padding: 0;}
 /* Legenda abaixo do bloco */
 .yt-caption {
   display: block;
-  margin-top: 37.79527559055118px;
+  margin-top: 5.752705569338079vh;
   font: 500 13px/1.2   Arial, sans-serif;
   text-decoration: none;
   color: #000 !important;
-  width: 320px;
+  width: 23.42606149341142vw;
   cursor: pointer;
   text-decoration: underline;
 }
 
 #customVideoBox {
  position: absolute;
- top: 86.9291338582677px; 
- left: 718.1102362204724px; 
+ top: 13.23122280947758vh; 
+ left: 52.570295477340586vw; 
 }
 
 #customYT {
    display: block;
-   width: 320px; 
-   height: 180px;
+   width: 23.42606149341142vw; 
+   height: 27.397260273972602vh;
   pointer-events: auto;
-  border-radius: 5px;
+  border-radius:  0.36603221083455345vw;
 } 
 
 #videoCaption { 
-margin-top: 37.79527559055118px;
+margin-top: 5.752705569338079vh;
  text-align: absolute;
  font-family: Arial, sans-serif;
  font-size: 13px;
@@ -1049,19 +1049,19 @@ margin-top: 37.79527559055118px;
 
  .video-miniatura {
   position: absolute;
-  top: 302px;
-  left: 38px;
-  width: 320px;
+  top: 45.96651445966514vh;
+  left: 2.781844802342606vw;
+  width: 23.42606149341142vw;
 }
 
 .video-miniatura iframe {
   width: 100%;
-  height: 180px; /* proporcional a 16:9 em 200px de largura */
-  border: 5px;
+  height: 27.397260273972602vh; /* proporcional a 16:9 em 200px de largura */
+  border:  0.36603221083455345vw;
 }
 
 .video-legenda {
-  margin-top: 4px;
+  margin-top: 0.60882800608828vh;
   font-size: 13px;
   font:  Arial, sans-serif;
 }
@@ -1069,19 +1069,19 @@ margin-top: 37.79527559055118px;
 
 #video-area {
   position: absolute;
-  top: 302px;         /* 8cm do topo */
-  left: 378px;        /* 6cm da esquerda */
-  width: 320px;     /* Miniatura padrão */
+  top: 45.96651445966514vh;         /* 8cm do topo */
+  left: 27.67203513909224vw;        /* 6cm da esquerda */
+  width: 23.42606149341142vw;     /* Miniatura padrão */
 }
 
 #video-area iframe {
   width: 100%;
-  height: 180px;    /* Proporção 16:9 para 320px de largura */
+  height: 27.397260273972602vh;    /* Proporção 16:9 para 320px de largura */
   border: none;
 }
 
 .video-caption {
-  margin-top: 4px;         /* 1mm abaixo do vídeo */
+  margin-top: 0.60882800608828vh;         /* 1mm abaixo do vídeo */
   font-size: 13px;
   text-align: absolute;
   color: #000;
@@ -1091,8 +1091,8 @@ margin-top: 37.79527559055118px;
 /* Container exclusivo para não afetar nada no site */
 .custom-video-container {
   position: absolute;
-  top: 302.36px;
-  right: 310px;
+  top: 46.02130898021309vh;
+  right: 310vw;
   text-align: center;
 }
 
@@ -1104,10 +1104,10 @@ margin-top: 37.79527559055118px;
 
 /* Miniatura do vídeo */
 .custom-yt-iframe {
-  width: 320px;
-  height: 180px;
+  width:  23.42606149341142vw;
+  height: 27.397260273972602vh;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.36603221083455345vw;
 }
 
 /* Ícone de play exclusivo */
@@ -1120,7 +1120,7 @@ margin-top: 37.79527559055118px;
   color: white;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
-  padding: 10px 18px;
+  padding: 0.7320644216691069vw  1.3177159590043923vw;
   cursor: pointer;
   transition: opacity 0.3s ease;
   user-select: none;
@@ -1128,32 +1128,32 @@ margin-top: 37.79527559055118px;
 
 /* Legenda-link exclusiva */
 .custom-video-caption {
-  margin-top: 3.78px;
+  margin-top: 0.5753424657534246vh;
   font-size: 13px;
-  width: 320px;
+  width: 23.42606149341142vw;
 }
 
 .custom-video-caption a {
   display: block;
-  width: 320px;
-  margin-top: 3.78px;
+  width: 23.42606149341142vw;
+  margin-top: 0.5753424657534246vh;
   text-align: left;
   word-wrap: break-word;
   color: #000;
 }
 
 .video-caption {
-  margin-top: 3.78px; /* distância entre o vídeo e a legenda */
+  margin-top: 0.5753424657534246vh; /* distância entre o vídeo e a legenda */
 }
 
   
 #youtubeVideo {
   position: absolute;
-  left: 37.8px;   /* distância da lateral-esquerda */
-  top: 87px;  /* distância do topo da tela */
-  width: 320px;
-  height: 180px;
-  border-radius: 5px;
+  left: 5.753424657534246vh;   /* distância da lateral-esquerda */
+  top: 13.242009132420092vh;  /* distância do topo da tela */
+  width: 23.42606149341142vw;
+  height: 27.397260273972602vh;
+  border-radius: 0.36603221083455345vw;
 }
 
 
@@ -1181,47 +1181,47 @@ html, body {
 
 .conteudo {
   width: 95%;
-  max-width: 1200px;
+  max-width: 87.84773060029282vw;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1.4641288433382138vw;
 }
 
 h2 {
-  margin-bottom: 15px;
+  margin-bottom: 1.0980966325036603vw;
 }
 
 .video-grid  {
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  gap: 20px;
-  margin-bottom: 40px;
+  gap: 1.4641288433382138vw;
+  margin-bottom: 2.9282576866764276vw;
 }
 
 .video-grid iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
   border: none;
-  border-radius: 6px;
+  border-radius: 1.4641288433382138vw;
 }
 
 .bloco {
-  margin-bottom: 40px;
-  padding: 20px;
+  margin-bottom: 1.4641288433382138vw;
+  padding: 1.4641288433382138vw;
   background: rgba(255,255,255,0.9);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.7320644216691069vw;
+  box-shadow: 0 0.29282576866764276vw 0.5856515373352855vw rgba(0, 0, 0, 0.1);
 }
 
 .qr-code img {
-  width: 113px;
-  height: 113px;
+  width: 8.272327964860908vw;
+  height: 8.272327964860908vh;
 }
 
 .grafico {
   width: 100%;
-  height: 400px;
+  height: 60.882800608828006vh;
   background: #e3e3e3;
-  border-radius: 8px;
+  border-radius: 0.5856515373352855vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1234,8 +1234,8 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 10px;
+  gap: 3.0441400304414vh;
+  padding: 0.7320644216691069vw;
 }
 
 html, body {
@@ -1249,29 +1249,29 @@ html, body {
 
 .video-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 320px);        /* 3 colunas */
+  grid-template-columns: repeat(3, 48.7062404870624vh);        /* 3 colunas */
   grid-auto-rows: auto;
-  gap: 10px;
+  gap: 48.7062404870624vh;
   justify-content: center;
-  padding-bottom: calc(75.59055118110236px + 180px);          /* primeira linha 2cm a cima do fundo */
-  padding-top: 20px; 
+  padding-bottom: calc(5.533715313404272vw + 13.177159590043924vw);          /* primeira linha 2cm a cima do fundo */
+  padding-top: 3.0441400304414vh; 
 }
 
 .vid-box{
-  width: 320px;
+  width: 23.42606149341142vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .vid-box iframe {
-  width: 320px;
-  height: 180px;
+  width: 23.42606149341142vw;
+  height:  27.397260273972602vh;
   border: none;
 }
 
 .vid-box p {
-  margin: 37.79527559055118px 0 0 0;      /* 1mm abaixo do vídeo */
+  margin: 2.766857656702136vw 0 0 0;      /* 1mm abaixo do vídeo */
   font-size: 14px;
   text-align: center; 
 }
@@ -1288,17 +1288,17 @@ html, body {
 
 .video-frame {
   position: absolute;
-  top: 536.6929133858267px;
-  left: 37.79527559055118px;
-  width: 320px;
-  height: 180px;
+  top: 81.68841908460072vh;
+  left: 2.766857656702136vw;
+  width: 23.42606149341142vw;
+  height: 27.397260273972602vh;
   border-radius: 5px;
 }
 
 
  /* Aumenta o tamanho da barra de rolagem */
 ::-webkit-scrollbar {
-  width: 16px; /* Largura da barra de rolagem */
+  width: 2.43531202435312vh; /* Largura da barra de rolagem */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1312,7 +1312,7 @@ html, body {
 
 /* Adicionando um container com rolagem */
 .container {
-  height: 793.7px; /* Altura da área rolável (21 cm) */
+  height: 120.80669710806697vh; /* Altura da área rolável (21 cm) */
   overflow-y: scroll; /* Permite rolagem vertical */
   width: 100%; /* Largura do container */
 }
@@ -1321,19 +1321,19 @@ html, body {
 
 #customVideoBox2 {
   position: absolute;
-  top: 529px;
-  left: 37.79527559055118px;
-  height: 180px;
+  top: 80.51750380517504vh;
+  left: 2.766857656702136vw;
+  height: 27.397260273972602vh;
 }
 
 #customYT2 {
-  width: 320px;
-  height: 180px;
+  width: 23.42606149341142vw;
+  height: 27.397260273972602vh;
 }
 
 #videoCaption2 {
-  margin-top: 37.79527559055118px;
-  width: 320px;
+  margin-top: 5.752705569338079vh;
+  width: 23.42606149341142vw;
   font-size: 13px;
   color: #000;
 }
@@ -1342,27 +1342,27 @@ html, body {
   display: block;
   text-align: absolute;
   text-decoration: none;
-  padding: 8px;
-  border-radius: 5px;
+  padding: 0.5856515373352855vw;
+  border-radius: 0.36603221083455345vw;
   color: #000;
   font-family: Arial, sans-serif;
 }
 
 #customVideoBox3 {
   position: absolute;
-  top: 529px;
-  left: 377.95275590551176px;
-  height: 180px;
+  top: 80.51750380517504vh;
+  left: 27.668576567021358vw;
+  height: 27.397260273972602vh;
 }
 
 #customYT3 {
-  width: 320px;
-  height: 180px;
+  width: 23.42606149341142vw;
+  height: 27.397260273972602vh;
 }
 
 #videoCaption3 {
   margin-top: 37.79527559055118px;
-  width: 320px;
+  width: 23.42606149341142vw;
   font-size: 13px;
   color: #000;
 }
@@ -1371,18 +1371,18 @@ html, body {
   display: block;
   text-align: absolute;
   text-decoration: none;
-  padding: 8px;
-  border-radius: 5px;
+  padding: 0.5856515373352855vw;
+  border-radius: 0.36603221083455345vw;
   color: #000;
   font-family: Arial, sans-serif;
 }
 
 #customVideoBox4 {
   position: absolute;
-  top: 529.13px; /* 14 cm do topo da tela */
-  left:  718.11px; /* 19 cm da lateral esquerda */
-  width: 320px; /* Largura do vídeo */
-  height: 180px; /* Altura do vídeo */
+  top: 80.5372907153729vh; /* 14 cm do topo da tela */
+  left:  52.57027818448024vw; /* 19 cm da lateral esquerda */
+  width: 23.42606149341142vw; /* Largura do vídeo */
+  height:  27.397260273972602vh; /* Altura do vídeo */
   background-color: #000; /* Fundo preto para o contêiner do vídeo */
 }
 
@@ -1394,7 +1394,7 @@ html, body {
 }
 
 #videoCaption4 {
-  margin-top: 10px;
+  margin-top: 1.5220700152207vh;
   text-align: absolute;
   font-family: Arial, sans-serif;
   font-size: 13px;
@@ -1423,10 +1423,10 @@ html, body {
 /* Contêiner principal do vídeo */
 #customVideoBox5 {
   position: absolute;
-  top: 755.90px;         /* distância do topo da tela */
-  left: 37.8px;         /* distância da lateral esquerda */
-  width: 320px;      /* largura padrão do vídeo (ajuste se desejar) */
-  height: 197px;     /* altura proporcional (16:9) */
+  top: 115.05327245053273vh;         /* distância do topo da tela */
+  left: 2.7672035139092235vw;         /* distância da lateral esquerda */
+  width: 23.42606149341142vw;      /* largura padrão do vídeo (ajuste se desejar) */
+  height: 29.984779299847794vh;     /* altura proporcional (16:9) */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1434,14 +1434,14 @@ html, body {
 
 /* Estilo do iframe do vídeo */
 #customVideoBox5 iframe {
-  width: 320px;      /* largura fixa do vídeo */
-  height: 180px;     /* altura proporcional */
+  width: 23.42606149341142vw;      /* largura fixa do vídeo */
+  height: 27.397260273972602vh;     /* altura proporcional */
   border: none;      /* remove borda */
 }
 
 /* Legenda abaixo do vídeo */
 #videoCaption5 {
-  margin-top: 3.78px;   /* legenda a 1mm abaixo do vídeo */
+  margin-top: 0.5753424657534246vh;   /* legenda a 1mm abaixo do vídeo */
   font-size: 13px;
   text-align: absolute;
 }
@@ -1450,39 +1450,39 @@ html, body {
 #videoCaption5 a {
   text-decoration: underline;
   color: #000; /* cor da legenda (ajuste conforme fundo) */
-  padding: 3px 6px;
-  border-radius: 4px;
+  padding: 0.21961932650073207vw  0.43923865300146414vw;
+  border-radius: 0.29282576866764276vw;
 }
 
 
 /* Container geral do vídeo */
 .video-container {
   position: absolute;        /* permite posicionamento exato na tela */
-  left: 377.95px;                 /* distância da lateral esquerda */
-  top: 755.90px;                  /* distância do topo da tela */
-  width: 320px;              /* largura do vídeo (igual à do iframe) */
+  left: 27.668374816983896vw;                 /* distância da lateral esquerda */
+  top: 115.05327245053273vh;                  /* distância do topo da tela */
+  width: 23.42606149341142vw;              /* largura do vídeo (igual à do iframe) */
   text-align: absolute;        /* centraliza a legenda abaixo do vídeo */
 }
 
 /* Estilo do vídeo incorporado */
 .video-container iframe {
-  width: 320px;              /* largura exata */
-  height: 192px;             /* altura exata */
+  width: 23.42606149341142vw;              /* largura exata */
+  height: 29.22374429223744vh;             /* altura exata */
   display: block;            /* garante que fique acima da legenda */
   margin: 0 auto;            /* centraliza dentro do container */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* sombra sutil opcional */
+  box-shadow: 0 0.29282576866764276vw  0.8784773060029283vw  rgba(0, 0, 0, 0.25); /* sombra sutil opcional */
 }
 
 /* Legenda-link logo abaixo do vídeo */
 .video-caption {
   display: block;
-  margin-top: 3.7795275590551185px;           /* 1 mm abaixo do vídeo */
+  margin-top: 0.5752705569338079vh;           /* 1 mm abaixo do vídeo */
   font-size: 13px;
   font-family: Arial, sans-serif;
   color: #000;
   text-decoration: underline;
-  padding: 4px 8px;
-  border-radius: 6px;
+  padding: 0.29282576866764276vw  0.5856515373352855vw;
+  border-radius: 0.43923865300146414vw;
   transition: 0.3s;
 }
 
@@ -1490,18 +1490,18 @@ html, body {
 /* Caixa do vídeo */
 #customVideoBox8 {
   position: absolute;
-  top: 984.25px;         /* ajuste conforme a posição do seu vídeo */
-  left: 718.1102362204724px;        /* distância da lateral esquerda */
-  width: 320px;      /* largura padrão do vídeo */
-  height: 180px;     /* altura padrão do vídeo */
+  top: 149.80974124809742vh;         /* ajuste conforme a posição do seu vídeo */
+  left: 52.570295477340586vw;        /* distância da lateral esquerda */
+  width: 23.42606149341142vw;      /* largura padrão do vídeo */
+  height: 27.397260273972602vh;     /* altura padrão do vídeo */
 }
 
 /* Legenda-link abaixo do vídeo */
 #videoCaption8 {
   position: absolute;
-  top: calc(984.25px + 180px); /* 26cm (posição do topo do vídeo) + altura do vídeo + 1mm */
-  left: 718.1102362204724px;                    /* mesma distância lateral do vídeo */
-  width: 320px;                  /* igual à largura do vídeo */
+  top: calc(149.80974124809742vh + 27.397260273972602vh); /* 26cm (posição do topo do vídeo) + altura do vídeo + 1mm */
+  left: 52.570295477340586vw;                    /* mesma distância lateral do vídeo */
+  width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 13px;
@@ -1515,18 +1515,18 @@ html, body {
 /* Caixa do vídeo */
 #customVideoBox9 {
   position: absolute;
-  top: 984.25px;         /* ajuste conforme a posição do seu vídeo */
-  left: 377.95px;        /* distância da lateral esquerda */
-  width: 320px;      /* largura padrão do vídeo */
-  height: 180px;     /* altura padrão do vídeo */
+  top: 149.80974124809742vh;         /* ajuste conforme a posição do seu vídeo */
+  left: 27.668374816983896vw;        /* distância da lateral esquerda */
+  width: 23.42606149341142vw;      /* largura padrão do vídeo */
+  height: 27.397260273972602vh;     /* altura padrão do vídeo */
 }
 
 /* Legenda-link abaixo do vídeo */
 #videoCaption9 {
   position: absolute;
-  top: calc(984.25px + 180px); /* 26cm (posição do topo do vídeo) + altura do vídeo + 1mm */
-  left: 377.95px;                    /* mesma distância lateral do vídeo */
-  width: 320px;                  /* igual à largura do vídeo */
+  top: calc(149.80974124809742vh + 27.397260273972602vh); /* 26cm (posição do topo do vídeo) + altura do vídeo + 1mm */
+  left: 27.668374816983896vw;                    /* mesma distância lateral do vídeo */
+  width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 13px;
@@ -1540,18 +1540,18 @@ html, body {
 /* Caixa do vídeo */
 #customVideoBox10 {
   position: absolute;
-  top: 984.25px;         /* ajuste conforme a posição do seu vídeo */
-  left: 37.8px;        /* distância da lateral esquerda */
-  width: 320px;      /* largura padrão do vídeo */
-  height: 180px;     /* altura padrão do vídeo */
+  top:  149.80974124809742vh;         /* ajuste conforme a posição do seu vídeo */
+  left: 2.7672035139092235vw;        /* distância da lateral esquerda */
+  width: 23.42606149341142vw;      /* largura padrão do vídeo */
+  height: 27.397260273972602vh;     /* altura padrão do vídeo */
 }
 
 /* Legenda-link abaixo do vídeo */
 #videoCaption10 {
   position: absolute;
-  top: calc(984.25px + 180px); /* 26cm (posição do topo do vídeo) + altura do vídeo + 1mm */
-  left: 37.8px;                    /* mesma distância lateral do vídeo */
-  width: 320px;                  /* igual à largura do vídeo */
+  top: calc(149.80974124809742vh + 27.397260273972602vh); /* 26cm (posição do topo do vídeo) + altura do vídeo + 1mm */
+  left: 2.7672035139092235vw;                    /* mesma distância lateral do vídeo */
+  width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 13px;
@@ -1565,18 +1565,18 @@ html, body {
 /* Caixa do vídeo */
 #customVideoBox11 {
   position: absolute;
-  top: 1209px;         /* ajuste conforme a posição do seu vídeo */
-  left: 37.8px;        /* distância da lateral esquerda */
-  width: 320px;      /* largura padrão do vídeo */
-  height: 180px;     /* altura padrão do vídeo */
+  top: 184.01826484018264vh;         /* ajuste conforme a posição do seu vídeo */
+  left: 2.7672035139092235vw;        /* distância da lateral esquerda */
+  width: 23.42606149341142vw;      /* largura padrão do vídeo */
+  height: 27.397260273972602vh;     /* altura padrão do vídeo */
 }
 
 /* Legenda-link abaixo do vídeo */
 #videoCaption11 {
   position: absolute;
-  top: calc(1209px + 180px); /* 32cm (posição do topo do vídeo) + altura do vídeo + 1mm */
-  left: 37.8px;                    /* mesma distância lateral do vídeo */
-  width: 320px;                  /* igual à largura do vídeo */
+  top: calc(184.01826484018264vh + 27.397260273972602vh); /* 32cm (posição do topo do vídeo) + altura do vídeo + 1mm */
+  left: 2.7672035139092235vw;                    /* mesma distância lateral do vídeo */
+  width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 13px;
@@ -1590,18 +1590,18 @@ html, body {
 /* Caixa do vídeo */
 #customVideoBox12 {
   position: absolute;
-  top: 1209px;         /* ajuste conforme a posição do seu vídeo */
-  left: 377.953px;        /* distância da lateral esquerda */
-  width: 320px;      /* largura padrão do vídeo */
-  height: 180px;     /* altura padrão do vídeo */
+  top: 184.01826484018264vh;         /* ajuste conforme a posição do seu vídeo */
+  left: 27.668594436310393vw;        /* distância da lateral esquerda */
+  width: 23.42606149341142vw;      /* largura padrão do vídeo */
+  height: 27.397260273972602vh;     /* altura padrão do vídeo */
 }
 
 /* Legenda-link abaixo do vídeo */
 #videoCaption12 {
   position: absolute;
-  top: calc(1209px + 180px); /* 32cm (posição do topo do vídeo) + altura do vídeo + 1mm */
-  left: 377.953px;                    /* mesma distância lateral do vídeo */
-  width: 320px;                  /* igual à largura do vídeo */
+  top: calc(184.01826484018264vh + 27.397260273972602vh); /* 32cm (posição do topo do vídeo) + altura do vídeo + 1mm */
+  left: 27.668594436310393vw;                    /* mesma distância lateral do vídeo */
+  width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 13px;
@@ -1615,18 +1615,18 @@ html, body {
 /* Caixa do vídeo */
 #customVideoBox13 {
   position: absolute;
-  top: 1209px;         /* ajuste conforme a posição do seu vídeo */
-  left: 718.11px;        /* distância da lateral esquerda */
-  width: 320px;      /* largura padrão do vídeo */
-  height: 180px;     /* altura padrão do vídeo */
+  top: 184.01826484018264vh;         /* ajuste conforme a posição do seu vídeo */
+  left: 52.57027818448024vw;        /* distância da lateral esquerda */
+  width: 23.42606149341142vw;      /* largura padrão do vídeo */
+  height: 27.397260273972602vh;     /* altura padrão do vídeo */
 }
 
 /* Legenda-link abaixo do vídeo */
 #videoCaption13 {
   position: absolute;
-  top: calc(1209px + 180px); /* 32cm (posição do topo do vídeo) + altura do vídeo + 1mm */
-  left: 718.11px;                    /* mesma distância lateral do vídeo */
-  width: 320px;                  /* igual à largura do vídeo */
+  top: calc(184.01826484018264vh + 27.397260273972602vh); /* 32cm (posição do topo do vídeo) + altura do vídeo + 1mm */
+  left: 52.57027818448024vw;                    /* mesma distância lateral do vídeo */
+  width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 13px;
@@ -1640,18 +1640,18 @@ html, body {
 /* Caixa do vídeo */
 #customVideoBox7 {
   position: absolute;
-  top: 755.9055118110235px;         /* ajuste conforme a posição do seu vídeo */
-  left: 718.1102362204724px;        /* distância da lateral esquerda */
-  width: 320px;      /* largura padrão do vídeo */
-  height: 180px;     /* altura padrão do vídeo */
+  top: 115.05411138676156vh;         /* ajuste conforme a posição do seu vídeo */
+  left: 52.570295477340586vw;        /* distância da lateral esquerda */
+  width: 23.42606149341142vw;      /* largura padrão do vídeo */
+  height: 27.397260273972602vh;     /* altura padrão do vídeo */
 }
 
 /* Legenda-link abaixo do vídeo */
 #videoCaption7 {
   position: absolute;
-  top: calc(755.9055118110235px + 180px); /* 20cm (posição do topo do vídeo) + altura do vídeo + 1mm */
-  left: 718.1102362204724px;                    /* mesma distância lateral do vídeo */
-  width: 320px;                  /* igual à largura do vídeo */
+  top: calc(115.05411138676156vh + 27.397260273972602vh); /* 20cm (posição do topo do vídeo) + altura do vídeo + 1mm */
+  left: 52.570295477340586vw;                    /* mesma distância lateral do vídeo */
+  width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 13px;
@@ -1667,18 +1667,18 @@ html, body {
 /* Caixa do vídeo */
 #customVideoBox15 {
   position: absolute;
-  top: 86.9291338582677px;         /* ajuste conforme a posição do seu vídeo */
-  left: 377.95275590551176px;        /* distância da lateral esquerda */
-  width: 320px;      /* largura padrão do vídeo */
-  height: 180px;     /* altura padrão do vídeo */
+  top: 13.23122280947758vh;         /* ajuste conforme a posição do seu vídeo */
+  left: 27.668576567021358vw;        /* distância da lateral esquerda */
+  width: 23.42606149341142vw;      /* largura padrão do vídeo */
+  height: 27.397260273972602vh;     /* altura padrão do vídeo */
 }
 
 /* Legenda-link abaixo do vídeo */
 #videoCaption15 {
   position: absolute;
-  top: 480px; /*(posição do topo do vídeo) + altura do vídeo + 1mm */
-  left: 377.953px;                    /* mesma distância lateral do vídeo */
-  width: 320px;                  /* igual à largura do vídeo */
+  top: 73.05936073059361vh; /*(posição do topo do vídeo) + altura do vídeo + 1mm */
+  left: 27.668594436310393vw;                    /* mesma distância lateral do vídeo */
+  width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 13px;
@@ -1693,7 +1693,7 @@ html, body {
 
 
 /* Responsivo (opcional) */
-@media (max-width: 600px) {
+@media (max-width: 43.92386530014641vw) {
   #customYT,
   #videoCaption {
     width: 100%;
@@ -1704,13 +1704,13 @@ html, body {
 
 
 /* Responsividade */
-@media (max-width: 1024px) {
+@media (max-width: 74.96339677891655vw) {
   .video-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 43.92386530014641vw) {
   .video-grid {
     grid-template-columns: 1fr;
   }
@@ -1719,7 +1719,7 @@ html, body {
 /* Media Queries para Responsividade */
 
 /* Para telas menores que 768px (como tablets e smartphones) */
-@media (max-width: 768px) {
+@media (max-width: 56.22254758418741vw) {
   .content {
       flex-direction: column;
   }
@@ -1728,20 +1728,20 @@ html, body {
   }
 }
 
-/* Para telas menores que 480px (como smartphones) */
-@media (max-width: 480px) {
+/* Para telas menores que 35.13909224011713vw (como smartphones) */
+@media (max-width: 35.13909224011713vw) {
   header, {
       font-size: 14px;
   }
   .box {
       font-size: 14px;
-      padding: 15px;
+      padding: 1.0980966325036603vw;
   }
 }
 
 
-/* Para telas menores que 768px */
-@media (max-width: 768px) {
+/* Para telas menores que 56.22254758418741vw */
+@media (max-width: 56.22254758418741vw) {
   .search-container {
       flex-direction: column; /* Coloca a barra e o botão em coluna */
       align-items: center; /* Centraliza os itens */
@@ -1749,75 +1749,75 @@ html, body {
 
   .search-input, .search-button {
       width: 100%; /* Faz a barra de pesquisa e o botão ocuparem a largura inteira */
-      margin-bottom: 10px; /* Dá um espaçamento entre os elementos */
+      margin-bottom: 1.5220700152207vh; /* Dá um espaçamento entre os elementos */
   }
 }
 
-/* Para telas menores que 480px (como smartphones) */
-@media (max-width: 480px) {
+/* Para telas menores que 35.13909224011713vw (como smartphones) */
+@media (max-width: 35.13909224011713vw) {
   .search-input, .search-button {
       font-size: 14px; /* Ajusta o tamanho da fonte para telas pequenas */
-      padding: 8px; /* Reduz o padding para economizar espaço */
+      padding: 0.5856515373352855vw; /* Reduz o padding para economizar espaço */
   }
 }
 
 /* Para telas até 320px (smartphones muito pequenos, ex: iPhone SE) */
-@media (max-width: 320px) {
+@media (max-width: 23.42606149341142vw) {
   .search-input, .search-button {
       width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
       font-size: 12px; /* Tamanho de fonte menor */
-      padding: 6px; /* Reduz o padding */
-      margin-bottom: 8px; /* Espaço entre os elementos */
+      padding: 0.43923865300146414vw; /* Reduz o padding */
+      margin-bottom: 1.21765601217656vh; /* Espaço entre os elementos */
   }
 }
 
 /* Para telas até 375px (iPhone X, iPhone 11, etc.) */
-@media (max-width: 375px) {
+@media (max-width: 27.452415812591507vw) {
   .search-input, .search-button {
       width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
       font-size: 14px; /* Tamanho de fonte ajustado */
-      padding: 8px; /* Ajusta o padding */
-      margin-bottom: 10px; /* Espaçamento entre os elementos */
+      padding:  0.43923865300146414vw; /* Ajusta o padding */
+      margin-bottom: 1.5220700152207vh; /* Espaçamento entre os elementos */
   }
 }
 
 /* Para telas até 414px (ex: Samsung Galaxy S9+) */
-@media (max-width: 414px) {
+@media (max-width:  30.307467057101025vw) {
   .search-input, .search-button {
       width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
       font-size: 15px; /* Ajuste do tamanho de fonte */
-      padding: 10px; /* Aumenta o padding para melhor visibilidade */
-      margin-bottom: 12px; /* Aumenta o espaçamento */
+      padding: 0.7320644216691069vw; /* Aumenta o padding para melhor visibilidade */
+      margin-bottom: 1.82648401826484vh; /* Aumenta o espaçamento */
   }
 }
 
 /* Para telas até 480px (como smartphones grandes e tablets pequenos em modo retrato) */
-@media (max-width: 480px) {
+@media (max-width: 35.13909224011713vw) {
   .search-input, .search-button {
       width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
       font-size: 16px; /* Tamanho de fonte mais legível */
-      padding: 12px; /* Espaço maior para facilitar a interação */
-      margin-bottom: 15px; /* Espaço maior entre os elementos */
+      padding: 0.8784773060029283vw; /* Espaço maior para facilitar a interação */
+      margin-bottom: 2.2831050228310503vh; /* Espaço maior entre os elementos */
   }
 }
 
 /* Para telas entre 481px e 600px (smartphones mais largos, tablets pequenos) */
-@media (min-width: 481px) and (max-width: 600px) {
+@media (min-width: 35.21229868228404vw) and (max-width: 43.92386530014641vw) {
   .search-input, .search-button {
       width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
       font-size: 16px; /* Tamanho de fonte ainda legível */
-      padding: 12px; /* Ajuste de padding */
-      margin-bottom: 15px; /* Espaçamento */
+      padding: 10.8784773060029283vw; /* Ajuste de padding */
+      margin-bottom: 2.2831050228310503vh; /* Espaçamento */
   }
 }
 
 /* Para telas entre 601px e 768px (tablets em modo retrato) */
-@media (min-width: 601px) and (max-width: 768px) {
+@media (min-width: 43.997071742313324vw) and (max-width: 56.22254758418741vw) {
   .search-input, .search-button {
       width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
       font-size: 18px; /* Tamanho de fonte maior */
-      padding: 14px; /* Maior espaçamento */
-      margin-bottom: 20px; /* Mais espaçamento entre os elementos */
+      padding: 1.0248901903367496vw; /* Maior espaçamento */
+      margin-bottom: 3.0441400304414vh; /* Mais espaçamento entre os elementos */
   }
 }
 
@@ -1845,7 +1845,7 @@ main {
 /* Media Queries para Responsividade */
 
 /* Para telas até 768px (tablets e smartphones em modo retrato) */
-@media (max-width: 768px) {
+@media (max-width: 56.22254758418741vw) {
   body {
       flex-direction: column; /* Organiza os itens em uma coluna */
   }
@@ -1867,50 +1867,51 @@ main {
   /* Ajusta os elementos de conteúdo para ocupar a largura completa */
   .content, .sidebar {
       width: 100%; /* Barra lateral e conteúdo ocupam toda a largura */
-      margin-bottom: 10px; /* Adiciona espaçamento entre os elementos */
+      margin-bottom: 1.5220700152207vh; /* Adiciona espaçamento entre os elementos */
   }
 }
 
 /* Para telas grandes acima de 1024px (monitores e desktops) */
-@media (min-width: 1024px) {
+@media (min-width: 74.96339677891655vw) {
   .content {
       display: flex;
       justify-content: space-between;
-      gap: 20px;
+      gap: 1.4641288433382138vw;
   }
 
   .sidebar {
-      width: 300px; /* Sidebar com largura fixa */
+      width: 21.961932650073205vw; /* Sidebar com largura fixa */
   }
 
   .box {
-      flex: 1 1 200px; /* Ajusta as caixas para ocupar o espaço */
+      flex: 0.07320644216691069  0.07320644216691069  14.641288433382138vw; /* Ajusta as caixas para ocupar o espaço */
   }
 }
 
 /* ======================== RESPONSIVIDADE ========================= */
 
-/* Tablets (até 1024px) */
-@media (max-width: 1024px) {
+/* Tablets (até 74.96339677891655vw) */
+@media (max-width: 74.96339677891655vw) {
   .search-bar { width: 50vw; }
   .vid-box p { font-size: 0.85rem; }
 }
 
-/* Smartphones (até 768px) */
-@media (max-width: 768px) {
+/* Smartphones (até 56.22254758418741vw) */
+@media (max-width: 56.22254758418741vw) {
   header { height: 8vh; }
   .search-container { flex-direction: column; }
-  .search-bar, .search-button { width: 80%; margin-bottom: 10px; }
+  .search-bar, .search-button { width: 80%; margin-bottom: 1.5220700152207vh; }
   .video-gallery { grid-template-columns: 1fr; }
   .chart-wrap, #qrcode-container { display: none; } /* oculta extras em telas pequenas */
 }
 
-/* Smartphones muito pequenos (até 480px) */
-@media (max-width: 480px) {
+/* Smartphones muito pequenos (até 35.13909224011713vw) */
+@media (max-width: 35.13909224011713vw) {
   .search-bar { font-size: 0.9rem; }
   .search-button { font-size: 0.9rem; }
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
