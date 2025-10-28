@@ -744,9 +744,9 @@ document.head.appendChild(customTag);
 function ajustarColunas() {
   const gallery = document.querySelector('.video-gallery');
   if(window.innerWidth < 1050) {
-    gallery.style.gridTemplateColumns = 'repeat(2, 320px)';   // 2 colunas em telas menores
+    gallery.style.gridTemplateColumns = 'repeat(2, 48.7062404870624vh)';   // 2 colunas em telas menores
   } else {
-    gallery.style.gridTemplateColumns = 'repeat(3, 320px)';
+    gallery.style.gridTemplateColumns = 'repeat(3, 48.7062404870624vh)';
   }
 }
 
@@ -762,14 +762,14 @@ function ajustarLayout() {
   const menu = document.querySelector("nav");
   const body = document.body;
 
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 56.22254758418741vw) {
     console.log("Modo mobile ativado");
 
     // 🔹 Ajuste de vídeos para telas pequenas
     videos.forEach(video => {
       video.style.width = "100%";
       video.style.height = "auto";
-      video.style.maxWidth = "320px";
+      video.style.maxWidth = "23.42606149341142vw";
       video.style.display = "block";
       video.style.margin = "0 auto";
     });
@@ -778,10 +778,10 @@ function ajustarLayout() {
     imagens.forEach(img => {
       img.style.width = "100%";
       img.style.height = "auto";
-      img.style.maxWidth = "320px";
-      img.style.borderRadius = "12px";
+      img.style.maxWidth = "23.42606149341142vw";
+      img.style.borderRadius = "0.8784773060029283vw";
       img.style.display = "block";
-      img.style.margin = "10px auto";
+      img.style.margin = "0.7320644216691069vw auto";
     });
 
     // 🔹 Ajuste do menu para mobile
@@ -791,23 +791,23 @@ function ajustarLayout() {
       menu.style.width = "100%";
       menu.style.height = "auto";
       menu.style.backgroundColor = "rgba(0, 0, 0, 0.85)";
-      menu.style.backdropFilter = "blur(5px)";
+      menu.style.backdropFilter = "blur( 0.36603221083455345vw)";
       menu.style.flexDirection = "column";
       menu.style.textAlign = "center";
-      menu.style.padding = "10px 0";
+      menu.style.padding = "1.52207001522070vh";
     }
 
     // 🔹 Ajuste geral do corpo da página
-    body.style.paddingTop = "70px";
+    body.style.paddingTop = "10.654490106544902vh";
 
   } else {
     console.log("Modo desktop ativado");
 
     // 🔹 Ajuste de vídeos para telas grandes
     videos.forEach(video => {
-      video.style.width = "640px";
-      video.style.height = "360px";
-      video.style.margin = "20px auto";
+      video.style.width = "46.85212298682284vw";
+      video.style.height = "54.794520547945204vh";
+      video.style.margin = "1.4641288433382138vw auto";
       video.style.display = "block";
     });
 
@@ -815,10 +815,10 @@ function ajustarLayout() {
     imagens.forEach(img => {
       img.style.width = "auto";
       img.style.height = "auto";
-      img.style.maxWidth = "600px";
-      img.style.borderRadius = "8px";
+      img.style.maxWidth = "43.92386530014641vw";
+      img.style.borderRadius = "0.5856515373352855vw";
       img.style.display = "block";
-      img.style.margin = "20px auto";
+      img.style.margin = "1.4641288433382138vw auto";
     });
 
     // 🔹 Ajuste do menu para desktop
@@ -843,6 +843,7 @@ function ajustarLayout() {
 // Executa o ajuste ao carregar e redimensionar
 window.addEventListener("load", ajustarLayout);
 window.addEventListener("resize", ajustarLayout);
+
 
 
 
