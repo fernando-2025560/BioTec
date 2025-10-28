@@ -826,22 +826,23 @@ function ajustarLayout() {
       menu.style.position = "fixed";
       menu.style.top = "0";
       menu.style.width = "100%";
-      menu.style.height = "60px";
+      menu.style.height = "9.132420091324201vh";
       menu.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
       menu.style.display = "flex";
       menu.style.justifyContent = "center";
       menu.style.alignItems = "center";
       menu.style.flexDirection = "row";
-      menu.style.backdropFilter = "blur(3px)";
+      menu.style.backdropFilter = "blur( 0.21961932650073207vw)";
     }
 
     // 🔹 Ajuste geral do corpo da página
-    body.style.paddingTop = "80px";
+    body.style.paddingTop = "12.1765601217656vh";
   }
 }
 
 // Executa o ajuste ao carregar e redimensionar
 window.addEventListener("load", ajustarLayout);
 window.addEventListener("resize", ajustarLayout);
+
 
 
