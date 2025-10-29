@@ -2,7 +2,7 @@ html, body {
   margin: 0 !important;
   padding: 0 !important;
   min-width: 100% !important;
-  min-height: 100% !important;
+  min-height: 100% + 7cm !important;
   background-image: url(1.jpg) !important;
   background-size: 100% 100% !important;
   background-position: center center !important;
@@ -1976,6 +1976,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
