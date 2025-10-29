@@ -1,6 +1,6 @@
 html, body {
-  height: 100%;html, body {
   height: 100%;
+  width: 100%;
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -2001,6 +2001,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
