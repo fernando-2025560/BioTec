@@ -3,9 +3,10 @@ html, body {
   width: 100%;
   margin: 0 !important;
   padding: 0 !important;
+  min-height: 100%; /* Garantir que o conteúdo ocupe toda a altura */
 }
-  
-/* cria um  plano de fundo independente do fluxo do documento */
+
+/* cria um plano de fundo independente do fluxo do documento */
 body::before {
   content: "";
   position: fixed;
@@ -13,7 +14,7 @@ body::before {
   z-index: -9999999;
   pointer-events: none;
   background-image: url(1.jpg) !important;
-  background-size: cover !important;
+  background-size: cover !important; /* A imagem vai cobrir toda a tela */
   background-position: center center !important;
   background-repeat: no-repeat !important;
 }
@@ -2001,6 +2002,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
