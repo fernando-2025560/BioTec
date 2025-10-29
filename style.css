@@ -3,7 +3,7 @@ html, body {
   width: 100%;
   margin: 0 !important;
   padding: 0 !important;
-  min-height: 100%; /* Garantir que o conteúdo ocupe toda a altura */
+  min-height: 200%; /* Garantir que o conteúdo ocupe toda a altura */
 }
 
 /* cria um plano de fundo independente do fluxo do documento */
@@ -2002,6 +2002,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
