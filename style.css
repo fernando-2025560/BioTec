@@ -1,9 +1,12 @@
 html, body {
-  height: 200%;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  margin: 0 !important;
-  padding: 0 !important;
-  min-height: 200%; /* Garantir que o conteúdo ocupe toda a altura */
+  min-height: calc(100vh + 11cm);
+  background-image: url('1.jpg')
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
 
 /* cria um plano de fundo independente do fluxo do documento */
@@ -2002,6 +2005,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
