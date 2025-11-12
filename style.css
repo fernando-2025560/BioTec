@@ -1,29 +1,7 @@
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: calc(100vh + 11cm);
-  background-image: url('1.jpg')
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-}
-
-/* cria um plano de fundo independente do fluxo do documento */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -9999999;
-  pointer-events: none;
-  background-image: url(1.jpg) !important;
-  background-size: cover !important; /* A imagem vai cobrir toda a tela */
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-}
-
-  margin: 0 !important;
+ margin: 0 !important;
   padding: 0 !important;
+  height: 190%;
 }
   
 /* cria um  plano de fundo independente do fluxo do documento */
@@ -36,9 +14,9 @@ body::before {
   background-image: url(1.jpg) !important;
   background-size: cover !important;
   background-position: center center !important;
-  background-repeat: no-repeat !important;
+  background-repeat: no-repeat !important; 
+  min-height: calc(190% + 16.535rem);
 }
-
 body {
   font-size: clamp(14px, 1.2vw, 20px);
   line-height: 1.6;
@@ -2005,6 +1983,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
