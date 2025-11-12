@@ -1,24 +1,15 @@
 html, body {
   margin: 0 !important;
   padding: 0 !important;
-  height: 200%;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  pointer-events: none;
-  background-image: url('1.jpg') !important;
+  min-width: 100% !important;
+  min-height: 190% !important;
+  background-image: url(1.jpg) !important;
   background-size: cover !important;
   background-position: center center !important;
+  background-attachment: scroll !important;
   background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
 }
+
 
 .search-container {
     position: absolute !important;
@@ -1981,6 +1972,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
