@@ -1,16 +1,21 @@
-body {
-  margin: 0 !important;
+html, body {
+ margin: 0 !important;
   padding: 0 !important;
-  background-image: url('1.jpg') !important;
-  background-size: cover !important;
-  background-position: absolute !important;
-  background-repeat: no-repeat !important;
-  background-attachment: scroll !important;
+  height: 190%;
 }
-
-body {
-  font-size: clamp(14px, 1.2vw, 20px);
-  line-height: 1.6;
+  
+/* cria um  plano de fundo independente do fluxo do documento */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -9999999;
+  pointer-events: none;
+  background-image: url(1.jpg) !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important; 
+  min-height: calc(190% + 16.535rem);
 }
 
 .search-container {
@@ -1974,6 +1979,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
