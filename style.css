@@ -15,7 +15,7 @@ body::before {
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important; 
-  min-height: calc(100% + 11cm);
+  min-height: calc(190% + 11cm);
 }
 body {
   font-size: clamp(14px, 1.2vw, 20px);
@@ -1983,6 +1983,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
