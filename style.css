@@ -1,13 +1,12 @@
 html, body {
  margin: 0 !important;
   padding: 0 !important;
-  height: calc(190% + 15cm) !important;
 }
   
 /* cria um  plano de fundo independente do fluxo do documento */
 body::before {
   content: "";
-  position: fixed;
+  position: scroll;
   inset: 0;
   z-index: -9999999;
   pointer-events: none;
@@ -15,7 +14,7 @@ body::before {
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important; 
-  min-height: calc(190% + 15cm) !important;
+  min-height: calc(210%) !important;
 }
 
 body {
@@ -1996,6 +1995,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
