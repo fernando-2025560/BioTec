@@ -1,7 +1,7 @@
 html, body {
  margin: 0 !important;
   padding: 0 !important;
-  height: 190%;
+  height: calc(190% + 11cm);
 }
   
 /* cria um  plano de fundo independente do fluxo do documento */
@@ -1749,7 +1749,7 @@ margin: clamp(10px, 2vw, 30px) 0;
 
   
   .marquee {
-    top: 3.1cm;
+    top: 2cm;
 }
 
 .icon-fixed {
@@ -1983,6 +1983,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
