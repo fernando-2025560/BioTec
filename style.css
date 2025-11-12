@@ -1,7 +1,7 @@
 html, body {
  margin: 0 !important;
   padding: 0 !important;
-  height: calc(190% + 11cm);
+  height: 190%;
 }
   
 /* cria um  plano de fundo independente do fluxo do documento */
@@ -15,7 +15,7 @@ body::before {
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important; 
-  min-height: calc(190% + 11cm);
+  min-height: calc(190% + 16.535rem);
 }
 body {
   font-size: clamp(14px, 1.2vw, 20px);
@@ -1983,6 +1983,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
