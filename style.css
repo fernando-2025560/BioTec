@@ -5,7 +5,7 @@ body {
   background-size: cover !important;
   background-position: absolute !important;
   background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
+  background-attachment: scroll !important;
 }
 
 body {
@@ -1974,6 +1974,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
