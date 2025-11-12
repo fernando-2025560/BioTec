@@ -23,7 +23,7 @@ body {
   background-size: cover; /* faz a imagem ocupar toda a área visível */
   background-repeat: no-repeat; /* impede a repetição da imagem */
   background-attachment: fixed; /* mantém a imagem fixa ao rolar a página */
-  background-position: center; /* centraliza a imagem */
+  background-position: absolute; /* centraliza a imagem */
   margin: 0;
   padding: 0;
   height: 100vh; /* garante que o body ocupe toda a altura da viewport */
@@ -1996,6 +1996,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
