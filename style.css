@@ -1747,9 +1747,9 @@ margin: clamp(10px, 2vw, 30px) 0;
 }
 
 
-  /* Marquee {
-  marquee {
-    /* sem mudanças */
+  
+  .marquee {
+    top: 3.1cm;
 }
 
 .icon-fixed {
@@ -1983,6 +1983,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
