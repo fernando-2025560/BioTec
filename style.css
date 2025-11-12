@@ -1,22 +1,18 @@
-html, body {
- margin: 0 !important;
-  padding: 0 !important;
-  height: 190%;
-}
-  
-/* cria um  plano de fundo independente do fluxo do documento */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  z-index: -9999999;
+  z-index: -999999;
   pointer-events: none;
-  background-image: url(1.jpg) !important;
+  background-image: url('1.jpg') !important;
   background-size: cover !important;
   background-position: center center !important;
-  background-repeat: no-repeat !important; 
-  min-height: calc(190% + 16.535rem);
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  width: 100%;
+  height: 100%;
 }
+
 body {
   font-size: clamp(14px, 1.2vw, 20px);
   line-height: 1.6;
@@ -1983,6 +1979,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
