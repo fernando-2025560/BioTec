@@ -1,12 +1,13 @@
 html, body {
  margin: 0 !important;
   padding: 0 !important;
+  height: 190%;
 }
   
 /* cria um  plano de fundo independente do fluxo do documento */
 body::before {
   content: "";
-  position: scroll;
+  position: fixed;
   inset: 0;
   z-index: -9999999;
   pointer-events: none;
@@ -14,21 +15,8 @@ body::before {
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important; 
-  min-height: calc(210%) !important;
+  min-height: calc(190% + 16.535rem);
 }
-
-body {
-  background-image: url('1.jpg'); /* substitua pelo seu arquivo */
-  background-size: cover; /* faz a imagem ocupar toda a área visível */
-  background-repeat: no-repeat; /* impede a repetição da imagem */
-  background-attachment: fixed; /* mantém a imagem fixa ao rolar a página */
-  background-position: absolute; /* centraliza a imagem */
-  margin: 0;
-  padding: 0;
-  height: 100vh; /* garante que o body ocupe toda a altura da viewport */
-}
-
-
 body {
   font-size: clamp(14px, 1.2vw, 20px);
   line-height: 1.6;
@@ -1995,6 +1983,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
