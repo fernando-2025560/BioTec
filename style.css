@@ -1,16 +1,11 @@
 body {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -999999;
-  pointer-events: none;
+  margin: 0 !important;
+  padding: 0 !important;
   background-image: url('1.jpg') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
-  width: 100%;
-  height: 100%;
 }
 
 body {
@@ -1979,6 +1974,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
