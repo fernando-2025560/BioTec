@@ -19,7 +19,7 @@ body::before {
 }
 
 body {
-  background-image: url('caminho/da/imagem.jpg'); /* substitua pelo seu arquivo */
+  background-image: url('1.jpg'); /* substitua pelo seu arquivo */
   background-size: cover; /* faz a imagem ocupar toda a área visível */
   background-repeat: no-repeat; /* impede a repetição da imagem */
   background-attachment: fixed; /* mantém a imagem fixa ao rolar a página */
@@ -1996,6 +1996,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
