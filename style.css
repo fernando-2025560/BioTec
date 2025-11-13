@@ -1,8 +1,4 @@
-html, body {
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 100%;
-}
+
 
 /* Imagem de fundo fixa, ocupando toda a tela */
 body::before {
@@ -1981,6 +1977,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
