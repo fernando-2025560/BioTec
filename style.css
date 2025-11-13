@@ -1,17 +1,21 @@
 html, body {
-  height: calc(100vh + 11cm);
-  margin: 0 !important;
+ margin: 0 !important;
   padding: 0 !important;
+  height: 190%;
 }
-
-/* plano de fundo ocupa toda a tela + 11cm, esticando na vertical */
-body {
+  
+/* cria um  plano de fundo independente do fluxo do documento */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -9999999;
+  pointer-events: none;
   background-image: url(1.jpg) !important;
-  background-repeat: no-repeat !important;
-  background-position: center top !important;
-  background-size: auto 100% !important; /* mantém proporção na horizontal, estica na vertical */
-  background-attachment: scroll; /* acompanha a rolagem */
-  min-height: calc(100vh + 11cm);
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important; 
+  min-height: calc(190% + 16.535rem);
 }
 
 
@@ -1976,6 +1980,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
