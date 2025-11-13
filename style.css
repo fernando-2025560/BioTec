@@ -1,21 +1,8 @@
-html, body {
- margin: 0 !important;
-  padding: 0 !important;
-  height: calc(190% + 16.535rem);
-}
-  
-/* cria um  plano de fundo independente do fluxo do documento */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -9999999;
-  pointer-events: none;
-  background-image: url(1.jpg) !important;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important; 
-  min-height: calc(190% + 16.535rem);
+body {
+  margin: 0;
+  padding: 0;
+  background: url('1.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 
@@ -1981,6 +1968,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
