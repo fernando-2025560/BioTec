@@ -1033,11 +1033,6 @@ html, body { margin: 0; padding: 0;}
  left: 52.570295477340586vw; 
 }
 
-#customVideoBox21 {
- position: absolute;
- top: 5cm; 
- left: 13cm; 
-}
 
 #customYT {
    display: block;
@@ -2055,6 +2050,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
