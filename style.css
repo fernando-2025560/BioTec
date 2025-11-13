@@ -189,7 +189,7 @@ h1 {
 /* Marquee */
 .marquee-container {
   position: absolute;
-  top: 2cm;
+  top: 1cm !important;
   left: 0;
   right: 0;
   font-weight: bold;
@@ -1737,10 +1737,7 @@ margin: clamp(10px, 2vw, 30px) 0;
 
 
   
-  .marquee {
-    top: 1.2cm !important;
-}
-
+  
 .icon-fixed {
   position: fixed;    /* mantém posição original */
   bottom: 10px;
@@ -1972,6 +1969,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
