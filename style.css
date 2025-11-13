@@ -4,17 +4,16 @@ html, body {
   height: 100%;
 }
 
-/* Plano de fundo fixo e cobrindo toda a largura */
+/* Imagem de fundo fixa, ocupando toda a tela */
 body::before {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -9999999;
-  pointer-events: none;
-  background-image: url(1.jpg) !important;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* suficiente para ficar atrás do conteúdo, mas visível */
+  background-image: url("1.jpg") !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
@@ -1982,6 +1981,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
