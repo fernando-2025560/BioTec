@@ -1,27 +1,17 @@
 html, body {
-  margin: 0 !important;
-  padding: 0 !important;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-/* cria um plano de fundo fixo que cobre toda a tela */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -9999999;
-  pointer-events: none;
-
-  background-image: url(1.jpg) !important;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
+body {
+  background-image: url(1.jpg);
+  background-repeat: no-repeat;
+  backgronud-position: left-top;
+  background-size: 100% 100%;
+  background-attachment: scroll;
+  min-height: 100vh;
 }
-
-
 .search-container {
     position: absolute !important;
     top: 0.15220700152207vh !important;  /* Distância do topo */
@@ -1983,6 +1973,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
