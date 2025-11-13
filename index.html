@@ -395,45 +395,6 @@
   </div>
 </div>
 
-<div id="customVideoBox21">
-  <iframe 
-      src="https://www.youtube.com/embed/FeXNB1x1Ixw?rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3" 
-      title="YouTube video player" 
-      frameborder="0" 
-      width="320px" 
-      height="180px"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-  </iframe>
-  <div class="video-caption">Legenda do vídeo</div>
-</div>
-
-        <div class="video-caption">Legenda do vídeo</div>
-</div>
-
-<script>
-  // Função para converter centímetros em pixels reais na tela
-  function cmToPx(cm, axis = 'y') {
-    const div = document.createElement('div');
-    div.style.position = 'absolute';
-    div.style.width = axis === 'x' ? cm + 'cm' : 'auto';
-    div.style.height = axis === 'y' ? cm + 'cm' : 'auto';
-    document.body.appendChild(div);
-    const px = axis === 'x' ? div.offsetWidth : div.offsetHeight;
-    document.body.removeChild(div);
-    return px;
-  }
-
-  function positionVideo() {
-    const videoContainer = document.getElementById('videoContainer');
-    videoContainer.style.top = cmToPx(10, 'y') + 'px';    // 10cm do topo
-    videoContainer.style.right = cmToPx(5, 'x') + 'px';   // 5cm da lateral direita
-  }
-
-  // Posiciona no carregamento e ajusta ao redimensionar
-  window.addEventListener('load', positionVideo);
-  window.addEventListener('resize', positionVideo);
-</script>
-
         
 
 
@@ -681,6 +642,7 @@
 </html>
 
  
+
 
 
 
