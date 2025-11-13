@@ -1,21 +1,16 @@
 html, body {
+ height: calc(100vh + 11cm);
  margin: 0 !important;
   padding: 0 !important;
-  min-height: calc(190% + 16.535rem);
-}
+  }
   
 /* cria um  plano de fundo independente do fluxo do documento */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -9999999;
-  pointer-events: none;
+body {
   background-image: url(1.jpg) !important;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important; 
-  min-height: calc(190% + 16.535rem);
+ background-repeat: no-repeat !important; 
+ background-position: center top !important;
+ background-size: cover !important;
+ background-attachment: scroll;  /* acompanha  a rolagem */
 }
 
 .search-container {
@@ -1979,6 +1974,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
