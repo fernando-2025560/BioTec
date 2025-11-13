@@ -8,7 +8,7 @@ html, body {
 body {
   background-image: url(1.jpg) !important;
  background-repeat: no-repeat !important; 
- background-position: center top !important;
+ background-position: absolute !important;
  background-size: cover !important;
  background-attachment: scroll;  /* acompanha  a rolagem */
 }
@@ -1974,6 +1974,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
