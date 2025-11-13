@@ -1048,11 +1048,39 @@ margin-top: 5.752705569338079vh;
  font-size: 13px;
  }
 
-#customVideoBox21 {
- position: absolute;
- top: 10cm; 
- left: 25cm; 
+/* Container do vídeo e legenda */
+.video-container {
+  position: fixed;       /* fixa na tela */
+  top: 0;                /* será definido pelo JS */
+  right: 0;              /* será definido pelo JS */
+  max-width: 35vw;       /* largura máxima proporcional à tela */
+  min-width: 250px;      /* largura mínima para telas pequenas */
+  z-index: 1000;         /* acima de outros elementos */
+  transition: top 0.2s, right 0.2s; /* suaviza mudanças ao redimensionar */
 }
+
+/* Aspect ratio 16:9 para o vídeo */
+.video-container iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  display: block;
+}
+
+/* Legenda abaixo do vídeo */
+.video-caption {
+  margin-top: 0.5em;
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+  color: #fff;
+  background-color: rgba(0,0,0,0.6);
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  text-align: center;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
 
 #customYT {
    display: block;
@@ -2021,6 +2049,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
