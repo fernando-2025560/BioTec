@@ -1050,8 +1050,8 @@ margin-top: 5.752705569338079vh;
 
 #customVideoBox21 {
  position: absolute;
- top: 1cm; 
- left: 5cm; 
+ top: 10cm; 
+ left: 25cm; 
 }
 
 #customYT {
@@ -2021,6 +2021,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
