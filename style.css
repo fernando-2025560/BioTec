@@ -1,17 +1,17 @@
 html, body {
- height: 190%;
- margin: 0 !important;
+  height: calc(100vh + 11cm);
+  margin: 0 !important;
   padding: 0 !important;
-  }
-  
-/* cria um  plano de fundo independente do fluxo do documento */
+}
+
+/* plano de fundo ocupa toda a tela + 11cm */
 body {
   background-image: url(1.jpg) !important;
- background-repeat: no-repeat !important; 
- background-position: center center !important;
- background-size: cover !important;
- background-attachment: scroll;  /* acompanha  a rolagem */
- min-height: calc(190% + 16.535rem);
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: 100% 100% !important; /* estica a imagem em toda a área */
+  background-attachment: scroll; /* acompanha a rolagem */
+  min-height: calc(100vh + 11cm);
 }
 
 .search-container {
@@ -1975,6 +1975,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
