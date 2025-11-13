@@ -1,3 +1,25 @@
+html, body {
+ margin: 0 !important;
+  padding: 0 !important;
+  height: calc(190% + 16.535rem);
+}
+  
+/* cria um  plano de fundo independente do fluxo do documento */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -9999999;
+  pointer-events: none;
+  background-image: url(1.jpg) !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important; 
+  min-height: calc(190% + 16.535rem);
+}
+
+
+
 .search-container {
     position: absolute !important;
     top: 0.15220700152207vh !important;  /* Distância do topo */
@@ -1959,6 +1981,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
