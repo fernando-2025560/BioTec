@@ -1738,7 +1738,7 @@ margin: clamp(10px, 2vw, 30px) 0;
 
   
   .marquee {
-    top: 2cm !important;
+    top: 1.2cm !important;
 }
 
 .icon-fixed {
@@ -1972,6 +1972,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
