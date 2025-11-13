@@ -1,16 +1,13 @@
-  
-/* cria um  plano de fundo independente do fluxo do documento */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -9999999;
-  pointer-events: none;
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  min-width: 100% !important;
+  min-height: 190% !important;
   background-image: url(1.jpg) !important;
   background-size: cover !important;
-  background-position: absolute !important;
-  background-repeat: no-repeat !important; 
-  min-height: 200% !important;
+  background-position: center center !important;
+  background-attachment: scroll !important;
+  background-repeat: no-repeat !important;
 }
 
 
@@ -1975,6 +1972,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
