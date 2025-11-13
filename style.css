@@ -13,7 +13,7 @@ body::before {
   pointer-events: none;
   background-image: url(1.jpg) !important;
   background-size: cover !important;
-  background-position: center center !important;
+  background-position: absolute !important;
   background-repeat: no-repeat !important; 
   min-height: 200% !important;
 }
@@ -1980,6 +1980,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
