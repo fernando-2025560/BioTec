@@ -1,18 +1,3 @@
-html, body {
- height: 100%;
-margin: 0;
-padding: 0;
-}
-
-
-body {
- background-image: url('1.jpg');
- background-repeat: no-repeat;
- background-position: absolute;
- background-size: 190% 100%;
- background-attachment: scroll;
- min-height: 100vh;
-}
 .search-container {
     position: absolute !important;
     top: 0.15220700152207vh !important;  /* Distância do topo */
@@ -1974,6 +1959,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
