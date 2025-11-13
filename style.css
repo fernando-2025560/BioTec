@@ -1754,7 +1754,7 @@ html, body {
 #videoCaption21 {
   position: 14cm;
   top: 73.05936073059361vh; /*(posição do topo do vídeo) + altura do vídeo + 1mm */
-  right: 5cm;                    /* mesma distância lateral do vídeo */
+  right: 2cm;                    /* mesma distância lateral do vídeo */
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -2049,6 +2049,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
