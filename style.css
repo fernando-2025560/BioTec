@@ -1745,7 +1745,7 @@ html, body {
 #customVideoBox21 {
   position: absolute;
   top: 7cm;         /* ajuste conforme a posição do seu vídeo */
-  left: 15cm;        /* distância da lateral esquerda */
+  right: 5cm;        /* distância da lateral esquerda */
   width: 23.42606149341142vw;      /* largura padrão do vídeo */
   height: 27.397260273972602vh;     /* altura padrão do vídeo */
 }
@@ -2049,6 +2049,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
