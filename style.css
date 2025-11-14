@@ -607,7 +607,7 @@ body {
 :root {
   --video-width: 16.601145940212817vw;
   --video-height: 26.0597562291015vh; /* 16:9 proporção exata para 60px largura */
-  --video-top: 0px;
+  --video-top: 0;
   --video-left: 4.150286485053204vw;
   --caption-gap:  4.150286485053204vw;
 }
@@ -654,7 +654,7 @@ body {
   top: calc(var(--video-top)  var(--video-height) + 28.76352784669039vh);
   left: var(--video-left);
   width: var(--video-width);
-  font-size: 13px;
+  font-size: 2.2887vh;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
@@ -719,7 +719,7 @@ body {
 .caption-link {
   position: absolute;
   left: 2.766857656702136vw;
-  font-size: 13px;
+  font-size: 2.2887vh;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
@@ -763,7 +763,7 @@ svg.chart {
 }
 
 .x-label {
-  font-size: 10px;
+  font-size: 1.7606vh;
   text-anchor: middle;
   fill: #000;
 }
@@ -774,7 +774,7 @@ svg.chart {
   color: #fff;
   padding: 0.29282576866764276vw 0.5856515373352855vw;
   border-radius: 0.29282576866764276vw;
-  font-size: 12px;
+  font-size: 2.1127vh;
   pointer-events: none;
   display: none;
   white-space: nowrap;
@@ -841,7 +841,7 @@ canvas {
   display: block;
   text-align: absolute;
   z-index: 3;
-  font-size: 12px;
+  font-size: 2.1127vh;
   color: #000;
 }
 
@@ -880,7 +880,7 @@ canvas {
   display: block;
   margin-top: 0.5753424657534246vh; /* distância de 1mm após o vídeo */
   width: 100%;        /* mesma largura do vídeo */
-  font-size: 12px;
+  font-size: 2.1127vh;
   text-align: absolute;
   text-decoration: underline;
   color: #000;
@@ -947,7 +947,7 @@ html, body { margin: 0; padding: 0; }
 .yt-caption {
   display: block;
   margin-top: 5.752705569338079vh;
-  font: 500 13px/1.2 system-ui,  Arial, sans-serif;
+  font: 500 2.2887vh/1.2 system-ui,  Arial, sans-serif;
   text-decoration: none;
   color: #000;
   width: 100%;
@@ -1019,7 +1019,7 @@ html, body { margin: 0; padding: 0;}
 .yt-caption {
   display: block;
   margin-top: 5.752705569338079vh;
-  font: 500 13px/1.2   Arial, sans-serif;
+  font: 500 2.2887vh/1.2   Arial, sans-serif;
   text-decoration: none;
   color: #000 !important;
   width: 23.42606149341142vw;
@@ -1046,7 +1046,7 @@ html, body { margin: 0; padding: 0;}
 margin-top: 5.752705569338079vh;
  text-align: absolute;
  font-family: Arial, sans-serif;
- font-size: 13px;
+ font-size: 2.2887vh;
  }
 
 /* Container do vídeo e legenda */
@@ -1055,7 +1055,7 @@ margin-top: 5.752705569338079vh;
   top: 0;                /* será definido pelo JS */
   right: 0;              /* será definido pelo JS */
   max-width: 35vw;       /* largura máxima proporcional à tela */
-  min-width: 250px;      /* largura mínima para telas pequenas */
+  min-width: 78.1250vw;      /* largura mínima para telas pequenas */
   z-index: 1000;         /* acima de outros elementos */
   transition: top 0.2s, right 0.2s; /* suaviza mudanças ao redimensionar */
 }
@@ -1075,7 +1075,7 @@ margin-top: 5.752705569338079vh;
   color: #fff;
   background-color: rgba(0,0,0,0.6);
   padding: 0.2em 0.5em;
-  border-radius: 4px;
+  border-radius: 1.2500vw;
   text-align: center;
   max-width: 100%;
   box-sizing: border-box;
@@ -1095,7 +1095,7 @@ margin-top: 5.752705569338079vh;
 margin-top: 5.752705569338079vh;
  text-align: absolute;
  font-family: Arial, sans-serif;
- font-size: 13px;
+ font-size: 12.887vh;
  }
 
  .video-miniatura {
@@ -1113,7 +1113,7 @@ margin-top: 5.752705569338079vh;
 
 .video-legenda {
   margin-top: 0.60882800608828vh;
-  font-size: 13px;
+  font-size: 2.2887vh;
   font:  Arial, sans-serif;
 }
 
@@ -1133,7 +1133,7 @@ margin-top: 5.752705569338079vh;
 
 .video-caption {
   margin-top: 0.60882800608828vh;         /* 1mm abaixo do vídeo */
-  font-size: 13px;
+  font-size: 2.2887vh;
   text-align: absolute;
   color: #000;
   font:  Arial, sans-serif;
@@ -1167,7 +1167,7 @@ margin-top: 5.752705569338079vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 48px;
+  font-size: 8.4507vh;
   color: white;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
@@ -1180,7 +1180,7 @@ margin-top: 5.752705569338079vh;
 /* Legenda-link exclusiva */
 .custom-video-caption {
   margin-top: 0.5753424657534246vh;
-  font-size: 13px;
+  font-size: 2.2887vh;
   width: 23.42606149341142vw;
 }
 
@@ -1276,7 +1276,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 3.5211vh;
   color: #333;
 }
 
@@ -1323,7 +1323,7 @@ html, body {
 
 .vid-box p {
   margin: 2.766857656702136vw 0 0 0;      /* 1mm abaixo do vídeo */
-  font-size: 14px;
+  font-size: 2.4648vh;
   text-align: center; 
 }
 
@@ -1385,7 +1385,7 @@ html, body {
 #videoCaption2 {
   margin-top: 5.752705569338079vh;
   width: 23.42606149341142vw;
-  font-size: 13px;
+  font-size:  2.887vh;
   color: #000;
 }
 
@@ -1414,7 +1414,7 @@ html, body {
 #videoCaption3 {
   margin-top: 5.752705569338079vh;
   width: 23.42606149341142vw;
-  font-size: 13px;
+  font-size: 2.887vh;
   color: #000;
 }
 
@@ -1448,7 +1448,7 @@ html, body {
   margin-top: 1.5220700152207vh;
   text-align: absolute;
   font-family: Arial, sans-serif;
-  font-size: 13px;
+  font-size: 2.2887vh;
   color: #000;
 }
 
@@ -1465,7 +1465,7 @@ html, body {
 
 #videoCaption a {
   color: black;
-  font-size: 13px !important;
+  font-size: 2.2887vh !important;
   text-decoration: none;
 }
 
@@ -1493,7 +1493,7 @@ html, body {
 /* Legenda abaixo do vídeo */
 #videoCaption5 {
   margin-top: 0.5753424657534246vh;   /* legenda a 1mm abaixo do vídeo */
-  font-size: 13px;
+  font-size: 2.2887vh;
   text-align: absolute;
 }
 
@@ -1528,7 +1528,7 @@ html, body {
 .video-caption {
   display: block;
   margin-top: 0.5752705569338079vh;           /* 1 mm abaixo do vídeo */
-  font-size: 13px;
+  font-size: 2.2887vh;
   font-family: Arial, sans-serif;
   color: #000;
   text-decoration: underline;
@@ -1555,7 +1555,7 @@ html, body {
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 2.2887vh;
   line-height: 1.1;
   color: #ffffff;
   margin: 0;
@@ -1580,7 +1580,7 @@ html, body {
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 2.2887vh;
   line-height: 1.1;
   color: #ffffff;
   margin: 0;
@@ -1605,7 +1605,7 @@ html, body {
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 2.2887vh;
   line-height: 1.1;
   color: #ffffff;
   margin: 0;
@@ -1630,7 +1630,7 @@ html, body {
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 2.2887vh;
   line-height: 1.1;
   color: #000;
   margin: 0;
@@ -1655,7 +1655,7 @@ html, body {
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 2.2887vh;
   line-height: 1.1;
   color: #000;
   margin: 0;
@@ -1680,7 +1680,7 @@ html, body {
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 2.2887vh;
   line-height: 1.1;
   color: #000;
   margin: 0;
@@ -1705,7 +1705,7 @@ html, body {
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 2.2887vh;
   line-height: 1.1;
   color: #ffffff;
   margin: 0;
@@ -1732,7 +1732,7 @@ html, body {
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 2.2887vh;
   line-height: 1.1;
   color: #000;
   margin: 0;
@@ -1749,25 +1749,25 @@ html, body {
 
 /* Container gerais */
 section, div, main, article {
-  padding: clamp(10px, 2vw, 40px);
+  padding: clamp(3.1250vw, 2vw, 12.5000vw);
 }
 
 /* Vídeos e legendas/links mantidos juntos */
 display: flex;
 flex-direction: column;
 align-items: center;
-margin: clamp(10px, 2vw, 30px) 0;
+margin: clamp(3.1250vw, 2vw, 9.3750vw) 0;
 }
 
 .video-container video {
-  width: clamp(300px, 60vw, 800px);
+  width: clamp(93.7500vw, 60vw, 800px);
   height: auto;
   display: block;
 }
 
 .video-container .caption-link {
-  font-size: clamp(12px, 1vw, 16px);
-  margin-top: clamp(5px, 1vw, 10px);
+  font-size: clamp(3.7500, 1vw, 2.8169vh);
+  margin-top: clamp(1.5625vw, 1vw, 3.1260vw);
   text-align: center;
 }
 
@@ -1775,12 +1775,12 @@ margin: clamp(10px, 2vw, 30px) 0;
 .search-bar {
   width: 10cm; /* mantém as dimensões originais */
   height: 1cm;
-  border-radius: 8px;
+  border-radius: 2.5000vw;
 }
 
 .search-button {
   margin-left: 1mm;  /* mantém posição ao lado da  barra */
-  border-radius: 8px;    
+  border-radius: 2.5000vw;    
 }
 
 /* Logo do site mantém a posição */
@@ -1796,8 +1796,8 @@ margin: clamp(10px, 2vw, 30px) 0;
   
 .icon-fixed {
   position: fixed;    /* mantém posição original */
-  bottom: 10px;
-  right: 10px;
+  bottom: 3.1250vw;
+  right: 3.1250vw;
 }
 
 /* Imagens gerais respponsivas */
@@ -1844,10 +1844,10 @@ img {
 /* Para telas menores que 35.13909224011713vw (como smartphones) */
 @media (max-width: 35.13909224011713vw) {
   header, {
-      font-size: 14px;
+      font-size: 2.4648vh;
   }
   .box {
-      font-size: 14px;
+      font-size: 2.4648vh;
       padding: 1.0980966325036603vw;
   }
 }
@@ -1869,7 +1869,7 @@ img {
 /* Para telas menores que 35.13909224011713vw (como smartphones) */
 @media (max-width: 35.13909224011713vw) {
   .search-input, .search-button {
-      font-size: 14px; /* Ajusta o tamanho da fonte para telas pequenas */
+      font-size: 2.4648vh; /* Ajusta o tamanho da fonte para telas pequenas */
       padding: 0.5856515373352855vw; /* Reduz o padding para economizar espaço */
   }
 }
@@ -1878,7 +1878,7 @@ img {
 @media (max-width: 23.42606149341142vw) {
   .search-input, .search-button {
       width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
-      font-size: 12px; /* Tamanho de fonte menor */
+      font-size: 2.1127vh; /* Tamanho de fonte menor */
       padding: 0.43923865300146414vw; /* Reduz o padding */
       margin-bottom: 1.21765601217656vh; /* Espaço entre os elementos */
   }
@@ -1888,7 +1888,7 @@ img {
 @media (max-width: 27.452415812591507vw) {
   .search-input, .search-button {
       width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
-      font-size: 14px; /* Tamanho de fonte ajustado */
+      font-size: 2.4648vh; /* Tamanho de fonte ajustado */
       padding:  0.43923865300146414vw; /* Ajusta o padding */
       margin-bottom: 1.5220700152207vh; /* Espaçamento entre os elementos */
   }
@@ -1898,7 +1898,7 @@ img {
 @media (max-width:  30.307467057101025vw) {
   .search-input, .search-button {
       width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
-      font-size: 15px; /* Ajuste do tamanho de fonte */
+      font-size: 2.6408vh; /* Ajuste do tamanho de fonte */
       padding: 0.7320644216691069vw; /* Aumenta o padding para melhor visibilidade */
       margin-bottom: 1.82648401826484vh; /* Aumenta o espaçamento */
   }
@@ -1908,7 +1908,7 @@ img {
 @media (max-width: 35.13909224011713vw) {
   .search-input, .search-button {
       width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
-      font-size: 16px; /* Tamanho de fonte mais legível */
+      font-size: 2.8169vh; /* Tamanho de fonte mais legível */
       padding: 0.8784773060029283vw; /* Espaço maior para facilitar a interação */
       margin-bottom: 2.2831050228310503vh; /* Espaço maior entre os elementos */
   }
@@ -1918,7 +1918,7 @@ img {
 @media (min-width: 35.21229868228404vw) and (max-width: 43.92386530014641vw) {
   .search-input, .search-button {
       width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
-      font-size: 16px; /* Tamanho de fonte ainda legível */
+      font-size: 2.8169vh; /* Tamanho de fonte ainda legível */
       padding: 10.8784773060029283vw; /* Ajuste de padding */
       margin-bottom: 2.2831050228310503vh; /* Espaçamento */
   }
@@ -1928,7 +1928,7 @@ img {
 @media (min-width: 43.997071742313324vw) and (max-width: 56.22254758418741vw) {
   .search-input, .search-button {
       width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
-      font-size: 18px; /* Tamanho de fonte maior */
+      font-size: 3.1690vh; /* Tamanho de fonte maior */
       padding: 1.0248901903367496vw; /* Maior espaçamento */
       margin-bottom: 3.0441400304414vh; /* Mais espaçamento entre os elementos */
   }
@@ -2025,6 +2025,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
