@@ -223,8 +223,8 @@ document.addEventListener("DOMContentLoaded", function () {
   
     new QRCode(document.getElementById("qrcode"), {
       text: url,
-      width: 113,   // 3cm ≈ 113px
-      height: 113,
+      width: 35.3125vw,   // 3cm ≈ 113px
+      height: 19.8944vh,
       colorDark: "#000000",
       colorLight: "#ffffff",
       correctLevel: QRCode.CorrectLevel.H
@@ -292,11 +292,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const css = `
     /* Estilos conforme especificado acima */
-    #custom-overlay-container { position: absolute; top: 113px; left: 566.9291338582676px; pointer-events: none; }
+    #custom-overlay-container { position: absolute; top: 2.2887vh; left: 566.9291338582676px; pointer-events: none; }
     #custom-overlay-container > * { pointer-events: auto; }
     #custom-video { position: relative; z-index: 2; display: block; }
     #custom-image { position: relative; z-index: 1; display: block; }
-    #custom-caption { position: relative; top: 3.779527559055118px; display: block; text-align: center; z-index: 3; }
+    #custom-caption { position: relative; top: 0.7042vh; display: block; text-align: center; z-index: 3; }
   `;
   const style = document.createElement('style');
   style.textContent = css;
@@ -743,9 +743,9 @@ document.head.appendChild(customTag);
 function ajustarColunas() {
   const gallery = document.querySelector('.video-gallery');
   if(window.innerWidth < 1050) {
-    gallery.style.gridTemplateColumns = 'repeat(2, 320px)';   // 2 colunas em telas menores
+    gallery.style.gridTemplateColumns = 'repeat(2, 56.3380vh)';   // 2 colunas em telas menores
   } else {
-    gallery.style.gridTemplateColumns = 'repeat(3, 320px)';
+    gallery.style.gridTemplateColumns = 'repeat(3, 56.3380vh)';
   }
 }
 
@@ -768,7 +768,7 @@ function ajustarLayout() {
     videos.forEach(video => {
       video.style.width = "100%";
       video.style.height = "auto";
-      video.style.maxWidth = "320px";
+      video.style.maxWidth = "100.000vw";
       video.style.display = "block";
       video.style.margin = "0 auto";
     });
@@ -777,8 +777,8 @@ function ajustarLayout() {
     imagens.forEach(img => {
       img.style.width = "100%";
       img.style.height = "auto";
-      img.style.maxWidth = "320px";
-      img.style.borderRadius = "12px";
+      img.style.maxWidth = "100.000vw";
+      img.style.borderRadius = "3.7500vw";
       img.style.display = "block";
       img.style.margin = "10px auto";
     });
@@ -790,14 +790,14 @@ function ajustarLayout() {
       menu.style.width = "100%";
       menu.style.height = "auto";
       menu.style.backgroundColor = "rgba(0, 0, 0, 0.85)";
-      menu.style.backdropFilter = "blur(5px)";
+      menu.style.backdropFilter = "blur(1.5625vw)";
       menu.style.flexDirection = "column";
       menu.style.textAlign = "center";
-      menu.style.padding = "10px 0";
+      menu.style.padding = "3.1250vw 0";
     }
 
     // 🔹 Ajuste geral do corpo da página
-    body.style.paddingTop = "70px";
+    body.style.paddingTop = "21.8750vw";
 
   } else {
     console.log("Modo desktop ativado");
@@ -806,7 +806,7 @@ function ajustarLayout() {
     videos.forEach(video => {
       video.style.width = "640px";
       video.style.height = "360px";
-      video.style.margin = "20px auto";
+      video.style.margin = "6.2500vw auto";
       video.style.display = "block";
     });
 
@@ -815,9 +815,9 @@ function ajustarLayout() {
       img.style.width = "auto";
       img.style.height = "auto";
       img.style.maxWidth = "600px";
-      img.style.borderRadius = "8px";
+      img.style.borderRadius = "2.5000vw";
       img.style.display = "block";
-      img.style.margin = "20px auto";
+      img.style.margin = "6.2500vw auto";
     });
 
     // 🔹 Ajuste do menu para desktop
@@ -825,22 +825,23 @@ function ajustarLayout() {
       menu.style.position = "fixed";
       menu.style.top = "0";
       menu.style.width = "100%";
-      menu.style.height = "60px";
+      menu.style.height = "10.5634vh";
       menu.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
       menu.style.display = "flex";
       menu.style.justifyContent = "center";
       menu.style.alignItems = "center";
       menu.style.flexDirection = "row";
-      menu.style.backdropFilter = "blur(3px)";
+      menu.style.backdropFilter = "blur(0.9375vw)";
     }
 
     // 🔹 Ajuste geral do corpo da página
-    body.style.paddingTop = "80px";
+    body.style.paddingTop = "25.0000vw";
   }
 }
 
 // Executa o ajuste ao carregar e redimensionar
 window.addEventListener("load", ajustarLayout);
 window.addEventListener("resize", ajustarLayout);
+
 
 
