@@ -369,7 +369,7 @@ body {
   top: calc(var(--video-top)  + var(--video-height) + 28.76352784669039vh);
   left: var(--video-left);
   width: var(--video-width);
-  font-size: 1.97869101978691vh;
+  font-size: 1.354vw;
   color: #000 !important;
   text-decoration: underline;
   cursor: pointer;
@@ -423,7 +423,7 @@ body {
   position: absolute;
   top: calc(11.505411138676157vh + 33.4855403348554vh + 0.76103500761035vh);
   left: 2.766857656702136vw;
-  font-size: 13px;
+  font-size: 1.354vw;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
@@ -498,7 +498,7 @@ body {
   top: calc(var(--video-top)  + var(--video-height) + 28.76352784669039vh);
   left: var(--video-left);
   width: var(--video-width);
-  font-size: 13px;
+  font-size: 1.354vw;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
@@ -562,7 +562,7 @@ body {
   position: absolute;
   top: calc(11.505411138676157vh + 31.963470319634702vh + 0.015220700152207vh);
   left: 2.766857656702136vw;
-  font-size: 13px;
+  font-size: 1.354vw;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
@@ -654,7 +654,7 @@ body {
   top: calc(var(--video-top)  var(--video-height) + 28.76352784669039vh);
   left: var(--video-left);
   width: var(--video-width);
-  font-size: 2.2887vh;
+  font-size: 1.354vw;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
@@ -719,7 +719,7 @@ body {
 .caption-link {
   position: absolute;
   left: 2.766857656702136vw;
-  font-size: 2.2887vh;
+  font-size: 1.354vw;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
@@ -841,7 +841,7 @@ canvas {
   display: block;
   text-align: absolute;
   z-index: 3;
-  font-size: 2.1127vh;
+  font-size: 1.354vw;
   color: #000;
 }
 
@@ -880,7 +880,7 @@ canvas {
   display: block;
   margin-top: 0.5753424657534246vh; /* distância de 1mm após o vídeo */
   width: 100%;        /* mesma largura do vídeo */
-  font-size: 2.1127vh;
+  font-size: 1.354vw;
   text-align: absolute;
   text-decoration: underline;
   color: #000;
@@ -1046,7 +1046,7 @@ html, body { margin: 0; padding: 0;}
 margin-top: 5.752705569338079vh;
  text-align: absolute;
  font-family: Arial, sans-serif;
- font-size: 2.2887vh;
+ font-size: 1.354vw;
  }
 
 /* Container do vídeo e legenda */
@@ -1493,7 +1493,7 @@ html, body {
 /* Legenda abaixo do vídeo */
 #videoCaption5 {
   margin-top: 0.5753424657534246vh;   /* legenda a 1mm abaixo do vídeo */
-  font-size: 2.2887vh;
+  font-size: 1.354vw;
   text-align: absolute;
 }
 
@@ -1528,7 +1528,7 @@ html, body {
 .video-caption {
   display: block;
   margin-top: 0.5752705569338079vh;           /* 1 mm abaixo do vídeo */
-  font-size: 2.2887vh;
+  font-size: 1.354vw;
   font-family: Arial, sans-serif;
   color: #000;
   text-decoration: underline;
@@ -1554,8 +1554,8 @@ html, body {
   left: 52.570295477340586vw;                    /* mesma distância lateral do vídeo */
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 2.2887vh;
+  font-family:  Arial, sans-serif;
+  font-size: 1.354vw;
   line-height: 1.1;
   color: #ffffff;
   margin: 0;
@@ -1579,8 +1579,8 @@ html, body {
   left: 27.668374816983896vw;                    /* mesma distância lateral do vídeo */
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 2.2887vh;
+  font-family:  Arial, sans-serif;
+  font-size: 1.354vw;
   line-height: 1.1;
   color: #ffffff;
   margin: 0;
@@ -1604,8 +1604,8 @@ html, body {
   left: 2.7672035139092235vw;                    /* mesma distância lateral do vídeo */
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 2.2887vh;
+  font-family:  Arial, sans-serif;
+  font-size: 1.354vw;
   line-height: 1.1;
   color: #ffffff;
   margin: 0;
@@ -1629,8 +1629,8 @@ html, body {
   left: 2.7672035139092235vw;                    /* mesma distância lateral do vídeo */
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 2.2887vh;
+  font-family:  Arial, sans-serif;
+  font-size: 1.354vw;
   line-height: 1.1;
   color: #000;
   margin: 0;
@@ -1654,8 +1654,8 @@ html, body {
   left: 27.668594436310393vw;                    /* mesma distância lateral do vídeo */
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 2.2887vh;
+  font-family:  Arial, sans-serif;
+  font-size: 1.354vw;
   line-height: 1.1;
   color: #000;
   margin: 0;
@@ -1679,8 +1679,8 @@ html, body {
   left: 52.57027818448024vw;                    /* mesma distância lateral do vídeo */
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 2.2887vh;
+  font-family:  Arial, sans-serif;
+  font-size: 1.354vw;
   line-height: 1.1;
   color: #000;
   margin: 0;
@@ -1704,8 +1704,8 @@ html, body {
   left: 52.570295477340586vw;                    /* mesma distância lateral do vídeo */
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 2.2887vh;
+  font-family:  Arial, sans-serif;
+  font-size: 1.354vw;
   line-height: 1.1;
   color: #ffffff;
   margin: 0;
@@ -1731,8 +1731,8 @@ html, body {
   left: 27.668594436310393vw;                    /* mesma distância lateral do vídeo */
   width: 23.42606149341142vw;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 2.2887vh;
+  font-family:  Arial, sans-serif;
+  font-size: 1.354vw;
   line-height: 1.1;
   color: #000;
   margin: 0;
@@ -2025,6 +2025,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
