@@ -1618,7 +1618,7 @@ html, body {
   position: absolute;
   top: calc(1209px + 180px); /* 32cm (posição do topo do vídeo) + altura do vídeo + 1mm */
   left: 718.11px;                    /* mesma distância lateral do vídeo */
-  width: 320px;                  /* igual à largura do vídeo */
+  width: calc(320px * 100vw / 1000);                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family:  Arial, sans-serif;
   font-size: 1.778vh;
@@ -1634,8 +1634,8 @@ html, body {
   position: absolute;
   top: 755.9055118110235px;         /* ajuste conforme a posição do seu vídeo */
   left: 718.1102362204724px;        /* distância da lateral esquerda */
-  width: 320px;      /* largura padrão do vídeo */
-  height: 180px;     /* altura padrão do vídeo */
+  width: calc(320px * 100vw / 1000);      /* largura padrão do vídeo */
+  height: calc(180px * 100vh / 1000);     /* altura padrão do vídeo */
 }
 
 /* Legenda-link abaixo do vídeo */
@@ -1914,5 +1914,6 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
