@@ -1417,8 +1417,8 @@ html, body {
   position: absolute;
   top: 755.90px;         /* distância do topo da tela */
   left: 37.8px;         /* distância da lateral esquerda */
-  width: 320px;      /* largura padrão do vídeo (ajuste se desejar) */
-  height: 180px;     /* altura proporcional (16:9) */
+  width: 20rem;      /* largura padrão do vídeo (ajuste se desejar) */
+  height: 11.25rem;     /* altura proporcional (16:9) */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1426,8 +1426,8 @@ html, body {
 
 /* Estilo do iframe do vídeo */
 #customVideoBox5 iframe {
-  width: 320px;      /* largura fixa do vídeo */
-  height: 180px;     /* altura proporcional */
+  width: 20rem;      /* largura fixa do vídeo */
+  height: 11.25rem;     /* altura proporcional */
   border: none;      /* remove borda */
 }
 
@@ -1914,3 +1914,4 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
