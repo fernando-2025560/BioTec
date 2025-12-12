@@ -517,24 +517,18 @@ height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
 </div>
 
 <div id="customVideoBox9">
-  
   <iframe
-  width: clamp(12vw, 26vw, 42vw);
-  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
     src="https://www.youtube.com/embed/AiqxEru6sdY"
     title="YouTube Shorts"
-    frameborder="0"
-    allow="accelerometer; clipboard-write; controls; encrypted-media; gyroscope; picture-in-picture">
+    allow="accelerometer; clipboard-write; controls; encrypted-media; gyroscope; picture-in-picture"
+    style="
+      width: 20rem;          /* equivalente a ~320px, mas responsivo */
+      max-width: 100%;       /* adapta ao container */
+      aspect-ratio: 16 / 9;  /* mantém altura proporcional, ~180px */
+      height: auto;          /* calculado automaticamente */
+      border: 0;
+    ">
   </iframe>
-</div>
-
-<!-- Legenda-link -->
-<div id="videoCaption9">
-  <a href="https://intertox.com.br/a-biotecnologia-como-instrumento-de-diagnostico-tratamento-e-prevencao-de-doencas-frente-a-pandemia-do-covid-19/" 
-     target="_blank">
-     "Entenda como a Biotecnologia ajuda a desenvolver novos tratamentos para doenças."
-  </a>
-</div>
 </div>
 
 <div id="customVideoBox10">
@@ -649,6 +643,7 @@ height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
 </body>    
 </html>
  
+
 
 
 
