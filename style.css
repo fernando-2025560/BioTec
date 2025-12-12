@@ -1529,6 +1529,13 @@ html, body {
   text-decoration: underline;
 }
 
+iframe {
+  width: clamp(200px, 40vw, 320px);
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+
+
 /* Caixa do vídeo */
 #customVideoBox10 {
   position: absolute;
@@ -1914,6 +1921,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
