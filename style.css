@@ -1417,8 +1417,8 @@ html, body {
   position: absolute;
   top: 755.90px;         /* distância do topo da tela */
   left: 37.8px;         /* distância da lateral esquerda */
-  width: 20rem;      /* largura padrão do vídeo (ajuste se desejar) */
-  height: 11.25rem;     /* altura proporcional (16:9) */
+  width: 29.632%;      /* largura padrão do vídeo (ajuste se desejar) */
+  height: 16.668%;     /* altura proporcional (16:9) */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1914,4 +1914,5 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
