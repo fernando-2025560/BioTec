@@ -2,7 +2,6 @@ html, body {
   margin: 0 !important;
   padding: 0 !important;
   min-width: 100% !important; /* Evita problemas em telas muito pequenas */
-  height: 149% !important;
   min-height: 149% !important;
   background-image: url(1.jpg) !important;
   background-size: cover !important;
@@ -86,7 +85,6 @@ body {
     align-items: flex-start !important;
     height: 100vh !important;
     background-color: #f5f5f5 !important;
-    font-family: Arial, sans-serif !important;
 }
 
 header {
@@ -322,15 +320,14 @@ body {
   width: 4.322917vw !important;
   height: 7.685185vh !important;
   position: fixed;
-  bottom: 367.795px;
+  bottom: 19.156vw;
 }
 
 body {
   margin: 0;
   padding: 0;
   background-color: #000;
-  font-family: Arial, sans-serif;
-  color: #000 !important;
+  
 }
 
 /* Dimensões fixas */
@@ -386,8 +383,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #000;
-  font-family: Arial, sans-serif;
-  color: #000 !important;
+  
 }
 
 .video-container {
@@ -719,7 +715,7 @@ body {
   color: #000;
   text-decoration: underline;
   cursor: pointer;
-  line-height: 1.1;
+  line-height: 1.1vh;
   width: 29.629630vh;
   bottom: 18.906250vh;
 }
