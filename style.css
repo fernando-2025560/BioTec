@@ -96,7 +96,7 @@ header {
 
   
 h1 {
-  font-size: clamp(1.125rem, 2.2vw, 1.5375rem) !important;
+  font-size: clamp(1.125rem, 2.2vw, 7.345vw) !important;
   position: absolute !important;
   top: clamp(0.25rem, 1vh, 0.5rem) !important;
   left: clamp(2.083vw, 10vw, 7.521vw) !important;
@@ -1915,6 +1915,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
