@@ -105,6 +105,14 @@ header {
   margin: clamp(5px, 1vh, 10px) !important;
 }
 
+      /* Ajuste fino para telas muito pequenas */
+@media (max-width: 480px) {
+  h1 {
+      left: 20px !important;
+      top: 6px !important;
+  }
+}
+
     
 
 /* Mantém a barra no mesmo lugar, mas ajusta automaticamente */
@@ -1911,6 +1919,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
