@@ -114,7 +114,8 @@ h1 {
 }
 
 /* Ajuste fino para telas muito pequenas */
-@media (max-width: 480px) {
+@media (max-width: 30em) {
+    /* regras aqui */
    h1 {
   font-size: clamp(1.125rem, 2.2vw, 1.5375rem) !important;
   position: absolute !important;
@@ -1911,6 +1912,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
