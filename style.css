@@ -100,7 +100,7 @@ h1 {
   position: absolute !important;
   top: clamp(0.25rem, 1vh, 0.5rem) !important;
   left: clamp(2.083vw, 10vw, 5.521vw) !important;
-  margin: clamp(5px, 1vh, 10px) !important;
+  margin: clamp(0.3125rem, 1vh, 0.625rem) !important;
 }
 
 /* Mantém a barra no mesmo lugar, mas ajusta automaticamente */
@@ -1915,6 +1915,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
