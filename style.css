@@ -98,7 +98,7 @@ header {
     /* Ajuste fino para telas muito pequenas */
     @media (max-width: 480px) {
       h1 {
-          left: clamp(2.5rem, 10vw, 6.625rem) !important;
+          left: clamp(40px, 10vw, 106px) !important;
           top: 6px !important;
       }
     }
@@ -1908,6 +1908,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
