@@ -1594,7 +1594,7 @@ iframe {
   text-align: absolute;
   font-family:  Arial, sans-serif;
   font-size: 1.778vh;
-  line-height: 1.1;
+  line-height: 1.1vh;
   color: #000;
   margin: 0;
   padding: 0;
@@ -1911,6 +1911,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
