@@ -93,16 +93,14 @@ header {
     width: 100% !important;
 }
 
-/* Ajuste fino para telas muito pequenas */
-@media (max-width: 480px) {
 
   
 h1 {
-  font-size: clamp(1.125rem, 2.2vw, 7.345vw) !important;
+  font-size: clamp(18px, 2.2vw, 24.6px) !important;
   position: absolute !important;
-  top: clamp(0.25rem, 1vh, 0.5rem) !important;
-  left: clamp(2.083vw, 10vw, 7.521vw) !important;
-  margin: clamp(0.3125rem, 1vh, 0.625rem) !important;
+  top: clamp(4px, 1vh, 8px) !important;
+  left: clamp(40px, 10vw, 106px) !important;
+  margin: clamp(5px, 1vh, 10px) !important;
 }
 
 /* Mantém a barra no mesmo lugar, mas ajusta automaticamente */
@@ -117,8 +115,13 @@ h1 {
   max-width: 100%;
 }
 
-  
-
+/* Ajuste fino para telas muito pequenas */
+@media (max-width: 480px) {
+  h1 {
+      left: 20px !important;
+      top: 6px !important;
+  }
+}
 
   
   
@@ -1911,16 +1914,3 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
