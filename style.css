@@ -103,14 +103,14 @@ h1 {
   
 /* Mantém a barra no mesmo lugar, mas ajusta automaticamente */
 .barra-de-pesquisa {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
-  padding: clamp(6px, 1vh, 10px);
-  width: auto;
-  max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: clamp(0.375rem, 1vh, 0.625rem);
+    width: auto;
+    max-width: 100%;
 }
 
 /* Ajuste fino para telas muito pequenas */
@@ -1909,6 +1909,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
