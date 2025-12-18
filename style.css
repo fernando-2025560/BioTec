@@ -95,18 +95,14 @@ header {
 
 
   
- /* Ajuste fino para telas muito pequenas */
-    @media (max-width: 30em) {
-        /* regras aqui */
-    
-
-    h1 {
-      font-size: clamp(1.125rem, 2.2vw, 1.5375rem) !important;
-      position: absolute !important;
-      top: clamp(0.25rem, 1vh, 0.5rem) !important;
-      left: clamp(2.5rem, 10vw, 6.625rem) !important;
-      margin: clamp(0.3125rem, 1vh, 0.625rem) !important;
+    /* Ajuste fino para telas muito pequenas */
+    @media (max-width: 480px) {
+      h1 {
+          left: 20px !important;
+          top: 6px !important;
+      }
     }
+    
 
 /* Mantém a barra no mesmo lugar, mas ajusta automaticamente */
 .barra-de-pesquisa {
@@ -1912,4 +1908,5 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
