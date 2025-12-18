@@ -75,7 +75,19 @@
     <style>
       
            
-        
+ /* Ajuste fino para telas muito pequenas */
+    @media (max-width: 30em) {
+        /* regras aqui */
+    
+
+    h1 {
+      font-size: clamp(1.125rem, 2.2vw, 1.5375rem) !important;
+      position: absolute !important;
+      top: clamp(0.25rem, 1vh, 0.5rem) !important;
+      left: clamp(2.5rem, 10vw, 6.625rem) !important;
+      margin: clamp(0.3125rem, 1vh, 0.625rem) !important;
+    }
+       
  
 
     
@@ -633,6 +645,7 @@ height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
 </body>    
 </html>
  
+
 
 
 
