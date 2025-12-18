@@ -97,11 +97,14 @@ header {
   
     /* Ajuste fino para telas muito pequenas */
     @media (max-width: 480px) {
-      h1 {
-          left: clamp(40px, 10vw, 106px) !important;
-          top: 6px !important;
-      }
-    }
+    h1 {
+  font-size: clamp(18px, 2.2vw, 24.6px) !important;
+  position: absolute !important;
+  top: clamp(4px, 1vh, 8px) !important;
+  left: clamp(40px, 10vw, 106px) !important;
+  margin: clamp(5px, 1vh, 10px) !important;
+}
+
     
 
 /* Mantém a barra no mesmo lugar, mas ajusta automaticamente */
@@ -1908,6 +1911,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
