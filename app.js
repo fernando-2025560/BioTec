@@ -807,7 +807,7 @@ function ajustarLayout() {
     videos.forEach(video => {
       video.style.width = "33.333vw";
       video.style.height = "40vh";
-      video.style.margin = "20px auto";
+      video.style.margin = "1.042vw auto";
       video.style.display = "block";
     });
 
@@ -848,6 +848,7 @@ window.addEventListener("resize", ajustarLayout);
 window.addEventListener("orientationchange", () => {
   document.documentElement.style.transition = "0.2s ease";
 });
+
 
 
 
