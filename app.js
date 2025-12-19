@@ -826,7 +826,7 @@ function ajustarLayout() {
       menu.style.position = "fixed";
       menu.style.top = "0";
       menu.style.width = "100%";
-      menu.style.height = "60px";
+      menu.style.height = "6.667vh";
       menu.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
       menu.style.display = "flex";
       menu.style.justifyContent = "center";
@@ -848,5 +848,6 @@ window.addEventListener("resize", ajustarLayout);
 window.addEventListener("orientationchange", () => {
   document.documentElement.style.transition = "0.2s ease";
 });
+
 
 
