@@ -836,7 +836,7 @@ function ajustarLayout() {
     }
 
     // 🔹 Ajuste geral do corpo da página
-    body.style.paddingTop = "80px";
+    body.style.paddingTop = "4.167vw";
   }
 }
 
@@ -848,4 +848,5 @@ window.addEventListener("resize", ajustarLayout);
 window.addEventListener("orientationchange", () => {
   document.documentElement.style.transition = "0.2s ease";
 });
+
 
