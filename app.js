@@ -818,7 +818,7 @@ function ajustarLayout() {
       img.style.maxWidth = "600px";
       img.style.borderRadius = "8px";
       img.style.display = "block";
-      img.style.margin = "20px auto";
+      img.style.margin = "2.222vh auto";
     });
 
     // 🔹 Ajuste do menu para desktop
@@ -848,6 +848,7 @@ window.addEventListener("resize", ajustarLayout);
 window.addEventListener("orientationchange", () => {
   document.documentElement.style.transition = "0.2s ease";
 });
+
 
 
 
