@@ -816,7 +816,7 @@ function ajustarLayout() {
       img.style.width = "auto";
       img.style.height = "auto";
       img.style.maxWidth = "600px";
-      img.style.borderRadius = "8px";
+      img.style.borderRadius = "0.417vw";
       img.style.display = "block";
       img.style.margin = "2.222vh auto";
     });
@@ -848,6 +848,7 @@ window.addEventListener("resize", ajustarLayout);
 window.addEventListener("orientationchange", () => {
   document.documentElement.style.transition = "0.2s ease";
 });
+
 
 
 
