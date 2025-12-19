@@ -806,7 +806,7 @@ function ajustarLayout() {
     // 🔹 Ajuste de vídeos para telas grandes
     videos.forEach(video => {
       video.style.width = "33.333vw";
-      video.style.height = "360px";
+      video.style.height = "40vh";
       video.style.margin = "20px auto";
       video.style.display = "block";
     });
@@ -848,6 +848,7 @@ window.addEventListener("resize", ajustarLayout);
 window.addEventListener("orientationchange", () => {
   document.documentElement.style.transition = "0.2s ease";
 });
+
 
 
 
