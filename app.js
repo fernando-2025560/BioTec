@@ -781,7 +781,7 @@ function ajustarLayout() {
       img.style.maxWidth = "320px";
       img.style.borderRadius = "12px";
       img.style.display = "block";
-      img.style.margin = "10px auto";
+      img.style.margin = "0.521vw auto";
     });
 
     // 🔹 Ajuste do menu para mobile
@@ -848,6 +848,7 @@ window.addEventListener("resize", ajustarLayout);
 window.addEventListener("orientationchange", () => {
   document.documentElement.style.transition = "0.2s ease";
 });
+
 
 
 
