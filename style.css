@@ -2,6 +2,7 @@ html, body {
   margin: 0 !important;
   padding: 0 !important;
   min-width: 100% !important; /* Evita problemas em telas muito pequenas */
+  height: 149% !important;
   min-height: 149% !important;
   background-image: url(1.jpg) !important;
   background-size: cover !important;
@@ -65,8 +66,8 @@ header{
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
-    width: 7.99vw !important;      /* 3px */
-    height: 9.15vh !important;     /* 56.7px */
+    width: 3px !important;
+    height: 56.7px !important;
     object-fit: cover !important;
     z-index: 999999999999 !important;
 }
@@ -85,6 +86,7 @@ body {
     align-items: flex-start !important;
     height: 100vh !important;
     background-color: #f5f5f5 !important;
+    font-family: Arial, sans-serif !important;
 }
 
 header {
@@ -95,33 +97,11 @@ header {
 
 
   
-h1 {
-  font-size: clamp(18px, 2.2vw, 24.6px) !important;
-  position: absolute !important;
-  top: clamp(4px, 1vh, 8px) !important;
-  left: clamp(40px, 10vw, 106px) !important;
-  margin: clamp(5px, 1vh, 10px) !important;
-}
-
-/* Mantém a barra no mesmo lugar, mas ajusta automaticamente */
-.barra-de-pesquisa {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
-  padding: clamp(6px, 1vh, 10px);
-  width: auto;
-  max-width: 100%;
-}
-
-/* Ajuste fino para telas muito pequenas */
-@media (max-width: 480px) {
   h1 {
-      left: 20px !important;
-      top: 6px !important;
+    left: 5.885417vw !important;
+    z-index: 9999999999999 !important;
+    color: #000 !important;
   }
-}
 
   
   
@@ -170,13 +150,13 @@ body {
   
   .search-bar {
     width: 34.8vw !important;
-    height: 4.7vh !important;
+    height: 15.981481vh !important;
     padding-left: 0.312500vw !important;
-    font-size: 2.6vh !important;
+    font-size: 1rem !important;
     border: 0.156250vw solid black !important;
-    border-radius: 0.8333333vw !important;
+    border-radius: 0.833333vw !important;
     position: absolute !important;
-    top: 1.1vh !important;
+    top: 6.944444vh !important;
     left: 50%  !important;
     transform: translateX(-50%) !important;
     z-index: 1000000000000000000000 !important;
@@ -187,9 +167,9 @@ body {
   .search-button {
     position: absolute !important;
     height: 4.7vh !important;
-    border-radius: 0.8333333vw !important;
+    border-radius: 1.989789vh !important;
     border: 0.156250vw solid black !important;
-    font-size: 2.6vh  !important;
+    font-size: 1rem  !important;
     cursor: pointer !important;
     width: 8.4vw !important;
     z-index: 10000000000000000000000 !important;
@@ -250,7 +230,7 @@ body {
   width: 1.822917vw !important;
   height: 3.240741vh !important;
   border-radius: 50% !important;
-  backdrop-filter: blur(0.312500vw) saturate(180%) !important;
+  backdrop-filter: blur(00.312500vw) saturate(180%) !important;
   background: rgba(255, 255, 255, 0.2) !important;
   box-shadow : 
      0 0.208333vw 0.520833vw rgba(255,255,255, 0.3),
@@ -262,7 +242,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease !important;
   text-decoration: none !important;
   object-fit: contain !important;
-  padding: 0.20419vw !important;
+  padding: 0.20419 !important;
   box-sizing: border-box !important;
   overflow: visible !important;
   top: 96vh !important;
@@ -320,14 +300,15 @@ body {
   width: 4.322917vw !important;
   height: 7.685185vh !important;
   position: fixed;
-  bottom: 19.156vw;
+  bottom: 367.795px;
 }
 
 body {
   margin: 0;
   padding: 0;
   background-color: #000;
-  
+  font-family: Arial, sans-serif;
+  color: #000 !important;
 }
 
 /* Dimensões fixas */
@@ -365,11 +346,11 @@ body {
   top: calc(var(--video-top)  + var(--video-height) + 188.97637795275588px);
   left: var(--video-left);
   width: var(--video-width);
-  font-size: 1.778vh;
+  font-size: 1.203704vh;
   color: #000 !important;
   text-decoration: underline;
   cursor: pointer;
-  line-height: 3vh;
+  line-height: 3;
   text-align: absolute;
   transition: color 0.3s;
 }
@@ -383,7 +364,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #000;
-  
+  font-family: Arial, sans-serif;
+  color: #000 !important;
 }
 
 .video-container {
@@ -418,11 +400,11 @@ body {
   position: absolute;
   top: calc(75.59055118110236px + 220px + 5px);
   left: 37.79527559055118px;
-  font-size: 1.778vh;
+  font-size: 1.203704vh;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
-  line-height: 1.2vh;
+  line-height: 1.2;
   width: 19.687500vw;
 }
 
@@ -493,7 +475,7 @@ body {
   top: calc(var(--video-top)  + var(--video-height) + 188.97637795275588px);
   left: var(--video-left);
   width: var(--video-width);
-  font-size: 1.778vh;
+  font-size: 1.203704vh;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
@@ -555,11 +537,11 @@ body {
   position: absolute;
   top: calc(75.59055118110236px + 19.444444vh + 0.1px);
   left: 1.979167vw;
-  font-size: 1.778vh;
+  font-size: 1.203704vh;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
-  line-height: 1.3vh;
+  line-height: 1.2;
   width: 377.95275590551176px;
 }
 
@@ -647,7 +629,7 @@ body {
   top: calc(var(--video-top)  var(--video-height) + 188.97637795275588px);
   left: var(--video-left);
   width: var(--video-width);
-  font-size: 1.778vh;
+  font-size: 1.203704vh;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
@@ -711,11 +693,11 @@ body {
 .caption-link {
   position: absolute;
   left: 37.79527559055118px;
-  font-size: 1.778vh;
+  font-size: 1.203704vh;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
-  line-height: 1.1vh;
+  line-height: 1.1;
   width: 29.629630vh;
   bottom: 18.906250vh;
 }
@@ -766,7 +748,7 @@ svg.chart {
   color: #fff;
   padding: 0.208333vw 0.416667vw;
   border-radius: 0.208333vw;
-  font-size: 1.778vh;
+  font-size: 1.111111vh;
   pointer-events: none;
   display: none;
   white-space: nowrap;
@@ -872,7 +854,7 @@ canvas {
   display: block;
   margin-top: 3.78px; /* distância de 1mm após o vídeo */
   width: 100%;        /* mesma largura do vídeo */
-  font-size: 1.778vh;
+  font-size: 1.111111vh;
   text-align: absolute;
   text-decoration: underline;
   color: #000;
@@ -939,7 +921,7 @@ html, body { margin: 0; padding: 0; }
 .yt-caption {
   display: block;
   margin-top: 37.795275590551181px;
-  font: 500 11.778vh/1.2  Arial, sans-serif;
+  font: 500 13px/1.2  Arial, sans-serif;
   text-decoration: none;
   color: #000;
   width: 100%;
@@ -1011,7 +993,7 @@ html, body { margin: 0; padding: 0;}
 .yt-caption {
   display: block;
   margin-top: 37.79527559055118px;
-  font: 500 1.778vh/1.2   Arial, sans-serif;
+  font: 500 13px/1.2   Arial, sans-serif;
   text-decoration: none;
   color: #000 !important;
   width: 320px;
@@ -1037,7 +1019,7 @@ html, body { margin: 0; padding: 0;}
 margin-top: 37.79527559055118px;
  text-align: absolute;
  font-family: Arial, sans-serif;
- font-size: 1.778vh;
+ font-size: 13px;
  }
 
  .video-miniatura {
@@ -1055,7 +1037,7 @@ margin-top: 37.79527559055118px;
 
 .video-legenda {
   margin-top: 4px;
-  font-size: 1.778vh;
+  font-size: 13px;
   font:  Arial, sans-serif;
 }
 
@@ -1075,7 +1057,7 @@ margin-top: 37.79527559055118px;
 
 .video-caption {
   margin-top: 4px;         /* 1mm abaixo do vídeo */
-  font-size: 1.778vh;
+  font-size: 13px;
   text-align: absolute;
   color: #000;
   font:  Arial, sans-serif;
@@ -1122,7 +1104,7 @@ margin-top: 37.79527559055118px;
 /* Legenda-link exclusiva */
 .custom-video-caption {
   margin-top: 3.78px;
-  font-size: 1.778vh;
+  font-size: 13px;
   width: 320px;
 }
 
@@ -1264,7 +1246,7 @@ html, body {
 
 .vid-box p {
   margin: 37.79527559055118px 0 0 0;      /* 1mm abaixo do vídeo */
-  font-size: 1.778vh;
+  font-size: 14px;
   text-align: center; 
 }
 
@@ -1326,7 +1308,7 @@ html, body {
 #videoCaption2 {
   margin-top: 37.79527559055118px;
   width: 320px;
-  font-size: 1.778vh;
+  font-size: 13px;
   color: #000;
 }
 
@@ -1355,7 +1337,7 @@ html, body {
 #videoCaption3 {
   margin-top: 37.79527559055118px;
   width: 320px;
-  font-size: 1.778vh;
+  font-size: 13px;
   color: #000;
 }
 
@@ -1389,7 +1371,7 @@ html, body {
   margin-top: 10px;
   text-align: absolute;
   font-family: Arial, sans-serif;
-  font-size: 1.778vh;
+  font-size: 13px;
   color: #000;
 }
 
@@ -1406,7 +1388,7 @@ html, body {
 
 #videoCaption a {
   color: black;
-  font-size: 1.778vh !important;
+  font-size: 13px !important;
   text-decoration: none;
 }
 
@@ -1418,7 +1400,7 @@ html, body {
   top: 755.90px;         /* distância do topo da tela */
   left: 37.8px;         /* distância da lateral esquerda */
   width: 320px;      /* largura padrão do vídeo (ajuste se desejar) */
-  height: 180px;     /* altura proporcional (16:9) */
+  height: 197px;     /* altura proporcional (16:9) */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1434,7 +1416,7 @@ html, body {
 /* Legenda abaixo do vídeo */
 #videoCaption5 {
   margin-top: 3.78px;   /* legenda a 1mm abaixo do vídeo */
-  font-size: 1.778vh;
+  font-size: 13px;
   text-align: absolute;
 }
 
@@ -1459,7 +1441,7 @@ html, body {
 /* Estilo do vídeo incorporado */
 .video-container iframe {
   width: 320px;              /* largura exata */
-  height: 180px;             /* altura exata */
+  height: 192px;             /* altura exata */
   display: block;            /* garante que fique acima da legenda */
   margin: 0 auto;            /* centraliza dentro do container */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* sombra sutil opcional */
@@ -1469,7 +1451,7 @@ html, body {
 .video-caption {
   display: block;
   margin-top: 3.7795275590551185px;           /* 1 mm abaixo do vídeo */
-  font-size: 1.778vh;
+  font-size: 13px;
   font-family: Arial, sans-serif;
   color: #000;
   text-decoration: underline;
@@ -1496,7 +1478,7 @@ html, body {
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family:  Arial, sans-serif;
-  font-size: 1.778vh;
+  font-size: 13px;
   line-height: 1.1;
   color: #ffffff;
   margin: 0;
@@ -1521,7 +1503,7 @@ html, body {
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family:  Arial, sans-serif;
-  font-size: 1.778vh;
+  font-size: 13px;
   line-height: 1.1;
   color: #ffffff;
   margin: 0;
@@ -1546,7 +1528,7 @@ html, body {
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: Arial, sans-serif;
-  font-size: 1.778vh;
+  font-size: 13px;
   line-height: 1.1;
   color: #ffffff;
   margin: 0;
@@ -1571,7 +1553,7 @@ html, body {
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family:  Arial, sans-serif;
-  font-size: 1.778vh;
+  font-size: 13px;
   line-height: 1.1;
   color: #000;
   margin: 0;
@@ -1596,7 +1578,7 @@ html, body {
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family:  Arial, sans-serif;
-  font-size: 1.778vh;
+  font-size: 13px;
   line-height: 1.1;
   color: #000;
   margin: 0;
@@ -1621,8 +1603,8 @@ html, body {
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family:  Arial, sans-serif;
-  font-size: 1.778vh;
-  line-height: 1.3vh;
+  font-size: 13px;
+  line-height: 1.1;
   color: #000;
   margin: 0;
   padding: 0;
@@ -1643,11 +1625,11 @@ html, body {
   position: absolute;
   top: calc(755.9055118110235px + 180px); /* 20cm (posição do topo do vídeo) + altura do vídeo + 1mm */
   left: 718.1102362204724px;                    /* mesma distância lateral do vídeo */
-  width: calc(16.667 * var(--vw));                  /* igual à largura do vídeo */
+  width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: Arial, sans-serif;
-  font-size: 1.778vh;
-  line-height: 1.3vh;
+  font-size: 13px;
+  line-height: 1.1;
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -1672,9 +1654,9 @@ html, body {
   left: 35.000000vh;                    /* mesma distância lateral do vídeo */
   width: 16.666667vw;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family:  Arial, sans-serif;
-  font-size: 1.778vh;
-  line-height: 1.3vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1.203704vh;
+  line-height: 1.1;
   color: #000;
   margin: 0;
   padding: 0;
@@ -1905,12 +1887,4 @@ main {
   .search-button { font-size: 0.9rem; }
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
-}
-
-/* Ajuste fino para telas muito pequenas */
-@media (max-width: 480px) {
-  h1 {
-    left: clamp(40px, 10vw, 106px) !important;
-    top: clamp(4px, 1vh, 8px) !important;
-  }
 }
