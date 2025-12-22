@@ -428,14 +428,6 @@ body {
 
 
 
-/* Dimensões fixas */
-:root {
-  --video-width: 11.822917vw;
-  --video-height: 15.833333vh; /* 16:9 proporção exata para 60px largura */
-  --video-top: 5.555556vh;
-  --video-left: 11.770833vw;
-  --caption-gap: 5.185185vh;
-}
 
 .video-container {
   position: absolute;
@@ -1900,5 +1892,6 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
