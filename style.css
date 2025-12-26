@@ -1175,11 +1175,11 @@ h2 {
 }
 
 .bloco {
-  margin-bottom: 40px;
-  padding: 20px;
+  margin-bottom: 4.444vh;
+  padding: 1.042vw;
   background: rgba(255,255,255,0.9);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.521vw;
+  box-shadow: 0 0.208vw   0.417vw rgba(0, 0, 0, 0.1);
 }
 
 .qr-code img {
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
