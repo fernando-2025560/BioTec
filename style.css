@@ -1171,7 +1171,7 @@ h2 {
   width: 100%;
   aspect-ratio: 16 / 9;
   border: none;
-  border-radius: 6px;
+  border-radius: 0.313vw;
 }
 
 .bloco {
@@ -1242,7 +1242,7 @@ html, body {
 
 .vid-box p {
   margin: 37.79527559055118px 0 0 0;      /* 1mm abaixo do vídeo */
-  font-size: 1.778vh;
+  font-size: 1.78vh;
   text-align: center; 
 }
 
@@ -1304,7 +1304,7 @@ html, body {
 #videoCaption2 {
   margin-top: 37.79527559055118px;
   width: 320px;
-  font-size: 1.778vh;
+  font-size: 1.78vh;
   color: #000;
 }
 
@@ -1333,7 +1333,7 @@ html, body {
 #videoCaption3 {
   margin-top: 37.79527559055118px;
   width: 320px;
-  font-size: 1.778vh;
+  font-size: 1.78vh;
   color: #000;
 }
 
@@ -1367,7 +1367,7 @@ html, body {
   margin-top: 10px;
   text-align: absolute;
   font-family: Arial, sans-serif;
-  font-size: 1.778vh;
+  font-size: 1.78vh;
   color: #000;
 }
 
@@ -1384,7 +1384,7 @@ html, body {
 
 #videoCaption a {
   color: black;
-  font-size: 1.778vh !important;
+  font-size: 1.78vh !important;
   text-decoration: none;
 }
 
@@ -1412,7 +1412,7 @@ html, body {
 /* Legenda abaixo do vídeo */
 #videoCaption5 {
   margin-top: 3.78px;   /* legenda a 1mm abaixo do vídeo */
-  font-size: 1.778vh;
+  font-size: 1.78vh;
   text-align: absolute;
 }
 
@@ -1447,7 +1447,7 @@ html, body {
 .video-caption {
   display: block;
   margin-top: 3.7795275590551185px;           /* 1 mm abaixo do vídeo */
-  font-size: 1.778vh;
+  font-size: 1.78vh;
   font-family: Arial, sans-serif;
   color: #000;
   text-decoration: underline;
@@ -1474,7 +1474,7 @@ html, body {
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family:  Arial, sans-serif;
-  font-size: 1.778vh;
+  font-size: 1.78vh;
   line-height: 1.1;
   color: #ffffff;
   margin: 0;
@@ -1499,7 +1499,7 @@ html, body {
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family:  Arial, sans-serif;
-  font-size: 1.778vh;
+  font-size: 1.78vh;
   line-height: 1.1;
   color: #ffffff;
   margin: 0;
@@ -1524,8 +1524,8 @@ html, body {
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family: Arial, sans-serif;
-  font-size: 1.778vh;
-  line-height: 1.1;
+  font-size: 1.78vh;
+  line-height: 1.1vh;
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -1549,8 +1549,8 @@ html, body {
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
   font-family:  Arial, sans-serif;
-  font-size: 1.778vh;
-  line-height: 1.1;
+  font-size: 1.78vh;
+  line-height: 1.1vh;
   color: #000;
   margin: 0;
   padding: 0;
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
