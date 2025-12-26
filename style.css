@@ -988,11 +988,11 @@ html, body { margin: 0; padding: 0;}
 /* Legenda abaixo do bloco */
 .yt-caption {
   display: block;
-  margin-top: 37.79527559055118px;
+  margin-top: 4.199vh;
   font: 500 1.78vh/1.2   Arial, sans-serif;
   text-decoration: none;
   color: #000 !important;
-  width: 320px;
+  width: 16.667vw;
   cursor: pointer;
   text-decoration: underline;
 }
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
