@@ -1099,14 +1099,14 @@ margin-top: 4.199vh;
 
 /* Legenda-link exclusiva */
 .custom-video-caption {
-  margin-top: 3.78px;
+  margin-top: 0.42vh;
   font-size: 1.78vh;
-  width: 320px;
+  width: 16.667vw;
 }
 
 .custom-video-caption a {
   display: block;
-  width: 320px;
+  width: 16.667vw;
   margin-top: 3.78px;
   text-align: left;
   word-wrap: break-word;
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
