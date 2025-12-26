@@ -538,7 +538,7 @@ body {
   text-decoration: underline;
   cursor: pointer;
   line-height: 1.3vh;
-  width: 377.95275590551176px;
+  width: 19.685vw;
 }
 
 
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
