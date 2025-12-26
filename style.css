@@ -916,8 +916,8 @@ html, body { margin: 0; padding: 0; }
 /* Legenda abaixo do bloco */
 .yt-caption {
   display: block;
-  margin-top: 37.795275590551181px;
-  font: 500 11.778vh/1.2  Arial, sans-serif;
+  margin-top: 4.199vh;
+  font: 500 11.78vh/1.2  Arial, sans-serif;
   text-decoration: none;
   color: #000;
   width: 100%;
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
