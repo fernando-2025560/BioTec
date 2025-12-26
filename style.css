@@ -744,7 +744,7 @@ svg.chart {
   color: #fff;
   padding: 0.208333vw 0.416667vw;
   border-radius: 0.208333vw;
-  font-size: 1.778vh;
+  font-size: 1.78vh;
   pointer-events: none;
   display: none;
   white-space: nowrap;
@@ -790,7 +790,7 @@ canvas {
 #custom-overlay-container {
   position: absolute;
   top: 8.055556vh;
-  left: 453.54330708661416px;
+  left: 23.622vw;
   pointer-events: none;  /* evita interferência na página */
 }
 
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
