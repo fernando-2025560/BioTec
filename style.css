@@ -1241,7 +1241,7 @@ html, body {
 }
 
 .vid-box p {
-  margin: 37.79527559055118px 0 0 0;      /* 1mm abaixo do vídeo */
+  margin: 1.969vw 0 0 0;      /* 1mm abaixo do vídeo */
   font-size: 1.78vh;
   text-align: center; 
 }
@@ -1258,22 +1258,22 @@ html, body {
 
 .video-frame {
   position: absolute;
-  top: 536.6929133858267px;
-  left: 37.79527559055118px;
+  top: 59.633vh;
+  left: 1.969vw;
   width: 16.667vw;
   height: 20vh;
-  border-radius: 5px;
+  border-radius: 0.26vw;
 }
 
 
  /* Aumenta o tamanho da barra de rolagem */
 ::-webkit-scrollbar {
-  width: 16px; /* Largura da barra de rolagem */
+  width: 0.833vw; /* Largura da barra de rolagem */
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: darkgrey; /* Cor do "polegar" da barra */
-  border-radius: 5px; /* Borda arredondada */
+  border-radius: 0.26vw; /* Borda arredondada */
 }
 
 ::-webkit-scrollbar-track {
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
