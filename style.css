@@ -807,7 +807,7 @@ canvas {
 
 #custom-caption {
   position: relative;
-  top: 0.41px !important; /* 0.1 mm abaixo da imagem */
+  top: 0.046vh !important; /* 0.1 mm abaixo da imagem */
   display: block;
   text-align: absolute;
   z-index: 3;
@@ -850,7 +850,7 @@ canvas {
   display: block;
   margin-top: 3.78px; /* distância de 1mm após o vídeo */
   width: 100%;        /* mesma largura do vídeo */
-  font-size: 1.778vh;
+  font-size: 1.78vh;
   text-align: absolute;
   text-decoration: underline;
   color: #000;
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
