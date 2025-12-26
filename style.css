@@ -1235,8 +1235,8 @@ html, body {
 }
 
 .vid-box iframe {
-  width: 320px;
-  height: 180px;
+  width: 16.667vw;
+  height: 20vh;
   border: none;
 }
 
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
