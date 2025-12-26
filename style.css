@@ -688,12 +688,12 @@ body {
 /* Legenda */
 .caption-link {
   position: absolute;
-  left: 37.79527559055118px;
-  font-size: 1.778vh;
+  left: 1.969vw;
+  font-size: 1.78vh;
   color: #000;
   text-decoration: underline;
   cursor: pointer;
-  line-height: 1.1vh;
+  line-height: 1.3vh;
   width: 29.629630vh;
   bottom: 18.906250vh;
 }
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
