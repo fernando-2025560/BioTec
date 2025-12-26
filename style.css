@@ -1273,7 +1273,7 @@ html, body {
 
 ::-webkit-scrollbar-thumb {
   background-color: darkgrey; /* Cor do "polegar" da barra */
-  border-radius: 0.26vw; /* Borda arredondada */
+  border-radius: 0.36vw; /* Borda arredondada */
 }
 
 ::-webkit-scrollbar-track {
@@ -1282,7 +1282,7 @@ html, body {
 
 /* Adicionando um container com rolagem */
 .container {
-  height: 793.7px; /* Altura da área rolável (21 cm) */
+  height: 88.189vh; /* Altura da área rolável (21 cm) */
   overflow-y: scroll; /* Permite rolagem vertical */
   width: 100%; /* Largura do container */
 }
@@ -1291,19 +1291,19 @@ html, body {
 
 #customVideoBox2 {
   position: absolute;
-  top: 529px;
+  top: 58.778vh;
   left: 37.79527559055118px;
-  height: 180px;
+  height: 20vh;
 }
 
 #customYT2 {
-  width: 320px;
-  height: 180px;
+  width: 16.667vw;
+  height: 20vh;
 }
 
 #videoCaption2 {
   margin-top: 37.79527559055118px;
-  width: 320px;
+  width: 16.667vw;
   font-size: 1.78vh;
   color: #000;
 }
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
