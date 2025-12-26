@@ -1107,14 +1107,14 @@ margin-top: 4.199vh;
 .custom-video-caption a {
   display: block;
   width: 16.667vw;
-  margin-top: 3.78px;
+  margin-top: 0.42vh;
   text-align: left;
   word-wrap: break-word;
   color: #000;
 }
 
 .video-caption {
-  margin-top: 3.78px; /* distância entre o vídeo e a legenda */
+  margin-top: 0.42vh; /* distância entre o vídeo e a legenda */
 }
 
   
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
