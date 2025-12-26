@@ -1153,18 +1153,18 @@ margin-top: 4.199vh;
   width: 95%;
   max-width: 62.5vw;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1.042vw;
 }
 
 h2 {
-  margin-bottom: 15px;
+  margin-bottom: 1.667vh;
 }
 
 .video-grid  {
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  gap: 20px;
-  margin-bottom: 40px;
+  gap: 1.042vw;
+  margin-bottom: 4.444vh;
 }
 
 .video-grid iframe {
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
