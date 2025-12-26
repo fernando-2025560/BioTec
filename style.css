@@ -1027,8 +1027,8 @@ margin-top: 4.199vh;
 
 .video-miniatura iframe {
   width: 100%;
-  height: 180px; /* proporcional a 16:9 em 200px de largura */
-  border: 5px;
+  height: 20vh; /* proporcional a 16:9 em 200px de largura */
+  border: 0.26vw;
 }
 
 .video-legenda {
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
