@@ -932,8 +932,8 @@ html, body { margin: 0; padding: 0;}
 /* Bloco absoluto na posição pedida */
 .yt-block {
   position: absolute;
-  top: 86.9291338582677px;
-  left: 377.95275590551176px;
+  top: 9.659vh;
+  left: 19.685vw;
   display: inline-block;
   line-height: 0;
   user-select: none;
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
