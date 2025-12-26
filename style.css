@@ -1040,9 +1040,9 @@ margin-top: 4.199vh;
 
 #video-area {
   position: absolute;
-  top: 302px;         /* 8cm do topo */
-  left: 378px;        /* 6cm da esquerda */
-  width: 320px;     /* Miniatura padrão */
+  top: 33.556vh;         /* 8cm do topo */
+  left: 19.688vw;        /* 6cm da esquerda */
+  width: 16.667vw;     /* Miniatura padrão */
 }
 
 #video-area iframe {
@@ -1053,7 +1053,7 @@ margin-top: 4.199vh;
 
 .video-caption {
   margin-top: 4px;         /* 1mm abaixo do vídeo */
-  font-size: 1.778vh;
+  font-size: 1.78vh;
   text-align: absolute;
   color: #000;
   font:  Arial, sans-serif;
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
