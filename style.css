@@ -848,7 +848,7 @@ canvas {
 
 #custom-caption {
   display: block;
-  margin-top: 3.78px; /* distância de 1mm após o vídeo */
+  margin-top: 0.42vh; /* distância de 1mm após o vídeo */
   width: 100%;        /* mesma largura do vídeo */
   font-size: 1.78vh;
   text-align: absolute;
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
