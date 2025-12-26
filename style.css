@@ -1005,8 +1005,8 @@ html, body { margin: 0; padding: 0;}
 
 #customYT {
    display: block;
-   width: 320px; 
-   height: 180px;
+   width: 16.667vw; 
+   height: 20vh;
   pointer-events: auto;
   border-radius: 5px;
 } 
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
