@@ -1020,9 +1020,9 @@ margin-top: 4.199vh;
 
  .video-miniatura {
   position: absolute;
-  top: 302px;
-  left: 38px;
-  width: 320px;
+  top: 33.556vh;
+  left: 1.979vw;
+  width: 16.667vw;
 }
 
 .video-miniatura iframe {
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
