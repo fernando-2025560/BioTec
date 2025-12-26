@@ -706,7 +706,7 @@ body {
 .chart-wrap {
   position: fixed;
   right: 0.989583vw;
-  bottom: 75.59055118110236px;
+  bottom: 8.399vh;
   width: 139.84251968503938px;
   height: 94.48818897637794px;
   background: #fff;
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
