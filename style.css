@@ -999,8 +999,8 @@ html, body { margin: 0; padding: 0;}
 
 #customVideoBox {
  position: absolute;
- top: 86.9291338582677px; 
- left: 718.1102362204724px; 
+ top: 9.659vh; 
+ left: 37.402vw; 
 }
 
 #customYT {
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
