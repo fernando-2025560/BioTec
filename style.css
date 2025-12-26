@@ -348,10 +348,10 @@ body {
 /* Legenda com alinhamento e distância de 1.5mm abaixo da imagem */
 .caption-link {
   position: absolute;
-  top: calc(var(--video-top)  + var(--video-height) + 188.97637795275588px);
+  top: calc(var(--video-top)  + var(--video-height) + 20.997vh);
   left: var(--video-left);
   width: var(--video-width);
-  font-size: 1.778vh;
+  font-size: 1.78vh;
   color: #000 !important;
   text-decoration: underline;
   cursor: pointer;
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
