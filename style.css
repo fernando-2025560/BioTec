@@ -976,7 +976,7 @@ html, body { margin: 0; padding: 0;}
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  height: 181.41732283464566px;
+  height: 108.778vh;
 }
 
 .yt-wrap.playing .yt-iframe {
@@ -989,7 +989,7 @@ html, body { margin: 0; padding: 0;}
 .yt-caption {
   display: block;
   margin-top: 37.79527559055118px;
-  font: 500 1.778vh/1.2   Arial, sans-serif;
+  font: 500 1.78vh/1.2   Arial, sans-serif;
   text-decoration: none;
   color: #000 !important;
   width: 320px;
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
