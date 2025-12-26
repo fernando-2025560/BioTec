@@ -1033,7 +1033,7 @@ margin-top: 4.199vh;
 
 .video-legenda {
   margin-top: 4px;
-  font-size: 1.778vh;
+  font-size: 1.78vh;
   font:  Arial, sans-serif;
 }
 
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
