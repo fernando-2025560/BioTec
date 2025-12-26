@@ -1008,14 +1008,14 @@ html, body { margin: 0; padding: 0;}
    width: 16.667vw; 
    height: 20vh;
   pointer-events: auto;
-  border-radius: 5px;
+  border-radius: 0.26vw;
 } 
 
 #videoCaption { 
-margin-top: 37.79527559055118px;
+margin-top: 4.199vh;
  text-align: absolute;
  font-family: Arial, sans-serif;
- font-size: 1.778vh;
+ font-size: 1.78vh;
  }
 
  .video-miniatura {
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
