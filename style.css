@@ -650,8 +650,8 @@ body {
 
 .video-container {
   position: absolute;
-  top: 86.9291338582677px;
-  left: 37.79527559055118px;
+  top: 9.659vh;
+  left: 1.969vw;
   width: 16.666667vw;
   height: 9.375000vw;
   border-radius: 0.206417vw;
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
