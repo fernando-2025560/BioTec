@@ -1204,8 +1204,8 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 10px;
+  gap: 1.042vw;
+  padding: 0.521vw;
 }
 
 html, body {
@@ -1219,12 +1219,12 @@ html, body {
 
 .video-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 320px);        /* 3 colunas */
+  grid-template-columns: repeat(3, 16.667vw);        /* 3 colunas */
   grid-auto-rows: auto;
-  gap: 10px;
+  gap: 0.521vw;
   justify-content: center;
-  padding-bottom: calc(75.59055118110236px + 180px);          /* primeira linha 2cm a cima do fundo */
-  padding-top: 20px; 
+  padding-bottom: calc(8.399vh + 20vh);          /* primeira linha 2cm a cima do fundo */
+  padding-top: 1.042vw; 
 }
 
 .vid-box{
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
