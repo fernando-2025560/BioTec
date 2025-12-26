@@ -1052,7 +1052,7 @@ margin-top: 4.199vh;
 }
 
 .video-caption {
-  margin-top: 4px;         /* 1mm abaixo do vídeo */
+  margin-top: 0.444vh;         /* 1mm abaixo do vídeo */
   font-size: 1.78vh;
   text-align: absolute;
   color: #000;
@@ -1062,8 +1062,8 @@ margin-top: 4.199vh;
 /* Container exclusivo para não afetar nada no site */
 .custom-video-container {
   position: absolute;
-  top: 302.36px;
-  right: 310px;
+  top: 33.596vh;
+  right: 16.146vw;
   text-align: center;
 }
 
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
