@@ -1120,11 +1120,11 @@ margin-top: 4.199vh;
   
 #youtubeVideo {
   position: absolute;
-  left: 37.8px;   /* distância da lateral-esquerda */
-  top: 87px;  /* distância do topo da tela */
-  width: 320px;
-  height: 180px;
-  border-radius: 5px;
+  left: 1.969vw;   /* distância da lateral-esquerda */
+  top: 9.667vh;  /* distância do topo da tela */
+  width: 16.667vw;
+  height: 20vh;
+  border-radius: 0.26vw;
 }
 
 
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
