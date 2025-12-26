@@ -1183,8 +1183,8 @@ h2 {
 }
 
 .qr-code img {
-  width: 113px;
-  height: 113px;
+  width: 5.885vw;
+  height: 12.556vh;
 }
 
 .grafico {
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
