@@ -1292,7 +1292,7 @@ html, body {
 #customVideoBox2 {
   position: absolute;
   top: 58.778vh;
-  left: 37.79527559055118px;
+  left: 1.969vw;
   height: 20vh;
 }
 
@@ -1302,7 +1302,7 @@ html, body {
 }
 
 #videoCaption2 {
-  margin-top: 37.79527559055118px;
+  margin-top: 4.199vh;
   width: 16.667vw;
   font-size: 1.78vh;
   color: #000;
@@ -1312,8 +1312,8 @@ html, body {
   display: block;
   text-align: absolute;
   text-decoration: none;
-  padding: 8px;
-  border-radius: 5px;
+  padding: 0.417vw;
+  border-radius: 0.26vw;
   color: #000;
   font-family: Arial, sans-serif;
 }
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
