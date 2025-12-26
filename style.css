@@ -948,7 +948,7 @@ html, body { margin: 0; padding: 0;}
 /* Imagem de capa */
 .yt-cover {
   display: block;
-  width: 320px;
+  width: 16.667vw;
   height: auto;
   object-fit: cover;
   transition: opacity 180ms ease-in-out, visibility 180ms ease-in-out;
@@ -1892,6 +1892,7 @@ main {
     top: clamp(4px, 1vh, 8px) !important;
   }
 }
+
 
 
 
