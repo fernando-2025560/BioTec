@@ -15,31 +15,16 @@ html, body {
   
 }
 
-#link-index.html-svg{
-  position: absolute;
-  left: 3vw;
-  top: 7vh;
-  z-index: 9999;
-  cursor: pointer;
-}
-
-#link-index.html-svg svg{
-  width: 3vw;
-  height: 7vh;
-  fill: #000;
-  transition: transform 0.3s ease;
-}
-
-#link-index.html-svg svg:hover{
-  transform: scale(1.15vh);
+.imagem-ovelay {
+  display: none
 }
 
 
-#link-pagina2-svg{
+#link-pagina4-svg{
 
   position: absolute;
   
-  left: 30vw;
+  right:30vw;
   
   top:7vh;
   
@@ -49,7 +34,7 @@ html, body {
   
   }
   
-  #link-pagina2-svg svg{
+  #link-pagina4-svg svg{
   
   width:93.2vw;
   
@@ -61,19 +46,54 @@ html, body {
   
   }
   
-  #link-pagina2-svg svg:hover{
+  #link-pagina4-svg svg:hover{
   
   transform:scale(1.1);
   
   }
 
+  #voltar-pagina4-svg{
+    position: absolute;
+    left: 3vw;
+    top: 7vh;
+    z-index: 9999;
+    cursor: pointer;
+  }
 
-  .imagem-ovelay {
-    display: none
+  #voltar-pagina4-svg svg{
+    width: 3vw;
+    height: 7vh;
+    fill: #000;
+    transition: transform 0.3s ease;
+  }
+
+  #voltar-pagina4-svg svg:hover{
+    transform: scale(1.15);
   }
 
 
-.search-container {
+  /* Seleciona o link que volta para o index ou página 3 */
+#botao-voltar-pagina1-svg {
+  position: absolute;
+  left: 3vw;    /* Posicionado no canto esquerdo */
+  top: 7vh;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+#botao-voltar-pagina1-svg svg {
+  width: 3vw;
+  height: 7vh;
+  fill: #000;
+  transition: transform 0.3s ease;
+}
+
+#botao-voltar-pagina1-svg svg:hover {
+  transform: scale(1.15);
+}
+
+
+  .search-container {
     position: absolute !important;
     top: 0.092592vh !important;  /* Distância do topo */
     left: 50% !important;
@@ -198,9 +218,7 @@ body, html {
     height: 100% !important;
     display: flex !important;
     justify-content: center !important;
-    align-items: flex-start !important;
-    font-family: Arial, sans-serif !important;
-    
+    align-items: flex-start !important; 
 }
 
 /* Estilizando a barra de pesquisa */
@@ -262,12 +280,13 @@ body {
     border-color: black !important;
 }
 
+
 /* CONTAINER FIXO */
 
 #icon-genetico-cnn{
   position: absolute;
   top:2vh;
-  right: 1.1vw;
+  right:1.1vw;
   z-index:999999;
   }
   
@@ -356,8 +375,8 @@ a.glass-icon[href*="dna-sintetico-expensao-alfabeto-genetico"] .glass-svg {
   /* Dimensões fluidas com limite máximo */
   width: 100%;
   height: 100%;
-  max-width: 1.25vw;
-  max-height: 2.667vh;
+  max-width: 24px;
+  max-height: 24px;
   
   /* Mantém a proporção do ícone sem distorcer o 'path' */
   aspect-ratio: 1 / 1; 
@@ -543,7 +562,7 @@ a.glass-icon[href*="revistapesquisa.fapesp.br"] {
 
 .glass-toolbar .icon-glass-container {
   position: absolute;
-  top: clamp(29px, 17vh, 53px);
+  top: clamp(22px, 10vh, 46px);
   left: clamp(196px,265.2vw, 196px);
 
   display: flex;
@@ -968,6 +987,7 @@ a.glass-icon[href*="revistapesquisa.fapesp.br"] {
 }
 
 
+
 body {
   margin: 0;
   padding: 0;
@@ -1225,6 +1245,14 @@ body {
 
 
 
+/* Dimensões fixas */
+:root {
+  --video-width: 11.811vw;
+  --video-height: 19.024vh; /* 16:9 proporção exata para 60px largura */
+  --video-top: 0;
+  --video-left: 6.979167vw;
+  --caption-gap: 2.953vw;
+}
 
 .video-container {
   position: absolute;
@@ -1288,7 +1316,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #000;
-  /*color: #000 !important; */
+  color: #000 !important;
 }
 
 .video-container {
@@ -1508,7 +1536,7 @@ html, body { margin: 0; padding: 0; }
 /* Bloco absoluto na posição pedida */
 .yt-block {
   position: absolute;
-  top: 1.018vh;           /* 3.1 cm abaixo do topo */
+  top: 13.018vh;           /* 3.1 cm abaixo do topo */
   left: 29.528vw;           /* 15 cm da lateral esquerda */
   display: inline-block;
   line-height: 0;
@@ -1531,44 +1559,6 @@ html, body { margin: 0; padding: 0; }
   cursor: pointer;
 }
 
-/* 1. Esconde a imagem de forma agressiva */
-#ytCover {
-  display: none !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
-  position: absolute !important;
-  z-index: -9999 !important;
-}
-
-/* 2. Força o player a ficar visível e no tamanho correto */
-#ytPlayer {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  position: relative !important;
-  z-index: 1 !important;
-  
-  /* Mantém as proporções exatas para a legenda não subir */
-  width: clamp(12vw, 26vw, 42vw) !important;
-  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625) !important;
-}
-
-/* 3. Garante que o container não colapse sem a imagem */
-#ytWrap {
-  display: block !important;
-  min-height: calc(clamp(12vw, 26vw, 42vw) * 0.5625) !important;
-  position: relative !important;
-}
-
-/* 4. Garante que a legenda fique abaixo do bloco */
-#ytCaption {
-  display: block !important;
-  margin-top: 1.2vw !important;
-  position: relative !important;
-  clear: both !important;
-}
-
 /* Iframe do vídeo */
 .yt-iframe {
   position: absolute;
@@ -1577,7 +1567,7 @@ html, body { margin: 0; padding: 0; }
   height: 100%;
   border: 0;
   opacity: 0;
-  top: 1vh;
+  visibility: hidden;
   pointer-events: none;
   transition: opacity 180ms ease-in-out, visibility 180ms ease-in-out;
 }
@@ -1674,7 +1664,6 @@ html, body { margin: 0; padding: 0;}
   display: block;
   margin-top: 7.199vh;
   font: 500 1.78vh   Arial, sans-serif;
-  text-decoration: none;
   color: #000 !important;
   width: clamp(12vw, 26vw, 42vw);
   cursor: pointer;
@@ -1696,10 +1685,12 @@ html, body { margin: 0; padding: 0;}
 } 
 
 #videoCaption { 
-margin-top: 4.199vh;
+margin-top: 4.197vh;
  text-align: absolute;
  font-family: Arial, sans-serif;
  font-size: 1.78vh;
+ position: absolute;
+ text-decoration: underline;
  }
 
  .video-miniatura {

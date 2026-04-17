@@ -10,38 +10,42 @@ html, body {
   background-repeat: no-repeat !important;
 }
 
+.imagem-ovelay {
+  display: none
+}
+
+
 .icones .icon-glass-container > :nth-last-child(-n+20){
   position: relative;
   
 }
 
-#link-index.html-svg{
-  position: absolute;
-  left: 3vw;
-  top: 7vh;
-  z-index: 9999;
-  cursor: pointer;
+#botao-voltar-pagina1-svg{
+  position:absolute;
+  right:5vw;
+  top:16vh;
+  z-index:9999;
+  cursor:pointer;
 }
 
-#link-index.html-svg svg{
-  width: 3vw;
-  height: 7vh;
-  fill: #000;
-  transition: transform 0.3s ease;
+#botao-voltar-pagina1-svg svg{
+  width:5vw;
+  height:5vh;
+  fill:#000;
+  transition:transform 0.3s ease;
 }
 
-#link-index.html-svg svg:hover{
-  transform: scale(1.15vh);
+#botao-voltar-pagina1-svg svg:hover{
+  transform:scale(1.15);
 }
-
 
 #link-pagina2-svg{
 
   position: absolute;
   
-  left: 30vw;
+  left:93.2vw;
   
-  top:7vh;
+  top:16vh;
   
   z-index:9999;
   
@@ -51,9 +55,9 @@ html, body {
   
   #link-pagina2-svg svg{
   
-  width:93.2vw;
+  width:5vw;
   
-  height:16vh;
+  height:5vh;
   
   fill:#000;
   
@@ -67,11 +71,25 @@ html, body {
   
   }
 
-
-  .imagem-ovelay {
-    display: none
+  #link-pagina3-svg{
+    position: absolute;
+    top: 16vh;
+    left: 93.2vw;
+    z-index: 9999;
+    cursor: pointer;
   }
-
+  
+  #link-pagina3-svg svg{
+    width: 5vw;
+    height: 5vh;
+    display: block;
+    fill: #000000;
+    transition: transform 0.3s ease;
+  }
+  
+  #link-pagina3-svg svg:hover{
+    transform: scale(1.15);
+  }
 
 .search-container {
     position: absolute !important;
@@ -198,9 +216,7 @@ body, html {
     height: 100% !important;
     display: flex !important;
     justify-content: center !important;
-    align-items: flex-start !important;
-    font-family: Arial, sans-serif !important;
-    
+    align-items: flex-start !important; 
 }
 
 /* Estilizando a barra de pesquisa */
@@ -262,12 +278,15 @@ body {
     border-color: black !important;
 }
 
+
+
+
 /* CONTAINER FIXO */
 
 #icon-genetico-cnn{
   position: absolute;
   top:2vh;
-  right: 1.1vw;
+  right:1.1vw;
   z-index:999999;
   }
   
@@ -330,15 +349,15 @@ a.glass-icon[href*="croplifebrasil.org"] .glass-svg {
   fill: currentColor; /* Permite controlar a cor via CSS do link */
 }
 
-a.glass-icon[href*="https://www.bbc.com/portuguese/articles/cly18l44dwno"] {
+a.glass-icon[href*="https://journals-sol.sbc.org.br/index.php/comp-br/article/view/1789"] {
   position: absolute;
   top: 4vh;
-  left: 37.4vw;
+  left: 37.3vw;
   z-index: 9999;
 }
 
 /* Seletor ultra-específico para garantir isolamento total */
-a.glass-icon[href="https://www.profissaobiotec.com.br/dna-sintetico-expensao-alfabeto-genetico/"] {
+a.glass-icon[href="https://exame.com/esg/biologia-sintetica-o-futuro-manipulado/"] {
   position: absolute;
   top: 4vh;
   left: 39.6vw;
@@ -351,29 +370,36 @@ a.glass-icon[href="https://www.profissaobiotec.com.br/dna-sintetico-expensao-alf
   text-decoration: none;
 }
 
-/* Seletor mais limpo e responsivo */
-a.glass-icon[href*="dna-sintetico-expensao-alfabeto-genetico"] .glass-svg {
-  /* Dimensões fluidas com limite máximo */
-  width: 100%;
-  height: 100%;
-  max-width: 1.25vw;
-  max-height: 2.667vh;
-  
-  /* Mantém a proporção do ícone sem distorcer o 'path' */
-  aspect-ratio: 1 / 1; 
-  
-  /* Cores e Display */
-  fill: currentColor;
-  display: inline-block; /* Melhor que 'block' para ícones em links */
-  vertical-align: middle;
-  
-  /* Remove eventos de mouse do SVG para não bugar o clique no link */
-  pointer-events: none;
-  
-  /* Suaviza mudanças de cor se houver hover */
-  transition: fill 0.2s ease-in-out;
+/* Posicionamento e dimensões do container (Link) */
+a.glass-icon[href*="bioet"] {
+  all: unset; /* Reseta estilos globais do site para este link */
+  position: fixed;
+  top: 4vh;
+  left: 28.1vw;
+  width: 3vw;
+  height: 3vh;
+  z-index: 9999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Estilização do ícone interno (SVG) */
+a.glass-icon[href*="bioet"] .glass-svg {
+  width: 100%;
+  height: 100%;
+  
+  /* Mantém a proporção e cores */
+  aspect-ratio: 1 / 1;
+  fill: currentColor;
+  display: inline-block;
+  vertical-align: middle;
+  
+  /* Interação e Performance */
+  pointer-events: none;
+  transition: fill 0.2s ease-in-out;
+}
 /* Garante que o container (o link) se ajuste ao ícone */
 a.glass-icon {
   display: inline-flex;
@@ -531,9 +557,9 @@ a.glass-icon-8 {
   z-index: 9999 !important;
 }
 
-a.glass-icon[href*="revistapesquisa.fapesp.br"] {
-  position: fixed;
-  top: 0.1vw;
+a.glass-icon[href*="https://veja.abril.com.br/coluna/letra-de-medico/terapia-genica-no-sus-um-novo-capitulo-para-as-doencas-raras-no-brasil/"] {
+  position: absolute;
+  top: 0.2vh;
   right: 36.2vw;
 }
 
@@ -543,7 +569,7 @@ a.glass-icon[href*="revistapesquisa.fapesp.br"] {
 
 .glass-toolbar .icon-glass-container {
   position: absolute;
-  top: clamp(29px, 17vh, 53px);
+  top: clamp(22px, 10vh, 46px);
   left: clamp(196px,265.2vw, 196px);
 
   display: flex;
@@ -968,6 +994,7 @@ a.glass-icon[href*="revistapesquisa.fapesp.br"] {
 }
 
 
+
 body {
   margin: 0;
   padding: 0;
@@ -1225,6 +1252,14 @@ body {
 
 
 
+/* Dimensões fixas */
+/*:root {
+  --video-width: 11.811vw;
+  --video-height: 19.024vh; /* 16:9 proporção exata para 60px largura 
+  --video-top: 0;
+  --video-left: 6.979167vw;
+  --caption-gap: 2.953vw;
+} */
 
 .video-container {
   position: absolute;
@@ -1288,7 +1323,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #000;
-  /*color: #000 !important; */
+  /*color: #000 !important;*/
 }
 
 .video-container {
@@ -1508,7 +1543,7 @@ html, body { margin: 0; padding: 0; }
 /* Bloco absoluto na posição pedida */
 .yt-block {
   position: absolute;
-  top: 1.018vh;           /* 3.1 cm abaixo do topo */
+  top: 13.018vh;           /* 3.1 cm abaixo do topo */
   left: 29.528vw;           /* 15 cm da lateral esquerda */
   display: inline-block;
   line-height: 0;
@@ -1531,44 +1566,6 @@ html, body { margin: 0; padding: 0; }
   cursor: pointer;
 }
 
-/* 1. Esconde a imagem de forma agressiva */
-#ytCover {
-  display: none !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
-  position: absolute !important;
-  z-index: -9999 !important;
-}
-
-/* 2. Força o player a ficar visível e no tamanho correto */
-#ytPlayer {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  position: relative !important;
-  z-index: 1 !important;
-  
-  /* Mantém as proporções exatas para a legenda não subir */
-  width: clamp(12vw, 26vw, 42vw) !important;
-  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625) !important;
-}
-
-/* 3. Garante que o container não colapse sem a imagem */
-#ytWrap {
-  display: block !important;
-  min-height: calc(clamp(12vw, 26vw, 42vw) * 0.5625) !important;
-  position: relative !important;
-}
-
-/* 4. Garante que a legenda fique abaixo do bloco */
-#ytCaption {
-  display: block !important;
-  margin-top: 1.2vw !important;
-  position: relative !important;
-  clear: both !important;
-}
-
 /* Iframe do vídeo */
 .yt-iframe {
   position: absolute;
@@ -1577,7 +1574,7 @@ html, body { margin: 0; padding: 0; }
   height: 100%;
   border: 0;
   opacity: 0;
-  top: 1vh;
+  visibility: hidden;
   pointer-events: none;
   transition: opacity 180ms ease-in-out, visibility 180ms ease-in-out;
 }
@@ -1828,11 +1825,11 @@ margin-top: 4.199vh;
 
 
 
-* {
+/* {
   overflow: visible !important;
 }
 
-
+*/
 .conteudo {
   width: 95%;
   max-width: 62.5vw;

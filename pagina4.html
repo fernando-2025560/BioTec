@@ -16,29 +16,68 @@
     <title>Ciência</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
-    <link rel="preload" as="image" href="1.jpg">
+    <link rel="stylesheet" href="style4.css">
     <link rel="preconnect" href="https://www.youtube.com">
     <link rel="preconnect" href="https://www.google.com">
     <link rel="preconnect" href="https://i.ytimg.com">
     <link rel="dns-prefetch" href="https://www.youtube.com">
-    <link rel="dns-prefetch" href="i.ytimg.com">
-    <link rel="preload" as="document" href="https://www.youtube.com/embed/">
+    <link rel="preload" as="image" href="1.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Plyr CSS -->
 <!-- link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css"-->
 
-<!-- LINK SVG - PAGINA 3 → PAGINA 2 -->
-<a id="link-pagina2-svg" href="pagina2.html" aria-label="Ir para página 2">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Plyr CSS -->
+<!-- link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css"-->
 
-  <svg viewBox="0 0 24 24">
-  <path d="M6 2h12a2 2 0 0 1 2 2v16a1 1 0 0 1-1.45.9L12 18.1l-6.55 2.8A1 1 0 0 1 4 20V4a2 2 0 0 1 2-2z"/>
-  </svg>
-  
+
+<div class="navegacao-fixa">
+    
+  <a href="pagina3.html" id="link-voltar" aria-label="Voltar para página 3" class="botao-nav voltar">
+      <svg viewBox="0 0 24 24">
+          <path d="M6 2h12a2 2 0 0 1 2 2v16a1 1 0 0 1-1.45.9L12 18.1l-6.55 2.8A1 1 0 0 1 4 20V4a2 2 0 0 1 2-2z"/>
+      </svg>
   </a>
 
-  
+  <a href="pagina5.html" id="link-proximo" aria-label="Ir para página 5" class="botao-nav">
+      <svg viewBox="0 0 24 24">
+          <path d="M6 2h12a2 2 0 0 1 2 2v16a1 1 0 0 1-1.45.9L12 18.1l-6.55 2.8A1 1 0 0 1 4 20V4a2 2 0 0 1 2-2z"/>
+      </svg>
+  </a>
+</div>
+
+<style>
+  .navegacao-fixa {
+      position: absolute;
+      right: 3vw;          /* 3vw da lateral direita */
+      top: 13vh;           /* Ajustado para 13vh do topo */
+      display: flex;       /* Alinha os botões lado a lado */
+      gap: 1vw;            /* Espaçamento horizontal entre eles */
+      z-index: 9999;
+  }
+
+  .botao-nav {
+      width: 5vw;          /* Largura solicitada */
+      height: 5vh;         /* Altura solicitada */
+      display: inline-block;
+      color: inherit;      /* Assume a cor do texto pai ou você pode definir uma cor fixa */
+  }
+
+  .botao-nav svg {
+      width: 100%;
+      height: 100%;
+      fill: currentColor;  /* Preenche o ícone com a cor do link */
+  }
+
+  /* Inverte o ícone de voltar horizontalmente */
+  .voltar {
+      transform: scaleX(-1);
+  }
+</style>
     <style>
 
 
@@ -93,6 +132,7 @@
     
 
 
+
     
     <style>
       h1 {
@@ -131,18 +171,10 @@
 
 </style>
 
-<body>
 
 
-<a href="pagina2.html" id="link-pagina2-svg">
 
-  <svg viewBox="0 0 24 24">
-  <path d="M6 2h12a2 2 0 0 1 2 2v16a1 1 0 0 1-1.45.9L12 18.1l-6.55 2.8A1 1 0 0 1 4 20V4a2 2 0 0 1 2-2z"/>
-  </svg>
-  
-  </a>
 
-</body>
 
 <img src="3.jpg" alt="Logo" id="logo" style="position: absolute; top:0 ; left: 0; width: 7.99vw; height: 9.15vh;">
          <header>  
@@ -210,7 +242,7 @@
 
           <div class="icon-glass-container">
             
-             <!-- 1 -->        <!-- Feito -->
+            <!-- 1 -->        <!-- Feito -->
 
             <!-- ÍCONE GENÉTICA ISOLADO -->
 <div id="icon-genetico-cnn">
@@ -229,24 +261,23 @@
   </div>
             <!-- 2 -->
             
-            <a href="https://www.abc.org.br/2020/12/20/crispr-e-edicao-de-genomas/"
+            <a href="https://g1.globo.com/ciencia-e-saude/noticia/2018/11/27/entenda-o-crispr-a-tecnica-de-edicao-de-dna-que-pode-ter-criado-bebes-resistentes-ao-hiv.ghtml"
             target="_blank"
             class="glass-icon"
             title="CRISPR"
             style="position: absolute; top: 4.2vh; left: 30.5vw">
 
-            <svg class="glass-svg" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
-              <path d="M256 0L0 128l256 128 256-128L256 0zm0 224L42.7 128 256 32l2 0 3.3 96L256 224zM64 192v192h96V192H64zm288 0v192h96V192h-96zm-160 32h64v160h-64V224z"/>
+            <svg class="glass-svg" viewBox="0 0 512 512">
+              <path d="M256 0L0 128l256 128 256-128L256 0zm0 224L42.7 128 256 32l213.3 96L256 224zM64 192v192h96V192H64zm288 0v192h96V192h-96zm-160 32h64v160h-64V224z"/>
             </svg>
-                </a>
+                          </a>
       
          
           <!-- 3 -->        <!-- Feito -->
-          <a href="https://www.seegenebrazil.com.br/" target="_blank"
-      class="glass-icon" title="SeeGene">
-      <svg class="glass-svg" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
-        <path d="M256 0L0 128l256 128 256-128L256 0zm0 224L42.7 128 256 32l2 3.3 0 96L256 224zM64 192v192h96V192H64zm288 0v192h96V192h-96zm-160 32h64v160h-64V224z"/>
-      </svg>
+          <a href="https://www.seegenebrazil.com.br/" target="_blank" class="glass-icon" title="SeeGene">
+            <svg class="glass-svg" viewBox="0 0 512 512">
+              <path d="M256 0L0 128l256 128 256-128L256 0zm0 224L42.7 128 256 32l213.3 96L256 224zM64 192v192h96V192H64zm288 0v192h96V192h-96zm-160 32h64v160h-64V224z"/>
+            </svg>
           </a>
 
       <!-- 4 -->      <!-- Feito -->
@@ -306,15 +337,11 @@
       <!-- 10 -->               <!-- Feito -->
 
       <a href="https://revistapesquisa.fapesp.br/terapia-celular-no-radar/" target="_blank" class="glass-icon" title="TerapiaCelular">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1.25vw" height="2.667vh">
-          <path d="M256 0 L0 128 L256 256 L512 128 L256 0 Z 
-M256 224 L42.7 128 L256 32 L469.3 128 L256 224 Z 
-M64 192 V384 H160 V192 H64 Z 
-M352 192 V384 H448 V192 H352 Z 
-M192 224 H256 V384 H192 V224 Z"/>
+        <svg class="glass-svg" viewBox="0 0 512 512">
+          <path d="M466.5 83.7c-23.4-23.4-54.8-35.7-90.5-35.7-63.6 0-128 53.5-192 160C120 101.5 55.6 48 27.3 48 20.3 48 0 68.3 0 93.3c0 22.1 12.6 38.2 32.4 48.1 27.3 13.3 58.2 32.6 96.4 72.1-38.2 39.5-69.1 58.8-96.4 72.1-19.8 9.9-32.4 26-32.4 48.1 0 25 20.3 45.3 45.3 45.3 63.6 0 128-53.5 192-160 64 106.5 128.4 160 192 160 34.7 0 67.1-12.3 90.5-35.7 20.2-20.3 30.5-47.3 30.5-76.7s-10.3-56.4-30.5-76.7z"/>
         </svg>
       </a>
+
 
        <!-- 11 --> <!-- Feito -->
 
@@ -326,9 +353,13 @@ M192 224 H256 V384 H192 V224 Z"/>
     class="icon-glass-container glass-icon"
     title="BioMatik">
     
-    <svg class="glass-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-      <path fill="currentColor" d="M256 0L0 128l256 128 256-128L256 0zm0 224L42.7 128 v192h96V192H64zm288 0v192h96V192h-96zm-160 32h64v160h-64V224z"/>
+    <svg class="glass-svg" viewBox="0 0 512 512">
+      <path d="M256 0L0 128l256 128 256-128L256 0zm0 224L42.7 128 256 32l213.3 96L256 224zM64 192v192h96V192H64zm288 0v192h96V192h-96zm-160 32h64v160h-64V224z"/>
     </svg>
+    
+    
+    
+    
   </a>
 </div>
 
@@ -341,7 +372,7 @@ title="CNPEM"
 style="position: relative; right: 41.1vw; top: 0.5vh;">
 
 <svg class="glass-svg" viewBox="0 0 512 512">
-  <path d="M256 0L0 128l256 128 256-128L256 0zm0 224L42.7 128 256 32l2 0 3.3 96L256 224zM64 192v192h96V192H64zm288 0v192h96V192h-96zm-160 32h64v160h-64V224z"/>
+  <path d="M256 0L0 128l256 128 256-128L256 0zm0 224L42.7 128 256 32l213.3 96L256 224zM64 192v192h96V192H64zm288 0v192h96V192h-96zm-160 32h64v160h-64V224z"/>
 </svg>
 
 </a>
@@ -352,8 +383,8 @@ style="position: relative; right: 41.1vw; top: 0.5vh;">
       class="glass-icon"
       title="TraumaGenético"
       style="position: relative; right: 45.3vw; top: 0.5vh;">
-      <svg class="glass-svg" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
-        <path d="M256 0L0 128l256 128 256-128L256 0zm0 224L42.7 128 v192h96V192H64zm288 0v192h96V192h-96zm-160 32h64v160h-64V224z"/>
+      <svg class="glass-svg" viewBox="0 0 512 512">
+        <path d="M256 0L0 128l256 128 256-128L256 0zm0 224L42.7 128 256 32l213.3 96L256 224zM64 192v192h96V192H64zm288 0v192h96V192h-96zm-160 32h64v160h-64V224z"/>
       </svg>
       </a>
 
@@ -419,12 +450,11 @@ style="position: relative; display: inline-flex; align-items: center; justify-co
 
   <!-- 20. Pronto -->
 
-  <a href="https://futurodasaude.com.br/terapia-genica/" target="_blank" class="glass-icon" title="Terapia Gênica">
-    <svg class="glass-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-      <path d="M466.5 83.7c-23.4-23.4-54.8-35.7-90.5-35.7-63.6 0-128 53.5-192 160C120 101.5 55.6 48 0 48c20.3 0 0 20.3 0 45.3 0 22.1 12.6 38.2 32.4 48.1 27.3 13.3 58.2 32.6 96.4 72.1-38.2 39.5-69.1 58.8-96.4 72.1-19.8 9.9-32.4 26-32.4 48.1 0 25 20.3 45.3 45.3 45.3 63.6 0 128-53.5 192-160 64 106.5 128.4 160 192 160 34.7 0 67.1-12.3 90.5-35.7 20.2-20.3 30.5-47.3 30.5-76.7s-10.3-56.4-30.5-76.7z"/>
+  <a href="https://futurodasaude.com.br/terapia-genica/" target="_blank" class="glass-icon" title="TerapiaGênica">
+    <svg class="glass-svg" viewBox="0 0 512 512">
+      <path d="M466.5 83.7c-23.4-23.4-54.8-35.7-90.5-35.7-63.6 0-128 53.5-192 160C120 101.5 55.6 48 12 48 20.3 48 0 68.3 0 93.3c0 22.1 12.6 38.2 32.4 48.1 27.3 13.3 58.2 32.6 96.4 72.1-38.2 39.5-69.1 58.8-96.4 72.1C12.6 296.6 0 312.7 0 334.8c0 25 20.3 45.3 45.3 45.3 63.6 0 128-53.5 192-160 64 106.5 128.4 160 192 160 34.7 0 67.1-12.3 90.5-35.7 20.2-20.3 30.5-47.3 30.5-76.7s-10.3-56.4-30.5-76.7z"/>
     </svg>
   </a>
-
 
 
   <!-- 21 -->            <!-- Feito -->
@@ -437,11 +467,12 @@ style="position: relative; display: inline-flex; align-items: center; justify-co
 
     <!-- 22 -->        <!-- Feito -->
 
-    <a href="https://www.cnnbrasil.com.br/saude/como-a-medicina-regenerativa-pode-mudar-as-perspectivas-de-envelhecimento/" target="_blank" class="glass-icon" title="Medicina Regenerativa" style="display: inline-block; text-decoration: none;">
-      <svg class="glass-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" style="pointer-events: none; display: block; width: 100%; height: auto;">
-        <path fill="currentColor" d="M466.5 83.7c-23.4-23.4-54.8-35.7-90.5-35.7-63.6 0-128 53.5-192 160C120 101.5 55.6 48 0 48c20.3 0 0 20.3 0 45.3 0 22.1 12.6 38.2 32.4 48.1 27.3 13.3 58.2 32.6 96.4 72.1-38.2 39.5-69.1 58.8-96.4 72.1-19.8 9.9-32.4 26-32.4 48.1 0 25 20.3 45.3 45.3 45.3 63.6 0 128-53.5 192-160 64 106.5 128.4 160 192 160 34.7 0 67.1-12.3 90.5-35.7 20.2-20.3 30.5-47.3 30.5-76.7s-10.3-56.4-30.5-76.7z"/>
+    <a href="https://www.cnnbrasil.com.br/saude/como-a-medicina-regenerativa-pode-mudar-as-perspectivas-de-envelhecimento/" target="_blank" class="glass-icon" title="Medicina Regenerativa">
+      <svg class="glass-svg" viewBox="0 0 512 512">
+        <path d="M466.5 83.7C443.1 60.3 411.7 48 376 48c-63.6 0-128 53.5-192 160C120 101.5 55.6 48 12 48 20.3 48 0 68.3 0 93.3c0 22.1 12.6 38.2 32.4 48.1 27.3 13.3 58.2 32.6 96.4 72.1-38.2 39.5-69.1 58.8-96.4 72.1-19.8 9.9-32.4 26-32.4 48.1 0 25 20.3 45.3 45.3 45.3 63.6 0 128-53.5 192-160 64 106.5 128.4 160 192 160 34.7 0 67.1-12.3 90.5-35.7 20.2-20.3 30.5-47.3 30.5-76.7s-10.3-56.4-30.5-76.7z"/>
       </svg>
     </a>
+
 
     <!-- 23 -->                <!-- Feito -->
     <a href="https://aegro.com.br/blog/genetica-na-agricultura/#:~:text=Essa%20tecnologia%20tamb%C3%A9m%20simplifica%20o,%C3%A0%20aplica%C3%A7%C3%A3o%20do%20herbicida%20glifosato." target="_blank" class="glass-icon" title="DNA&amp;Agro">
@@ -454,19 +485,12 @@ style="position: relative; display: inline-flex; align-items: center; justify-co
 
       <!-- 24 -->               <!-- Feito -->
 
-      <a href="https://lifegenomics.com.br/o-que-parece-ficcao-cientifica-hoje-e-realidade/" 
-   target="_blank" 
-   class="glass-icon" 
-   title="Genoma" 
-   style="display: inline-block; text-decoration: none; border: none; padding: 0; margin: 0; line-height: 0; vertical-align: middle;">
-  <svg class="glass-svg" 
-       viewBox="0 0 512 512" 
-       xmlns="http://www.w3.org/2000/svg" 
-       aria-hidden="true" 
-       style="width: 1em; height: 1em; display: inline-block; fill: currentColor; pointer-events: none; overflow: hidden; vertical-align: middle;">
-    <path d="M466.5 83.7c-23.4-23.4-54.8-35.7-90.5-35.7-63.6 0-128 53.5-192 160C120 101.5 55.6 48 0 48c20.3 0 0 20.3 0 45.3 0 22.1 12.6 38.2 32.4 48.1 27.3 13.3 58.2 32.6 96.4 72.1-38.2 39.5-69.1 58.8-96.4 72.1-19.8 9.9-32.4 26-32.4 48.1 0 25 20.3 45.3 45.3 45.3 63.6 0 128-53.5 192-160 64 106.5 128.4 160 192 160 34.7 0 67.1-12.3 90.5-35.7 20.2-20.3 30.5-47.3 30.5-76.7s-10.3-56.4-30.5-76.7z"/>
-  </svg>
-</a>
+      <a href="https://lifegenomics.com.br/o-que-parece-ficcao-cientifica-hoje-e-realidade/" target="_blank" class="glass-icon" title="Genoma">
+        <svg class="glass-svg" viewBox="0 0 512 512">
+          <path d="M466.5 83.7c-23.4-23.4-54.8-35.7-90.5-35.7-63.6 0-128 53.5-192 160C120 101.5 55.6 48 12 48 20.3 48 0 68.3 0 93.3c0 22.1 12.6 38.2 32.4 48.1 27.3 13.3 58.2 32.6 96.4 72.1-38.2 39.5-69.1 58.8-96.4 72.1-19.8 9.9-32.4 26-32.4 48.1 0 25 20.3 45.3 45.3 45.3 63.6 0 128-53.5 192-160 64 106.5 128.4 160 192 160 34.7 0 67.1-12.3 90.5-35.7 20.2-20.3 30.5-47.3 30.5-76.7s-10.3-56.4-30.5-76.7z"/>
+        </svg>
+      </a>
+
 
           </div>
           </div>
@@ -596,9 +620,10 @@ viewBox="0 0 24 24">
         src="https://www.cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
         <body>
           <div id="qrcode-container">
+            
             <h2></h2>
               <div id="qrcode"></div>
-          <a class="link" href="https://www.genome.gov/human-genome-project" target="_blank"></a>
+          <a class="link" href="https://futurodasaude.com.br/genoma/" target="_blank"></a>
           </div>
 
 
@@ -622,7 +647,7 @@ viewBox="0 0 24 24">
 
           <div id="qrcode-container-5">
             <div id="qrcode-5"></div>
-            <a class="link" href="https://noticias.portaldaindustria.com.br/noticias/inovacao-e-tecnologia/viu-isso-dna-sintetico-podera-armazenar-dados-digitais/" target="_blank"></a>
+            <a class="link" href="https://www.ebsco.com/research-starters/science/dna-and-rna-synthesis" target="_blank"></a>
           </div>
           <div id="qr-container"></div>
 
@@ -630,7 +655,7 @@ viewBox="0 0 24 24">
           
           
 
-          
+       
           <!-- Container do vídeo -->
 <div class="video-container" id="videoBox">
   
@@ -640,19 +665,14 @@ viewBox="0 0 24 24">
 
 <iframe 
   id="youtubeVideo"
-  style="width: clamp(12vw, 26vw, 42vw); height: calc(clamp(12vw, 26vw, 42vw) * 0.5625); border: none; display: block;"
-  src="https://www.youtube.com/embed/C5x073iElaA?controls=1&rel=0&modestbranding=1&enablejsapi=1&fs=0"
-  fetchpriority="high" 
-  loading="eager"
-  title="YouTube video player"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  referrerpolicy="strict-origin-when-cross-origin">
+  style="width: clamp(12vw, 26vw, 42vw); height: calc(clamp(12vw, 26vw, 42vw) * 0.5625); border: none;"
+  src="https://www.youtube.com/embed/rjGo3NndwBM?rel=0&showinfo=1"
+  loading="lazy" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" >
 </iframe>
 
 <div class="caption-link link-legenda" style="cursor: pointer;" onclick="window.open('https://www.ciencianews.com.br/', '_blank')">
-  <a href="https://www.ciencianews.com.br/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; pointer-events: none;">
-    Descubra as inovações que estão transformando o Mundo. Explore o universo da ciência e tecnologia!
-  </a>
+  <a>Cientistas criam a forma de vida mais Sintética da História</a>
 </div>
 <body>
 
@@ -671,18 +691,16 @@ viewBox="0 0 24 24">
         height: calc(clamp(12vw, 26vw, 42vw) * 0.5625); 
       id="ytPlayer"
         class="yt-iframe"
-        controls;
         title="YouTube player"
-        frameborder="0"
-        src="https://www.youtube.com/embed/EIGWzwAmH7E?&enablejsapi=1&rel=0&modestbranding=1&playsinline=1"
-        fetchpriority="high"
-        loading="eager">
+        src="https://www.youtube.com/embed/uLrAl9hiroQ?&enablejsapi=1&rel=0&modestbranding=1&playsinline=1"
+        loading="lazy"
+        frameborder="0">
       </iframe>
     </div>
 
     <!-- Legenda/Link -->
-    <a class="yt-caption" id="ytCaption" href="https://www.bbc.com/portuguese/articles/c4g9gp05m14o" target="_blank" rel="noopener">
-      Cientistas criam organismo com DNA mínimo - um novo passo para a engenharia genética!
+    <a class="yt-caption" id="ytCaption" href="https://www.cnnbrasil.com.br/tecnologia/dna-lixo-pode-ter-papel-fundamental-no-desenvolvimento-humano-diz-estudo/" target="_blank" rel="noopener">
+      "DNA Lixo" que controla nossos genes, será ?
     </a>
   </div>
 
@@ -728,25 +746,21 @@ viewBox="0 0 24 24">
   <iframe 
     id="customYT" 
     style="width: clamp(12vw, 26vw, 42vw); height: calc(clamp(12vw, 26vw, 42vw) * 0.5625); border: none;"
-    src="https://www.youtube.com/embed/yh-RrGHL5c8?list=PLsRNoUx8w3rOwHx4kVJL5ksS9vTxj5hXn&index=80&rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3" 
-    fetchpriority="high"
-    loading="eager"
-    allow="autoplay; encrypted-media">
+    src="https://www.youtube.com/embed/dk_qRYS6fnU?list=PLsRNoUx8w3rOwHx4kVJL5ksS9vTxj5hXn&index=80&rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3" 
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;">
   </iframe>
   <div id="videoCaption">
-    <a href="https://timesbrasil.com.br/colunas/brazil-health/o-futuro-da-medicina-ja-comecou-a-revolucao-quantica-na-saude/" target="_blank">A resposta que você procura pode estar neste episódio</a>
+    <a href="https://www.newscientist.com/article/2504563-mosquito-proboscis-repurposed-as-a-fine-nozzle-for-3d-printing/" target="_blank">Probóscide de mosquito reaproveitada como bico fino para impressão 3D.</a>
   </div>
 </div>
-
 <div id="customVideoBox2" style="display: block; width: clamp(12vw, 26vw, 42vw); margin: 0 auto; clear: both;">
   <iframe 
     id="customYT2" 
     style="width: 100%; height: calc(clamp(12vw, 26vw, 42vw) * 0.5625); border: none; display: block;"
-    src="https://www.youtube.com/embed/DaEq3iBxQB8?controls=1&rel=0&modestbranding=1&enablejsapi=1&fs=0" 
-    fetchpriority="high"
-    loading="eager"
-    title="YouTube video player"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    src="https://www.youtube.com/embed/DaEq3iBxQB8?controls=1&rel=0" 
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;">
   </iframe>
   
   <div id="videoCaption2" style="text-align: center; margin-top: 0.5vh; width: 100%;">
@@ -754,28 +768,27 @@ viewBox="0 0 24 24">
        target="_blank" 
        rel="noopener noreferrer" 
        style="text-decoration: underline; color: #000000; font-size: clamp(0.7rem, 0.9vw, 0.9rem); display: block; width: 100%; word-wrap: break-word;">
-       "A Ciência Revela: A Resposta Estava Aqui o Tempo Todo!"
+      "A Ciência Revela: A Resposta Estava Aqui o Tempo Todo!"
     </a>
   </div>
 </div>
 
-</div></div><div class="video-miniatura">
+<div class="video-miniatura" style="width: clamp(12vw, 26vw, 42vw); margin: 0 auto;">
   <iframe 
-  width: clamp(12vw, 26vw, 42vw);
-  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);  
-  src="https://www.youtube.com/embed/QWAhS5AAJbU?rel=0&modestbranding=1&controls=1&fs=0" 
-  fetchpriority="high"
-  loading="eager"
-  title="YouTube video player"
-  allow="accelerometer; autoplay;  clipboard-write; encrypted-media; gyroscope; picture-in-picture;">
+    style="width: 100%; height: calc(clamp(12vw, 26vw, 42vw) * 0.5625); border: none; display: block;"
+    src="https://www.youtube.com/embed/QO67RIM-BEE?controls=1&rel=0"
+    loading="lazy" 
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;">
   </iframe>
-  <div class="video-legenda">
-    <a href="https://www.nucleodoconhecimento.com.br/livros/biotecnologia-um-enfoque/inovacao-medica" target="_blank">“Biotecnologia Vermelha: quando a próxima revolução médica já está nas páginas!”
+  <div class="video-legenda" style="margin-top: 0.5vh;">
+    <a href="https://www.cnnbrasil.com.br/nacional/brasil/peixes-geneticamente-modificados-ibama-apreende-mais-de-58-mil-animais/" 
+       target="_blank" 
+       rel="noopener">
+       “Animais geneticamente modificados pela humanidade.”
     </a>
   </div>
 </div>
-
-
   <div id="video-area"></div>
 
  
@@ -786,17 +799,16 @@ viewBox="0 0 24 24">
  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);  
   id="customYtVideo"
     class="custom-yt-iframe"
-    src="https://www.youtube.com/embed/FeXNB1x1Ixw?rel=0&modestbranding=1&controls=1&fs=0"
-    fetchpriority="high"
-    loading="eager"
+    src="https://www.youtube.com/embed/lyw_UOddaFo?rel=0&modestbranding=1&controls=1&fs=0"
+    loading="lazy"
     title="YouTube video player"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
   </iframe>
 
   <div class="custom-video-caption">
-    <a href="https://www.greenrock.vc/blog/genomica-futuro-da-medicina-avancos-mercado-saude-global" target="_blank">
-      "Genômica: O Mapa Secreto do DNA que está reinventando diagnósticos"
+    <a href="https://medicinasa.com.br/medicina-do-amanha-pedro/" target="_blank">
+      "Medicina do Amanhã: A inteligência artificial está influenciando vários setores, inclusive, a medicina."
     </a>
   </div>
 </div>
@@ -809,14 +821,13 @@ viewBox="0 0 24 24">
     <iframe id="customYT2" 
     width: clamp(12vw, 26vw, 42vw);
         height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);  
-    src="https://www.youtube.com/embed/htEHwDuHoYU/&rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3"
-    fetchpriority="high" 
-    loading="eager"
+    src="https://www.youtube.com/embed/QO67RIM-BEE/&rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3"
+    loading="lazy" 
       frameborder="0" 
       allow="autoplay; encrypted-media">
     </iframe>
     <div id="videoCaption3">
-      <a href="https://www.sustentec.com.br/biotecnologia/" target="_blank">"Biotecnologia do Futuro: A Revolução que Sempre Esteve Escondida Dentro de Nós!" </a>
+      <a href="https://nautica.com.br/modificacoes-geneticas-animais-transgenicos/" target="_blank">"Animais geneticamente modificados pela humanidade" </a>
     </div>
   </div>
    
@@ -825,9 +836,8 @@ viewBox="0 0 24 24">
     <iframe id="customYT2" 
     width: clamp(12vw, 26vw, 42vw);
         height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);    
-    src="https://www.youtube.com/embed/AKzq0vpdmRk/&rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3" 
-    fetchpriority="high"
-    loading="eager"
+    src="https://www.youtube.com/embed/AKzq0vpdmRk/&rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3"
+    loading="lazy" 
         frameborder="0" 
         allow="autoplay; encrypted-media; picture-in-picture">
     </iframe>
@@ -840,41 +850,41 @@ viewBox="0 0 24 24">
   <iframe 
   width: clamp(12vw, 26vw, 42vw);
   height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);  
-  src="https://www.youtube.com/embed/I707uBgrD94?rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3"
-  fetchpriority="high"
-  loading="eager"
+  src="https://www.youtube.com/embed/lmpt_Ft0ZVs?rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3"
+  loading="lazy"
     title="Vídeo YouTube"
     frameborder="0"
     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
   </iframe>
   <div id="videoCaption5">
-  <a href="https://www.infomoney.com.br/saude/cientistas-iniciam-criacao-de-dna-humano-do-zero-especialistas-veem-riscos/" target="_blank">Um ousado projeto no Reino Unido dá os primeiros passos a fim de construir as bases da vida humana desde o início.</a>
+  <a href="https://ses.sp.bvs.br/pesquisadores-criam-dna-sintetico-que-sera-capaz-de-armazenar-dados-digitais/" target="_blank">Pesquisadores criam DNA sintético que será capaz de armazenar dados digitais.</a>
 </div>
 </div>
 
 <div class="video-container">
+  <!-- Vídeo Shorts incorporado -->
   <iframe id="ytVideo"
-    style="width: clamp(12vw, 26vw, 42vw); height: calc(clamp(12vw, 26vw, 42vw) * 0.5625); border: none; display: block;"
-    src="https://www.youtube.com/embed/elY_FPWcGwY?rel=0&modestbranding=1&fs=0&controls=1&enablejsapi=1"
-    fetchpriority="high"
-    loading="eager"
+  width: clamp(12vw, 26vw, 42vw);
+  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
+    src="https://www.youtube.com/embed/jk5jfbXAjM4?rel=0&modestbranding=1&fs=0&controls=1"
+    loading="lazy"
     title="YouTube Shorts"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    referrerpolicy="strict-origin-when-cross-origin">
+    frameborder="0"
+    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
   </iframe>
 
-  <a href="https://profissaobiotec.com.br/super-humanos-seria-possivel/" target="_blank" rel="noopener" class="video-caption" style="display: block;">
-      "Tecnologia Avança: Super Humanos - O Futuro da Medicina em ação!"
+  <a href="https://profissaobiotec.com.br/super-humanos-seria-possivel/"   target="_blank" class="video-caption">
+     "Biotecnologia pretende revolucionar a saúde, agricultura e Muito mais no Futuro Próximo!"
   </a>
 </div>
+
 <div id="customVideoBox8">
   
   <iframe
   width: clamp(12vw, 26vw, 42vw);
   height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
     src="https://www.youtube.com/embed/mR9CZXdTaNY?rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3"
-    fetchpriority="high"
-    loading="eager"
+    loading="lazy"
     title="YouTube Shorts"
     frameborder="0"
     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
@@ -891,145 +901,106 @@ viewBox="0 0 24 24">
 </div>
 
 <div id="customVideoBox9">
-  
   <iframe
-  width: clamp(12vw, 26vw, 42vw);
-  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
-    src="https://www.youtube.com/embed/AiqxEru6sdY?rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3"
-    fetchpriority="high"
-    loading="eager"
+    style="width: clamp(12vw, 26vw, 42vw); height: calc(clamp(12vw, 26vw, 42vw) * 0.5625); border: none;"
+    src="https://www.youtube.com/embed/JdEBOolrkKE"
+    loading="lazy"
     title="YouTube Shorts"
-    frameborder="0"
-    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
   </iframe>
 </div>
 
-<!-- Legenda-link -->
 <div id="videoCaption9">
-  <a href="https://intertox.com.br/a-biotecnologia-como-instrumento-de-diagnostico-tratamento-e-prevencao-de-doencas-frente-a-pandemia-do-covid-19/" 
+  <a href="https://www.nationalgeographic.pt/ciencia/os-perigos-alterar-o-codigo-da-vida_1193#:~:text=Os%20perigos%20de%20alterar%20o%20c%C3%B3digo%20da%20vida" 
      target="_blank">
-     "Entenda como a Biotecnologia ajuda a desenvolver novos tratamentos para doenças."
+     "Editar o código da vida, Prós&Contras"
   </a>
-</div>
 </div>
 
 <div id="customVideoBox10">
-  
   <iframe
-  width: clamp(12vw, 26vw, 42vw);
-  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
-    src="https://www.youtube.com/embed/2YV-dT52LQg?controls=1&rel=0&modestbranding=1&enablejsapi=1&fs=0"
-    fetchpriority="high"
-    loading="eager"
+    style="width: clamp(12vw, 26vw, 42vw); height: calc(clamp(12vw, 26vw, 42vw) * 0.5625); border: none;"
+    src="https://www.youtube.com/embed/2YV-dT52LQg?controls=1&rel=0&showinfo=1&iv_load_policy=1"
+    loading="lazy"
     title="YouTube Shorts"
-    frameborder="0"
-    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;">
   </iframe>
 </div>
 
-<!-- Legenda-link -->
 <div id="videoCaption10">
   <a href="https://www.unicep.edu.br/post/revolu%C3%A7%C3%A3o-gen%C3%A9tica-descubra-o-futuro-da-medicina-personalizada" 
      target="_blank">
      "Descubra como a Engenharia Genética abre caminhos para a Medicina do Futuro."
   </a>
 </div>
-</div>
 
 <div id="customVideoBox11">
-  
   <iframe
-  width: clamp(12vw, 26vw, 42vw);
-  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
-    src="https://www.youtube.com/embed/yM3G7397XZ4?controls=1&rel=0&modestbranding=1&enablejsapi=1&fs=0"
-    fetchpriority="high"
-    loading="eager"
+    style="width: clamp(12vw, 26vw, 42vw); height: calc(clamp(12vw, 26vw, 42vw) * 0.5625); border: none;"
+    src="https://www.youtube.com/embed/y4TgFyW2kXbM?controls=1&rel=0"
+    loading="lazy"
     title="YouTube Shorts"
-    frameborder="0"
-    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;">
   </iframe>
 </div>
 
-<!-- Legenda-link -->
 <div id="videoCaption11">
-  <a href="https://institutogene.org.br/index.php/2025/09/26/instituto-gene-divulga-selecionados-para-a-pre-incubadora-2025/" target="_blank">
-     "Seegene - soluções Inovadoras de diagnóstico molecular."
+  <a href="https://revistapesquisa.fapesp.br/a-tesoura-dos-genes/" target="_blank">
+     "Tesoura Molecular e Edição de Genes."
   </a>
-</div>
 </div>
 
 <div id="customVideoBox12">
-  
   <iframe
-  width: clamp(12vw, 26vw, 42vw);
-  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
-    src="https://www.youtube.com/embed/2muq7tHNGvI?controls=1&rel=0&modestbranding=1&enablejsapi=1&fs=0"
-    fetchpriority="high"
-    loading="eager"
+    style="width: clamp(12vw, 26vw, 42vw); height: calc(clamp(12vw, 26vw, 42vw) * 0.5625); border: none;"
+    src="https://www.youtube.com/embed/9SO92TzJFRo?controls=1&rel=0"
+    loading="lazy"
     title="YouTube Shorts"
-    frameborder="0"
-    allow="accelerometer; clipboard-write;  encrypted-media; gyroscope; picture-in-picture">
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"">
   </iframe>
 </div>
 
-<!-- Legenda-link -->
 <div id="videoCaption12">
-  <a href="https://www.cienciaesaudecoletiva.com.br/artigos/manipulacao-do-genoma-humano-etica-e-direito/1547?id=1547" target="_blank">
-     Quando editar o código da vida exige mais consciência do que técnica, um convite à reflexão profunda sobre os limites éticos da manipulação do genoma humano.
+  <a href="https://bjihs.emnuvens.com.br/bjihs/article/view/353" target="_blank">
+    Genoma Humano: 20 anos do Sequenciamento que Revolucionou a Ciência.
   </a>
-</div>
 </div>
 
 <div id="customVideoBox13">
-  
   <iframe
-  width: clamp(12vw, 26vw, 42vw);
-  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
-    src="https://www.youtube.com/embed/q7BOf3EV2Bc?controls=1&rel=0&modestbranding=1&enablejsapi=1&fs=0"
-    fetchpriority="high"
-    loading="eager"
-    frameborder="0"
-    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    style="width: clamp(12vw, 26vw, 42vw); height: calc(clamp(12vw, 26vw, 42vw) * 0.5625); border: none;"
+    src="https://www.youtube.com/embed/NoSKvFeuH7o?controls=1&rel=0"
+    loading="lazy"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;">
   </iframe>
 </div>
 
-<!-- Legenda-link -->
 <div id="videoCaption13">
-  <a href="https://fiocruz.br/rede-genomica-fiocruz" target="_blank">
-    A Rede Genômica Fiocruz é uma iniciativa de excelência no monitoramento e estudo de patógenos emergentes e endêmicos, com foco em sequenciamento genético para apoiar a vigilância epidemiológica e as políticas de saúde pública.
-
-    
+  <a href="https://www.bbc.com/portuguese/articles/cj5d192pq10o" target="_blank">
+    Cientistas criam modelo de embrião humano sem usar espermatozoide ou óvulo.
   </a>
 </div>
-</div>
-
 
 
 
 <!-- Novo vídeo YouTube Shorts -->
 <div id="customVideoBox7">
-  
   <iframe
-  width: clamp(12vw, 26vw, 42vw);
-  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
-    src="https://www.youtube.com/embed/EUsVcMhBkoY?rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3"
-    fetchpriority="high"
-    loading="eager"
+    style="width: clamp(12vw, 26vw, 42vw); height: calc(clamp(12vw, 26vw, 42vw) * 0.5625); border: none;"
+    src="https://www.youtube.com/embed/PdWck5e19cg?rel=0&modestbranding=1&fs=1&controls=1&disablekb=1&iv_load_policy=3"
+    loading="lazy"
     title="YouTube Shorts"
-    frameborder="0"
-    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;">
   </iframe>
 </div>
 
-<!-- Legenda-link -->
 <div id="videoCaption7">
-  <a href="https://oglobo.globo.com/saude/noticia/2025/06/30/cientistas-iniciam-projeto-para-criar-dna-humano-artificial-a-partir-do-zero-e-especialistas-citam-riscos-entenda.ghtml" 
+  <a href="https://olhardigital.com.br/2025/05/10/ciencia-e-espaco/primeira-aranha-geneticamente-modificada-do-mundo-produz-seda-fluorescente/" 
      target="_blank">
-     Explore o poder do DNA Projetado e descubra como o Futuro já começou!
+     Aranha Brilhante: A Revolução Genética da Seda.
   </a>
 </div>
-</div>
-
     <script src="dados.js" defer></script>
     <script src="app.js" defer></script>
 </body>    

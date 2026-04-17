@@ -161,7 +161,7 @@ let dados = [
     redes: {
       instagram: "https://www.instagram.com/biotecnologiagenetica",
       twitter: "https://twitter.com/biotecgenetica",
-      site: "https://www.biotecnologiagenet
+      site: "https://www.biotecnologiagenetica.com.br"
     }
   }
 ]

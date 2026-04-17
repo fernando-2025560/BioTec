@@ -1,5 +1,4 @@
-  
-// console.log(dados);
+  // console.log(dados);
 
 
 
@@ -207,7 +206,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const encontrado = termos.some(t => normalizarTexto(t) === termoDigitado);
 
     if (encontrado) {
-      const url = "https://www.google.com/search?q=" + encodeURIComponent(searchInput.value);
+      // Garante que o elemento existe e remove espaços desnecessários antes de criar a URL
+  const url = searchInput && searchInput.value 
+? "https://www.google.com/search?q=" + encodeURIComponent(searchInput.value.trim())
+: "#";
       window.open(url, "_blank");
     } else {
       alert("⚠️ Termo não encontrado na lista permitida!");
@@ -220,24 +222,184 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const url = "https://www.genome.gov/human-genome-project";
-  
-    new QRCode(document.getElementById("qrcode"), {
-      text: url,
-      width: 113,   // 3cm ≈ 113px
-      height: 113,
-      colorDark: "#000000",
-      colorLight: "#ffffff",
-      correctLevel: QRCode.CorrectLevel.H
-    });
+  const url = "https://www.genome.gov/human-genome-project";
+  const qrContainer = document.getElementById("qrcode");
+
+  // Lê o tamanho real definido pelo CSS
+  const size = qrContainer.offsetWidth;
+
+  new QRCode(qrContainer, {
+    text: url,
+    width: size,
+    height: size,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
   });
+});
+
+
+/*new QRCode(document.getElementById("qrcode-6"), {
+  text: "https://www.ebsco.com/research-starters/science/dna-and-rna-synthesis",
+  width: 120,
+  height: 120
+  }); */
   
 
+document.addEventListener("DOMContentLoaded", function () {
+  const originalContainer = document.getElementById("qrcode-container");
+  const originalQR = document.getElementById("qrcode");
 
- 
+  const newContainer = document.getElementById("qrcode-container-2");
+  const newQR = document.getElementById("qrcode-2");
+
+  /* 🔁 copia dimensões reais */
+  const containerStyles = window.getComputedStyle(originalContainer);
+  const qrSize = originalQR.offsetWidth;
+
+  newContainer.style.width = containerStyles.width;
+  newContainer.style.height = containerStyles.height;
+
+  /* 📍 mesma distância da lateral direita */
+  newContainer.style.right = containerStyles.right;
+  newContainer.style.left = containerStyles.left;
+
+  /* ⬇️ posição vertical nova */
+  newContainer.style.top = "55vh";
   
+  /* 🔲 QR quadrado */
+  newQR.style.width = qrSize + "px";
+  newQR.style.height = qrSize + "px";
+
+  new QRCode(newQR, {
+    text: "https://www.cnnbrasil.com.br/tecnologia/cientistas-criam-tecnologia-que-usa-dna-para-armazenar-dados/",
+    width: qrSize,
+    height: qrSize,
+    colorDark: "#000",
+    colorLight: "#fff",
+    correctLevel: QRCode.CorrectLevel.H
+  });
+});
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const originalContainer = document.getElementById("qrcode-container");
+  const originalQR = document.getElementById("qrcode");
+
+  const newContainer = document.getElementById("qrcode-container-3");
+  const newQR = document.getElementById("qrcode-3");
+
+  /* 🔁 copia dimensões reais */
+  const containerStyles = window.getComputedStyle(originalContainer);
+  const qrSize = originalQR.offsetWidth;
+
+  newContainer.style.width = containerStyles.width;
+  newContainer.style.height = containerStyles.height;
+
+  /* 📍 mesma distância da lateral direita */
+  newContainer.style.right = containerStyles.right;
+  newContainer.style.left = containerStyles.left;
+
+  /* ⬇️ posição vertical nova */
+  newContainer.style.top = "95vh";
+  
+  /* 🔲 QR quadrado */
+  newQR.style.width = qrSize + "px";
+  newQR.style.height = qrSize + "px";
+
+  new QRCode(newQR, {
+    text: "https://protosbiotec.com/blog/big-data-na-biotecnologia-como-lidar-com-milhoes-de-dados-genomicos/",
+    width: qrSize,
+    height: qrSize,
+    colorDark: "#000",
+    colorLight: "#fff",
+    correctLevel: QRCode.CorrectLevel.H
+  });
+});
+
+  
+document.addEventListener("DOMContentLoaded", function () {
+  const originalContainer = document.getElementById("qrcode-container");
+  const originalQR = document.getElementById("qrcode");
+
+  const newContainer = document.getElementById("qrcode-container-4");
+  const newQR = document.getElementById("qrcode-4");
+
+  /* 🔁 copia dimensões reais */
+  const containerStyles = window.getComputedStyle(originalContainer);
+  const qrSize = originalQR.offsetWidth;
+
+  newContainer.style.width = containerStyles.width;
+  newContainer.style.height = containerStyles.height;
+
+  /* 📍 mesma distância da lateral direita */
+  newContainer.style.right = containerStyles.right;
+  newContainer.style.left = containerStyles.left;
+
+  /* ⬇️ posição vertical nova */
+  newContainer.style.top = "133vh";
+  
+  /* 🔲 QR quadrado */
+  newQR.style.width = qrSize + "px";
+  newQR.style.height = qrSize + "px";
+
+  new QRCode(newQR, {
+    text: "https://www.exxtend.com.br/blog/revolucionando-o-armazenamento-de-dados-o-poder-do-dna-sintetico-na-era-digital",
+    width: qrSize,
+    height: qrSize,
+    colorDark: "#000",
+    colorLight: "#fff",
+    correctLevel: QRCode.CorrectLevel.H
+  });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const originalContainer = document.getElementById("qrcode-container");
+  const originalQR = document.getElementById("qrcode");
+
+  const newContainer = document.getElementById("qrcode-container-5");
+  const newQR = document.getElementById("qrcode-5");
+
+  /* 🔁 copia dimensões reais */
+  const containerStyles = window.getComputedStyle(originalContainer);
+  const qrSize = originalQR.offsetWidth;
+
+  newContainer.style.width = containerStyles.width;
+  newContainer.style.height = containerStyles.height;
+
+  /* 📍 mesma distância da lateral direita */
+  newContainer.style.right = containerStyles.right;
+  newContainer.style.left = containerStyles.left;
+
+  /* ⬇️ posição vertical nova */
+  newContainer.style.top = "161vh";
+  
+  /* 🔲 QR quadrado */
+  newQR.style.width = qrSize + "px";
+  newQR.style.height = qrSize + "px";
+
+  new QRCode(newQR, {
+    text: "https://noticias.portaldaindustria.com.br/noticias/inovacao-e-tecnologia/viu-isso-dna-sintetico-podera-armazenar-dados-digitais/",
+    width: qrSize,
+    height: qrSize,
+    colorDark: "#000",
+    colorLight: "#fff",
+    correctLevel: QRCode.CorrectLevel.H
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("qr-container");
+
+  new QRCode(container, {
+    text: "https://www.bbc.com/portuguese/articles/cp3j3616k05o",
+    width: qrSize,
+    height: qrSize,
+    
+  });
+});
 
 
 
@@ -293,11 +455,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const css = `
     /* Estilos conforme especificado acima */
-    #custom-overlay-container { position: absolute; top: 113px; left: 566.9291338582676px; pointer-events: none; }
+    #custom-overlay-container { position: absolute; top: 12.556vh; left: 29.528vw; pointer-events: none; }
     #custom-overlay-container > * { pointer-events: auto; }
     #custom-video { position: relative; z-index: 2; display: block; }
     #custom-image { position: relative; z-index: 1; display: block; }
-    #custom-caption { position: relative; top: 3.779527559055118px; display: block; text-align: center; z-index: 3; }
+    #custom-caption { position: relative; top: 0.42vh; display: block; text-align: center; z-index: 3; }
   `;
   const style = document.createElement('style');
   style.textContent = css;
@@ -310,7 +472,7 @@ document.addEventListener("DOMContentLoaded", function () {
   iframe.id = 'custom-video';
   iframe.src = 'https://www.youtube.com/embed/EIGWzwAmH7E?&enablejsapi=1&rel=0&modestbranding=1&playsinline=1';
   iframe.frameborder = '0';
-  iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+  iframe.allow = 'accelerometer; controls; autoplay; encrypted-media; gyroscope; picture-in-picture';
   
 
   
@@ -349,7 +511,7 @@ let persistentTarget = null;
 function drawChart() {
   svg.innerHTML = "";
 
-  const width = svg.clientWidth;
+  const width = svg.clientWidth || svg.getBoundingClientRect().width || 0;
   const height = svg.clientHeight;
   const barWidth = width / data.length - 10;
   const maxValue = Math.max(...data.map(d => d.value));
@@ -361,8 +523,10 @@ function drawChart() {
     const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
     rect.setAttribute("x", i * (barWidth + 10) + 5);
     rect.setAttribute("y", height - barHeight - 15);
-    rect.setAttribute("width", barWidth);
-    rect.setAttribute("height", barHeight);
+    // Garante que a largura seja sempre um número válido e não negativo
+rect.setAttribute("width", Math.max(0, parseFloat(barWidth) || 0));
+    // Garante que o valor seja um número absoluto e evita valores negativos ou NaN
+rect.setAttribute("height", Math.max(0, Math.abs(barHeight)) || 0);
     rect.setAttribute("fill", colors[i]);
     rect.classList.add("bar");
 
@@ -417,11 +581,29 @@ function showTooltipPersistent(e, d) {
   positionTooltip(e);
 }
 
-// Posicionar tooltip
 function positionTooltip(e) {
   const rect = wrap.getBoundingClientRect();
-  tooltip.style.left = `${rect.left + e.target.getAttribute("x") * 1 + 10}px`;
-  tooltip.style.top = `${rect.top + e.target.getAttribute("y") * 1 - 25}px`;
+  const svg = e.target.ownerSVGElement;
+
+  // Escala do SVG
+  const scaleX = rect.width / svg.viewBox.baseVal.width;
+  const scaleY = rect.height / svg.viewBox.baseVal.height;
+
+  const x = e.target.getAttribute("x") * scaleX;
+  const y = e.target.getAttribute("y") * scaleY;
+
+  const tooltipWidth = tooltip.offsetWidth;
+  const tooltipHeight = tooltip.offsetHeight;
+
+  tooltip.style.left = `${Math.min(
+    Math.max(rect.left + x + 10, 8),
+    window.innerWidth - tooltipWidth - 8
+  )}px`;
+
+  tooltip.style.top = `${Math.min(
+    Math.max(rect.top + y - 25, 8),
+    window.innerHeight - tooltipHeight - 8
+  )}px`;
 }
 
 // Redesenhar ao redimensionar
@@ -446,17 +628,17 @@ const chartContainer = document.getElementById('chartContainer');
 let chartInitialized = false;
 let dnaChart; // armazenar a instância do gráfico
 
-// Dados reais (fonte: OMS, UNESCO, OECD 2024 - valores aproximados)
+// Dados reais (fonte: OMS, UNESCO, OECD 2025 - valores aproximados)
 const initialData = {
   labels: ['OMS', 'Brasil', 'União Europeia'],
   datasets: [
     {
-      label: 'Pesquisas em DNA Projetado (nº de publicações, 2025)',
+      label: 'Pesquisas em DNA Projetado (nº de publicações, 2026)',
       data: [1500, 620, 2100],
       backgroundColor: ['#e74c3c', '#2ecc71', '#3498db']
     },
     {
-      label: 'Investimento em Biotecnologia (bilhões USD, 2025)',
+      label: 'Investimento em Biotecnologia (bilhões USD, 2026)',
       data: [220, 58, 180],
       backgroundColor: ['#c0392b', '#27ae60', '#2980b9']
     }
@@ -491,7 +673,7 @@ svgGatilho.addEventListener('click', (e) => {
           },
           title: {
             display: true,
-            text: 'DNA Projetado & Biotecnologia - Dados Reais 2025'
+            text: 'DNA Projetado & Biotecnologia - Dados Reais 2026'
           }
         },
         scales: {
@@ -622,30 +804,80 @@ document.querySelector('#customYT').setAttribute('allowfullscreen', 'false');
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const videoContainer = document.getElementById("video-area");
+(function () {
+  "use strict";
 
-  // Cria iframe do YouTube
-  const iframe = document.createElement("iframe");
-  iframe.src = "https://www.youtube.com/embed/-8jPxoehEDU";
-  iframe.allow = "accelerometer; autoplay; encrypted-media; controls; gyroscope; picture-in-picture";
+  (function() {
+    if (window.__VIDEO_FORCE_LOADED__) return;
+    window.__VIDEO_FORCE_LOADED__ = true;
   
-  // Cria legenda
-  const caption = document.createElement("div");
-  caption.className = "video-caption";
+    const injectVideo = () => {
+      const videoContainer = document.getElementById("video-area");
+      if (!videoContainer) return;
+  
+      // Força a visibilidade do container pai contra qualquer regra CSS externa
+      videoContainer.style.setProperty("display", "block", "important");
+      videoContainer.style.setProperty("visibility", "visible", "important");
+      videoContainer.style.setProperty("opacity", "1", "important");
+      videoContainer.style.setProperty("height", "auto", "important");
+      videoContainer.style.setProperty("min-height", "22.222vh", "important");
+  
+      if (videoContainer.dataset.loaded === "true") return;
+      videoContainer.dataset.loaded = "true";
+  
+      // Iframe com proporção 16:9 forçada
+      const iframe = document.createElement("iframe");
+      iframe.src = "https://www.youtube.com/embed/QN8Y8eEKz7Q?controls=1&autoplay=0&rel=0&modestbranding=1&playsinline=1";
+      iframe.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
+      iframe.loading = "lazy";
+      
+      // Estilos críticos forçados no Iframe
+      iframe.style.setProperty("width", "100%", "important");
+      iframe.style.setProperty("aspect-ratio", "16 / 9", "important");
+      iframe.style.setProperty("border", "none", "important");
+      iframe.style.setProperty("display", "block", "important");
+  
+      // Legenda
+      const caption = document.createElement("div");
+      caption.style.setProperty("padding", "0.521vw 0", "important");
+      caption.style.setProperty("display", "block", "important");
+  
+      const link = document.createElement("a");
+      link.href = "https://medicinasa.com.br/ia-genoma-humano/";
+      link.textContent = "Do Código ao Carbono: A Ciência Hackeando a Vida!";
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      
+      // Estilo do Link (Garante legibilidade básica)
+      link.style.setProperty("color", "#000", "important");
+      link.style.setProperty("text-decoration", "underline", "important");
+      link.style.setProperty("font-family", "Arial, sans-serif", "important");
+      link.style.setProperty("font-size", "1.76vh", "important");
+  
+      caption.appendChild(link);
+  
+      const fragment = document.createDocumentFragment();
+      fragment.appendChild(iframe);
+      fragment.appendChild(caption);
+  
+      videoContainer.innerHTML = ""; // Limpa conteúdo residual antes de injetar
+      videoContainer.appendChild(fragment);
+    };
+  
+    // Garante execução mesmo se o DOM já estiver pronto
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+      injectVideo();
+    } else {
+      document.addEventListener("DOMContentLoaded", injectVideo);
+    }
+  })();})();
 
-  const link = document.createElement("a");
-  link.href = "https://medicinasa.com.br/ia-genoma-humano/";
-  link.textContent = "Do Código ao Carbono: A Ciência Hackeando a Vida!";
-  link.target = "_blank";
-
-  caption.appendChild(link);
-
-  // Adiciona ao container
-  videoContainer.appendChild(iframe);
-  videoContainer.appendChild(caption);
+/*document.addEventListener("DOMContentLoaded", () => {
+  const capa =document.getElementById("ytCover");
+  if (capa) capa.style.display = "none";
 });
 
+*/
 
 let customPlayer;
 function onYouTubeIframeAPIReady() {
@@ -724,18 +956,29 @@ document.head.appendChild(customTag);
   }
 
   placeholder.addEventListener('click', function (e) {
-    // injeta iframe e mostra o player
-    const iframe = createIframe();
-    container.innerHTML = '';
-    container.appendChild(iframe);
-    container.style.display = 'block';
-    container.setAttribute('aria-hidden', 'false');
+    // 1. Previne o comportamento padrão do clique (importante se for um link ou botão)
+    e.preventDefault();
 
-    // opcional: remover placeholder do DOM para evitar cliques duplicados
-    placeholder.style.display = 'none';
+    // 2. Garante que a função e o container existam antes de prosseguir
+    if (typeof createIframe === 'function' && container) {
+      const iframe = createIframe();
+
+      // 3. Limpa o container de forma segura e injeta o iframe
+      while (container.firstChild) {
+        container.removeChild(container.firstChild);
+      }
+      
+      container.appendChild(iframe);
+      container.style.display = 'block';
+      container.setAttribute('aria-hidden', 'false');
+
+      // 4. Esconde o placeholder apenas se ele existir
+      if (placeholder) {
+        placeholder.style.display = 'none';
+      }
+    }
   });
 })();
-
 
 
 
@@ -744,9 +987,9 @@ document.head.appendChild(customTag);
 function ajustarColunas() {
   const gallery = document.querySelector('.video-gallery');
   if(window.innerWidth < 1050) {
-    gallery.style.gridTemplateColumns = 'repeat(2, 320px)';   // 2 colunas em telas menores
+    gallery.style.gridTemplateColumns = 'repeat(2, clamp(12vw, 26vw, 42vw))';   // 2 colunas em telas menores
   } else {
-    gallery.style.gridTemplateColumns = 'repeat(3, 320px)';
+    gallery.style.gridTemplateColumns = 'repeat(3, clamp(12vw, 26vw, 42vw))';
   }
 }
 
@@ -769,7 +1012,7 @@ function ajustarLayout() {
     videos.forEach(video => {
       video.style.width = "100%";
       video.style.height = "auto";
-      video.style.maxWidth = "320px";
+      video.style.maxWidth = "16.667vw";
       video.style.display = "block";
       video.style.margin = "0 auto";
     });
@@ -778,8 +1021,8 @@ function ajustarLayout() {
     imagens.forEach(img => {
       img.style.width = "100%";
       img.style.height = "auto";
-      img.style.maxWidth = "320px";
-      img.style.borderRadius = "12px";
+      img.style.maxWidth = "16.667vw";
+      img.style.borderRadius = "0.625vw";
       img.style.display = "block";
       img.style.margin = "0.521vw auto";
     });
@@ -791,14 +1034,14 @@ function ajustarLayout() {
       menu.style.width = "100%";
       menu.style.height = "auto";
       menu.style.backgroundColor = "rgba(0, 0, 0, 0.85)";
-      menu.style.backdropFilter = "blur(5px)";
+      menu.style.backdropFilter = "blur(0.26vw)";
       menu.style.flexDirection = "column";
       menu.style.textAlign = "center";
-      menu.style.padding = "10px 0";
+      menu.style.padding = "0.521vw 0";
     }
 
     // 🔹 Ajuste geral do corpo da página
-    body.style.paddingTop = "70px";
+    body.style.paddingTop = "3.646vw";
 
   } else {
     console.log("Modo desktop ativado");
@@ -818,7 +1061,7 @@ function ajustarLayout() {
       img.style.maxWidth = "31.25vw";
       img.style.borderRadius = "0.417vw";
       img.style.display = "block";
-      img.style.margin = "2.222vh auto";
+      img.style.margin = "1.042vw auto";
     });
 
     // 🔹 Ajuste do menu para desktop
@@ -849,6 +1092,61 @@ window.addEventListener("orientationchange", () => {
   document.documentElement.style.transition = "0.2s ease";
 });
 
+let ultimoScroll  = 0;
+const icones = document.querySelector('.icones');
+
+window.addEventListener('scroll', ()  => {
+  const scrollAtual = window.scrollY;
+
+  if  (scrollAtual > ultimoScroll &&  scrollAtual > 50) {
+      // rolando para baixo - some
+      icones.classList.add('oculto');
+  } else {
+    // rolando para cima - apareçe
+    icones.classList.remove('oculto');
+  }
+
+  ultimoScroll = scrollAtual;
+});
+
+
+
+(function () {
+  // Busca especificamente o link da BBC para não afetar outros placeholders
+  const bbcIcon = document.querySelector('a.glass-icon[href*="bbc.com/portuguese"]');
+
+  if (bbcIcon) {
+    bbcIcon.addEventListener('click', function (e) {
+      // O comportamento de clique só será disparado para este elemento
+      console.log("Ícone da BBC clicado de forma isolada.");
+    });
+  }
+})();
+
+
+
+const icon = document.getElementById("yt-icon");
+const box = document.getElementById("yt-shorts-box");
+const iframe = document.getElementById("yt-shorts");
+const closeBtn = document.getElementById("yt-close");
+const volume = document.getElementById("yt-volume");
+
+
+
+/* LINK SVG PARA PÁGINA 3 */
+
+const linkPagina3 = document.getElementById("link-pagina3-svg");
+
+if(linkPagina3){
+
+linkPagina3.addEventListener("click", function(e){
+
+e.preventDefault(); 
+window.location.href = "pagina3.html";
+
+});
+
+}
 
 
 
@@ -857,4 +1155,35 @@ window.addEventListener("orientationchange", () => {
 
 
 
+
+
+
+
+
+
+const linkPagina2 = document.getElementById("link-pagina2-svg");
+
+if(linkPagina2){
+
+linkPagina2.addEventListener("click", function(e){
+
+e.preventDefault(); 
+window.location.href = "pagina2.html";
+
+});
+
+}
+
+const linkPagina1 = document.getElementById("link-pagina1-svg");
+
+if(linkPagina3){
+
+linkPagina1.addEventListener("click", function(e){
+
+e.preventDefault(); 
+window.location.href = "pagina1.html";
+
+});
+
+}
 
